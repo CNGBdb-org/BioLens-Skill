@@ -106,6 +106,5 @@ bash ./scripts/smr.sh --gene BLK --trait RA --max 10
 
 ## Citation
 
-Local disease table: `/public/.../CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx`  
-FTP: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx  
+FTP disease table: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx  
 Yin et al., Science 2026 — DOI [10.1126/science.adt3130](https://doi.org/10.1126/science.adt3130)
