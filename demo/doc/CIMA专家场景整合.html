@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CIMA 专家 · 能力与使用场景</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --paper: #fffcf7;
+      --ink: #1c2429;
+      --muted: #5a6670;
+      --line: #d9d2c5;
+      --accent: #0d6e6e;
+      --accent-soft: #e4f2f1;
+      --warn: #8a5a00;
+      --warn-bg: #fff6e5;
+      --code-bg: #eef2f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #e7f3f2 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #f3ebe0 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header.hero {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 2rem 1.75rem;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 10px 30px rgba(28, 36, 41, 0.04);
+    }
+    header.hero h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      letter-spacing: 0.02em;
+      font-weight: 700;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .meta a { color: var(--accent); }
+    section {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.25rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      margin: 1.35rem 0 0.6rem;
+      font-size: 1.05rem;
+    }
+    p { margin: 0.55rem 0; }
+    ul, ol { margin: 0.4rem 0 0.8rem; padding-left: 1.35rem; }
+    li { margin: 0.25rem 0; }
+    strong { font-weight: 650; }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      background: var(--code-bg);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.75rem 0 1rem;
+      overflow-x: auto;
+      display: block;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.55rem 0.65rem;
+      text-align: left;
+      vertical-align: top;
+      background: #fff;
+    }
+    th {
+      background: #f0ebe3;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    blockquote {
+      margin: 0.85rem 0;
+      padding: 0.75rem 1rem;
+      background: var(--warn-bg);
+      border-left: 3px solid #d4a017;
+      color: var(--warn);
+      border-radius: 0 8px 8px 0;
+    }
+    .scene {
+      border: 1px dashed var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+      background: #fffefb;
+    }
+    .scene h3 { margin-top: 0; }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-right: 0.35rem;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    a { color: var(--accent); }
+    @media print {
+      body { background: #fff; }
+      section, header.hero { box-shadow: none; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>CIMA 专家</h1>
+      <p class="meta">
+        面向 Chinese Immune Multi-Omics Atlas 的 Agent Skills 能力说明与使用场景<br />
+        文献：Yin et al., <em>Science</em> 2026；
+        DOI <a href="https://doi.org/10.1126/science.adt3130" target="_blank" rel="noopener">10.1126/science.adt3130</a><br />
+        门户：<a href="https://db.cngb.org/trueblood/cima/" target="_blank" rel="noopener">https://db.cngb.org/trueblood/cima/</a>
+      </p>
+    </header>
+
+    <section id="intro">
+      <h2>CIMA 专家是什么</h2>
+      <p>
+        <strong>CIMA 专家</strong>是围绕
+        <a href="https://db.cngb.org/trueblood/cima/" target="_blank" rel="noopener">Chinese Immune Multi-Omics Atlas（CIMA / TrueBlood）</a>
+        的一组 Agent Skills：用自然语言提问，即可完成免疫图谱浏览、组成与衰老相关统计、基因调控与遗传关联查询，以及本地 scRNA / scATAC 分析流水线。
+      </p>
+      <p>
+        CIMA 基于 428 名中国成人、千万级外周血免疫细胞的多组学图谱（scRNA + scATAC），并发布 GRN、xQTL、SMR 等预计算结果。
+        本专家将能力分为两条主线：一是查询已发布的图谱与预计算表；二是在示例数据或自有 h5ad 上跑通分析流程，降低使用门槛，并与论文及门户资源保持对应。
+      </p>
+      <p>
+        能力覆盖：数据与路径说明、谱系子集探索、细胞组成与年龄/性别分层、基因表达、eRegulon、cis-xQTL、SMR 性状关联、CIMA-CLM 预计算变异效应可视化，以及从预处理到 metacell 的 CPU 流水线。
+      </p>
+    </section>
+
+    <section id="s1">
+      <h2>一、总体优势</h2>
+
+      <h3>1. 降低多组学分析门槛</h3>
+      <p>传统 CIMA 多组学需同时掌握 scRNA、scATAC、QTL、GWAS 整合、GRN 等，工具链长（scanpy、SnapATAC2、SCENIC+、tensorQTL、SMR…）。CIMA 专家 Skills 封装为自然语言可触发的能力：</p>
+      <ul>
+        <li>Agent 按问题自动路由到对应 Skill</li>
+        <li>参数默认对齐论文流程，便于复现</li>
+        <li>流水线以 <strong>CPU</strong> 为主路径，适配常见实验室环境</li>
+      </ul>
+
+      <h3>2. 千万级细胞图谱即时探索</h3>
+      <p>CIMA 数据集包含 648 万 scRNA-seq + 376 万 scATAC-seq 细胞（共 1000 万+），总文件约 120GB。传统方式需要下载、加载、编写分析脚本才能查询，单次 UMAP 出图可能需要数小时。CIMA 专家通过预计算表和 FTP / 本地缓存，实现：</p>
+      <ul>
+        <li>428 名供体的临床元数据（年龄/性别/BMI）秒级查询</li>
+        <li>6 大免疫谱系（PBMC / CD4T / CD8T / B / Myeloid / NK）的细胞类型组成即时统计</li>
+        <li>基因跨谱系表达比较（如 CD8A 在各谱系子集中的表达差异）秒级返回</li>
+        <li>GRN（203 个 eRegulon）、xQTL（223,405 条关联）、SMR（13,826 条关联）预计算表即时查询</li>
+      </ul>
+
+      <h3>3. 从「重计算」到「即时查询」</h3>
+      <table>
+        <thead>
+          <tr><th>传统方式</th><th>CIMA Skills</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>下载百 GB h5ad → 写脚本 → 久等</td><td>自然语言 → 路由 → 预计算/缓存返回</td></tr>
+          <tr><td>SCENIC+ 集群重跑数天</td><td>查 eRegulon 预计算表</td></tr>
+          <tr><td>tensorQTL + WGS 数小时</td><td>查 lead xQTL 表</td></tr>
+          <tr><td>SMR + GCTA + GWAS 手工多步</td><td>查 SMR / 疾病性状表</td></tr>
+          <tr><td>Enformer + GPU 推理</td><td>基于预计算的 CLM 结果出图</td></tr>
+        </tbody>
+      </table>
+
+      <h3>4. 标准化与可复现</h3>
+      <ul>
+        <li>遵循 Agent Skills 规范，可部署到多种 Agent</li>
+        <li>输出统一：表格 / 图路径 / 数据源说明</li>
+        <li>部署环境优先读取本地 CIMA Resource</li>
+      </ul>
+    </section>
+
+    <section id="s2">
+      <h2>二、Skill 清单</h2>
+      <p>下列 Skill 共同构成 CIMA 专家能力（安装后为可独立调用的叶子目录）。</p>
+      <table>
+        <thead>
+          <tr><th>Skill</th><th>类型</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>cima-resource</code></td><td>资源</td><td>可下载数据清单、本地 / FTP 路径</td></tr>
+          <tr><td><code>cima-atlas-explore</code></td><td>图谱浏览</td><td>谱系子集、donor、组成、基因 UMAP（不含 GRN / xQTL / SMR）</td></tr>
+          <tr><td><code>cima-scrna-preprocessing</code></td><td>分析流水线</td><td>scRNA QC → 聚类 → 系群拆分</td></tr>
+          <tr><td><code>cima-cell-annotation</code></td><td>分析流水线</td><td>TrueBlood L1–L4 marker 注释</td></tr>
+          <tr><td><code>cima-pseudobulk-variance</code></td><td>分析流水线</td><td>Pseudobulk + age/sex 方差</td></tr>
+          <tr><td><code>cima-scratac-preprocessing</code></td><td>分析流水线</td><td>scATAC + 可选 gene activity</td></tr>
+          <tr><td><code>cima-multiomics-integration</code></td><td>分析流水线</td><td>RNA → ATAC 标签迁移</td></tr>
+          <tr><td><code>cima-metacell</code></td><td>分析流水线</td><td>Metacell 聚合与配对</td></tr>
+          <tr><td><code>cima-grn-scenicplus</code></td><td>预计算查询</td><td>eRegulon / GRN</td></tr>
+          <tr><td><code>cima-xqtl</code></td><td>预计算查询</td><td>cis-eQTL / cis-caQTL</td></tr>
+          <tr><td><code>cima-smr-gwas</code></td><td>预计算查询</td><td>SMR；疾病性状场景请用显著关联表</td></tr>
+          <tr><td><code>cima-clm</code></td><td>预计算可视化</td><td>CIMA-CLM 变异效应热图 / 折线等</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="s3">
+      <h2>三、使用场景</h2>
+
+      <div class="scene">
+        <h3><span class="tag">A</span>资源与谱系图谱探索</h3>
+        <p><strong>Skill：</strong><code>cima-resource</code> + <code>cima-atlas-explore</code></p>
+        <p><strong>能做什么：</strong>无需先下载全量 h5ad，即可查询数据清单、供体信息、细胞组成与基因表达。</p>
+        <p><strong>可以这样问：</strong></p>
+        <ol>
+          <li>CIMA 有哪些可下载数据？本地路径在哪？</li>
+          <li>可以探索哪些谱系子集（PBMC / CD4T / CD8T / B / Myeloid / NK）？</li>
+          <li>CIMA B 细胞子集有哪些亚型？各占多少比例？</li>
+          <li>CD8A 在不同免疫谱系里怎么表达？哪个更高？</li>
+          <li>428 名供体年龄和性别分布怎样？</li>
+          <li>在 B 细胞谱系里，随年龄增长哪些亚型比例升/降？按年龄段分层画图。</li>
+          <li>基因列表 MS4A1、CD8A、NKG7、LYZ、FOXP3、IKZF4、IL12B 在哪些细胞类型高表达？</li>
+        </ol>
+        <p><strong>响应量级：</strong>多数为秒级至分钟级；全量 PBMCs UMAP 出图慢一些。</p>
+      </div>
+
+      <div class="scene">
+        <h3><span class="tag">B</span>基因调控网络（GRN）</h3>
+        <p><strong>Skill：</strong><code>cima-grn-scenicplus</code></p>
+        <p><strong>能做什么：</strong>无需重跑 SCENIC+；可按转录因子、靶基因或谱系列出 eRegulon。</p>
+        <p><strong>可以这样问：</strong></p>
+        <ol>
+          <li>Treg 关键因子 FOXP3 调控哪些下游基因？</li>
+          <li>B 细胞有哪些高质量 eRegulon？</li>
+          <li>NK 谱系的转录因子调控网络有哪些 regulon？</li>
+        </ol>
+        <p><strong>响应量级：</strong>预计算表查询，通常为秒级（首次拉取表除外）。</p>
+      </div>
+
+      <div class="scene">
+        <h3><span class="tag">C</span>cis-xQTL</h3>
+        <p><strong>Skill：</strong><code>cima-xqtl</code></p>
+        <p><strong>能做什么：</strong>无需本地 tensorQTL 与全基因组测序重算；可按基因、变异、细胞类型，以及 eQTL / caQTL 过滤查询。</p>
+        <p><strong>可以这样问：</strong></p>
+        <ol>
+          <li>基因 CDC42 在 CIMA 里有没有 cis-eQTL？在哪些细胞类型？</li>
+          <li>Bn_TCL1A（或 B 相关亚型）里有哪些 cis-caQTL？</li>
+          <li>某 variant（如 chr12_56050848）影响哪个基因？</li>
+        </ol>
+        <p><strong>响应量级：</strong>通常秒级返回 lead 关联（含 p 值、效应等）。</p>
+      </div>
+
+      <div class="scene">
+        <h3><span class="tag">D</span>SMR 与免疫相关性状</h3>
+        <p><strong>Skill：</strong><code>cima-smr-gwas</code></p>
+        <p><strong>能做什么：</strong>无需本地搭建 SMR / GCTA 工具链；可查询基因与免疫相关疾病 / 性状的显著 SMR 关联。查询疾病性状时，请使用显著关联表中有记录的基因（例如 CTLA4、BLK、ORMDL3）。</p>
+        <p><strong>可以这样问：</strong></p>
+        <ol>
+          <li>基因 <strong>CTLA4</strong> 在 CIMA 显著 SMR 里和哪些免疫相关疾病有关联？</li>
+          <li>基因 <strong>BLK</strong> 和类风湿关节炎（RA）有没有 SMR 关联？</li>
+          <li>基因 <strong>ORMDL3</strong> 和哮喘（As）有没有显著 SMR 关联？</li>
+        </ol>
+        <blockquote>结果为统计关联 / SMR 证据，不能替代临床诊断。</blockquote>
+        <p><strong>响应量级：</strong>通常为秒级。</p>
+      </div>
+
+      <div class="scene">
+        <h3><span class="tag">E</span>CIMA-CLM 变异效应可视化</h3>
+        <p><strong>Skill：</strong><code>cima-clm</code></p>
+        <p><strong>能做什么：</strong>基于预计算的 in silico mutagenesis 结果生成热图、折线与 logo，无需现场 GPU / Enformer 推理。</p>
+        <p><strong>可以这样问：</strong></p>
+        <ol>
+          <li>帮我运行 CIMA-CLM 变异效应分析，生成热图和折线图。</li>
+          <li>CIMA-CLM 能做什么？预计算结果的边界是什么？</li>
+        </ol>
+        <p><strong>数据前提：</strong>需提供 <code>CIMA-CLM_Demo</code> 目录，或设置环境变量 <code>CIMA_CLM_DEMO</code>。</p>
+      </div>
+
+      <div class="scene">
+        <h3><span class="tag">F</span>本地分析流水线</h3>
+        <p><strong>Skill：</strong><br />
+          <code>cima-scrna-preprocessing</code> → <code>cima-cell-annotation</code> →（可选）<code>cima-pseudobulk-variance</code>
+          → <code>cima-scratac-preprocessing</code> → <code>cima-multiomics-integration</code> → <code>cima-metacell</code>
+        </p>
+        <p><strong>能做什么：</strong>按论文向流程在 CPU 上完成预处理、注释、多组学整合与 metacell。可使用配套示例数据（<code>paired_demo_rna</code> / <code>paired_demo_atac</code> / <code>paired_demo_atac_gene</code>），或替换为自有 h5ad。</p>
+        <p><strong>可以这样问：</strong></p>
+        <ol>
+          <li>用配对示例数据按 CIMA 流程依次做预处理、L1–L4 注释、pseudobulk、scATAC、多组学整合、metacell 配对。</li>
+          <li>只用 RNA 示例数据跑 scRNA 预处理 + L1–L4 注释。</li>
+          <li>已有预处理后的 RNA 与 gene-level ATAC，做多组学标签迁移再 metacell，并报告配对对数。</li>
+        </ol>
+        <p><strong>响应量级：</strong>通常为数分钟级；结果可关注 <code>Pseudo_multiomics_barcode_info.csv</code> 与 metacell h5ad 规模。</p>
+      </div>
+    </section>
+
+    <section id="s4">
+      <h2>四、问题速查</h2>
+      <p><strong>资源 / 图谱</strong></p>
+      <ol>
+        <li>CIMA 有哪些可下载数据？本地路径在哪？</li>
+        <li>可探索哪些谱系子集？各大约多少细胞？</li>
+        <li>B 子集亚型组成？CD8A 跨谱系谁高？</li>
+        <li>428 人年龄性别分布？随年龄哪些亚型比例变？</li>
+      </ol>
+      <p><strong>GRN</strong></p>
+      <ol>
+        <li>FOXP3 的 eRegulon / 靶基因？</li>
+        <li>B / NK 高质量 eRegulon 列表？</li>
+      </ol>
+      <p><strong>xQTL</strong></p>
+      <ol>
+        <li>CDC42 的 cis-eQTL（按细胞类型）？</li>
+        <li>指定亚型的 cis-caQTL？</li>
+      </ol>
+      <p><strong>SMR</strong></p>
+      <ol>
+        <li>CTLA4 / BLK / ORMDL3 等与免疫病性状关联？</li>
+      </ol>
+      <p><strong>CLM</strong></p>
+      <ol>
+        <li>运行 CIMA-CLM，生成热图与折线图。</li>
+      </ol>
+      <p><strong>流水线</strong></p>
+      <ol>
+        <li>配对示例数据全流程；或仅预处理 + 注释；或整合 + metacell。</li>
+      </ol>
+    </section>
+
+    <section id="links">
+      <h2>相关链接</h2>
+      <ul>
+        <li>CIMA 门户：<a href="https://db.cngb.org/trueblood/cima/" target="_blank" rel="noopener">https://db.cngb.org/trueblood/cima/</a></li>
+        <li>文献 DOI：<a href="https://doi.org/10.1126/science.adt3130" target="_blank" rel="noopener">10.1126/science.adt3130</a></li>
+      </ul>
+    </section>
+
+    <footer>CIMA / TrueBlood · Agent Skills</footer>
+  </div>
+</body>
+</html>

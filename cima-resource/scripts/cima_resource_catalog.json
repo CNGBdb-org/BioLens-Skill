@@ -1,0 +1,468 @@
+{
+  "source": "https://db.cngb.org/trueblood/cima/resource",
+  "ftp_root": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/",
+  "raysync_tool": "https://ftp.cngb.org/pub/course/tool/raysync/",
+  "readme": "https://db.cngb.org/trueblood/readme.en.txt",
+  "citation": "Yin et al., Science 2026; DOI 10.1126/science.adt3130",
+  "download_tips": [
+    "Deployed CNGBdb agents: data lives under /public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource (override with env CIMA_RESOURCE_ROOT).",
+    "Answer users with local absolute paths first; portal/FTP are mirrors for external download only.",
+    "Portal catalog: https://db.cngb.org/trueblood/cima/resource",
+    "Public FTP mirror: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/",
+    "Large external downloads may use RaySync; on internal deploy prefer reading local_path directly."
+  ],
+  "categories": [
+    "Metadata",
+    "Cell Atlas",
+    "GRN",
+    "xQTL",
+    "CIMA-CLM",
+    "Full Length"
+  ],
+  "n_files": 44,
+  "resources": [
+    {
+      "category": "Metadata",
+      "name": "CIMA_Sample_Information_Metadata.csv",
+      "size": "78KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Metadata/CIMA_Sample_Information_Metadata.csv",
+      "note": "Donor/sample clinical-style metadata",
+      "related_skill": null,
+      "relative_path": "Metadata/CIMA_Sample_Information_Metadata.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Metadata/CIMA_Sample_Information_Metadata.csv"
+    },
+    {
+      "category": "Metadata",
+      "name": "CIMA_Sample_Omics_Metadata.csv",
+      "size": "11KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Metadata/CIMA_Sample_Omics_Metadata.csv",
+      "note": "Which omics available per sample",
+      "related_skill": null,
+      "relative_path": "Metadata/CIMA_Sample_Omics_Metadata.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Metadata/CIMA_Sample_Omics_Metadata.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_RNA_6484974cells_36326genes_compressed.h5ad",
+      "size": "44.4GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_6484974cells_36326genes_compressed.h5ad",
+      "note": "Full scRNA atlas (~6.5M cells)",
+      "related_skill": "cima / cima-scrna-preprocessing",
+      "relative_path": "Cell_Atlas/CIMA_RNA_6484974cells_36326genes_compressed.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_6484974cells_36326genes_compressed.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_RNA_B_566569cells_36326genes_compressed_20260305.h5ad",
+      "size": "4.1GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_B_566569cells_36326genes_compressed_20260305.h5ad",
+      "note": "B lineage subset",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_RNA_B_566569cells_36326genes_compressed_20260305.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_B_566569cells_36326genes_compressed_20260305.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_RNA_Myeloid_754770cells_36326genes_compressed_20260305.h5ad",
+      "size": "6.0GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_Myeloid_754770cells_36326genes_compressed_20260305.h5ad",
+      "note": "Myeloid subset",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_RNA_Myeloid_754770cells_36326genes_compressed_20260305.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_Myeloid_754770cells_36326genes_compressed_20260305.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_RNA_NK_503083cells_36326genes_compressed_20260305.h5ad",
+      "size": "3.4GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_NK_503083cells_36326genes_compressed_20260305.h5ad",
+      "note": "NK subset",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_RNA_NK_503083cells_36326genes_compressed_20260305.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_NK_503083cells_36326genes_compressed_20260305.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_RNA_CD4T_2320103cells_36326genes_compressed_20260305.h5ad",
+      "size": "15.4GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_CD4T_2320103cells_36326genes_compressed_20260305.h5ad",
+      "note": "CD4 T subset",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_RNA_CD4T_2320103cells_36326genes_compressed_20260305.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_CD4T_2320103cells_36326genes_compressed_20260305.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_RNA_CD8T_2340449cells_36326genes_compressed_20260305.h5ad",
+      "size": "15.7GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_CD8T_2340449cells_36326genes_compressed_20260305.h5ad",
+      "note": "CD8 T subset",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_RNA_CD8T_2340449cells_36326genes_compressed_20260305.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_RNA_CD8T_2340449cells_36326genes_compressed_20260305.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_ATAC_3762242cells_338036peaks_compressed.h5ad",
+      "size": "33.6GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_ATAC_3762242cells_338036peaks_compressed.h5ad",
+      "note": "scATAC peak matrix (~3.8M cells)",
+      "related_skill": "cima-scratac-preprocessing",
+      "relative_path": "Cell_Atlas/CIMA_ATAC_3762242cells_338036peaks_compressed.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_ATAC_3762242cells_338036peaks_compressed.h5ad"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_ATAC_Fragments.tar",
+      "size": "249.3GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_ATAC_Fragments.tar",
+      "note": "Raw ATAC fragment files (very large)",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_ATAC_Fragments.tar",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_ATAC_Fragments.tar"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_ATAC_Cell_Type_Peakset.csv.zip",
+      "size": "6.6MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_ATAC_Cell_Type_Peakset.csv.zip",
+      "note": "Cell-type peak sets",
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_ATAC_Cell_Type_Peakset.csv.zip",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_ATAC_Cell_Type_Peakset.csv.zip"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_COSG_Marker_Results.csv",
+      "size": "5.3MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_COSG_Marker_Results.csv",
+      "note": "L4 COSG markers",
+      "related_skill": "cima-cell-annotation",
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_COSG_Marker_Results.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_COSG_Marker_Results.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_Level_and_Marker.xlsx",
+      "size": "20.4KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_Level_and_Marker.xlsx",
+      "note": "L1–L4 ontology + markers",
+      "related_skill": "cima-cell-annotation",
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_Level_and_Marker.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_Level_and_Marker.xlsx"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_scRNA_Proportion.csv",
+      "size": "360KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_scRNA_Proportion_Age_Related.csv",
+      "size": "3KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion_Age_Related.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion_Age_Related.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion_Age_Related.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_scRNA_Proportion_Sex_Related.csv",
+      "size": "3KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion_Sex_Related.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion_Sex_Related.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scRNA_Proportion_Sex_Related.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_scATAC_Proportion.csv",
+      "size": "263KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_scATAC_Proportion_Age_Related.csv",
+      "size": "3KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion_Age_Related.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion_Age_Related.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion_Age_Related.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Cell_Type_L4_scATAC_Proportion_Sex_Related.csv",
+      "size": "3KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion_Sex_Related.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion_Sex_Related.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Cell_Type_L4_scATAC_Proportion_Sex_Related.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Sample_Blood_Biochemistry_Results.csv",
+      "size": "40KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Sample_Blood_Biochemistry_Results.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Sample_Blood_Biochemistry_Results.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Sample_Blood_Biochemistry_Results.csv"
+    },
+    {
+      "category": "Cell Atlas",
+      "name": "CIMA_Sample_Plasma_Metabolites_and_Lipids_Results.csv",
+      "size": "5.7MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/Cell_Atlas/CIMA_Sample_Plasma_Metabolites_and_Lipids_Results.csv",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "Cell_Atlas/CIMA_Sample_Plasma_Metabolites_and_Lipids_Results.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Cell_Atlas/CIMA_Sample_Plasma_Metabolites_and_Lipids_Results.csv"
+    },
+    {
+      "category": "GRN",
+      "name": "CIMA_eRegulons_Metadata.csv",
+      "size": "115.2MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/CIMA_eRegulons_Metadata.csv",
+      "note": "SCENIC+ eRegulon table",
+      "related_skill": "cima-grn-scenicplus",
+      "relative_path": "GRN/CIMA_eRegulons_Metadata.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/CIMA_eRegulons_Metadata.csv"
+    },
+    {
+      "category": "GRN",
+      "name": "CIMA_Sex_Related_eRegulons.csv",
+      "size": "1.4MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/CIMA_Sex_Related_eRegulons.csv",
+      "note": null,
+      "related_skill": "cima-grn-scenicplus",
+      "relative_path": "GRN/CIMA_Sex_Related_eRegulons.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/CIMA_Sex_Related_eRegulons.csv"
+    },
+    {
+      "category": "GRN",
+      "name": "CIMA_Age_Related_eRegulons.csv",
+      "size": "556KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/CIMA_Age_Related_eRegulons.csv",
+      "note": null,
+      "related_skill": "cima-grn-scenicplus",
+      "relative_path": "GRN/CIMA_Age_Related_eRegulons.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/CIMA_Age_Related_eRegulons.csv"
+    },
+    {
+      "category": "GRN",
+      "name": "CIMA_eRegulons_Activators_Exp_AUC_RSS.csv",
+      "size": "1.3MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/CIMA_eRegulons_Activators_Exp_AUC_RSS.csv",
+      "note": null,
+      "related_skill": "cima-grn-scenicplus",
+      "relative_path": "GRN/CIMA_eRegulons_Activators_Exp_AUC_RSS.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/CIMA_eRegulons_Activators_Exp_AUC_RSS.csv"
+    },
+    {
+      "category": "GRN",
+      "name": "CIMA_eRegulons_AUC_Large_than_1_in_cell_type_L4.csv",
+      "size": "23KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/CIMA_eRegulons_AUC_Large_than_1_in_cell_type_L4.csv",
+      "note": null,
+      "related_skill": "cima-grn-scenicplus",
+      "relative_path": "GRN/CIMA_eRegulons_AUC_Large_than_1_in_cell_type_L4.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/CIMA_eRegulons_AUC_Large_than_1_in_cell_type_L4.csv"
+    },
+    {
+      "category": "GRN",
+      "name": "CIMA_Selected_High_Quality_eRegulons.csv",
+      "size": "7KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/CIMA_Selected_High_Quality_eRegulons.csv",
+      "note": null,
+      "related_skill": "cima-grn-scenicplus",
+      "relative_path": "GRN/CIMA_Selected_High_Quality_eRegulons.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/CIMA_Selected_High_Quality_eRegulons.csv"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Lead_cis-xQTL.csv",
+      "size": "60.3MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Lead_cis-xQTL.csv",
+      "note": "Lead cis-eQTL/caQTL",
+      "related_skill": "cima-xqtl",
+      "relative_path": "xQTL/CIMA_Lead_cis-xQTL.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Lead_cis-xQTL.csv"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Dynamic_eQTL_of_Bcells_and_Monocytes.csv",
+      "size": "835.1KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Dynamic_eQTL_of_Bcells_and_Monocytes.csv",
+      "note": null,
+      "related_skill": "cima-xqtl",
+      "relative_path": "xQTL/CIMA_Dynamic_eQTL_of_Bcells_and_Monocytes.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Dynamic_eQTL_of_Bcells_and_Monocytes.csv"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_caQTL_eQTL_SMR.csv",
+      "size": "3.5MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_caQTL_eQTL_SMR.csv",
+      "note": "caQTL–eQTL SMR links",
+      "related_skill": "cima-smr-gwas",
+      "relative_path": "xQTL/CIMA_caQTL_eQTL_SMR.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_caQTL_eQTL_SMR.csv"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Significant_SMR_Pleiotropic_Associations.xlsx",
+      "size": "398.7KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx",
+      "note": null,
+      "related_skill": "cima-smr-gwas",
+      "relative_path": "xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Traits_Used_for_SMR_Analysis.xlsx",
+      "size": "22.2KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Traits_Used_for_SMR_Analysis.xlsx",
+      "note": null,
+      "related_skill": "cima-smr-gwas",
+      "relative_path": "xQTL/CIMA_Traits_Used_for_SMR_Analysis.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Traits_Used_for_SMR_Analysis.xlsx"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Trans-eQTL.xlsx",
+      "size": "41.1KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Trans-eQTL.xlsx",
+      "note": null,
+      "related_skill": "cima-xqtl",
+      "relative_path": "xQTL/CIMA_Trans-eQTL.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Trans-eQTL.xlsx"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Cell_Type-specific_Analysis_of_cis-xQTLs.xlsx",
+      "size": "330.0KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Cell_Type-specific_Analysis_of_cis-xQTLs.xlsx",
+      "note": null,
+      "related_skill": "cima-xqtl",
+      "relative_path": "xQTL/CIMA_Cell_Type-specific_Analysis_of_cis-xQTLs.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Cell_Type-specific_Analysis_of_cis-xQTLs.xlsx"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Ancestry-specific_loci_in_cis-xQTLs.xlsx",
+      "size": "1.3MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Ancestry-specific_loci_in_cis-xQTLs.xlsx",
+      "note": null,
+      "related_skill": "cima-xqtl",
+      "relative_path": "xQTL/CIMA_Ancestry-specific_loci_in_cis-xQTLs.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Ancestry-specific_loci_in_cis-xQTLs.xlsx"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_Chinese_Selection_Loci.xlsx",
+      "size": "14.9KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Chinese_Selection_Loci.xlsx",
+      "note": null,
+      "related_skill": null,
+      "relative_path": "xQTL/CIMA_Chinese_Selection_Loci.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Chinese_Selection_Loci.xlsx"
+    },
+    {
+      "category": "xQTL",
+      "name": "CIMA_In_House_GWAS_of_Lipids_and_Metabolisms.xlsx",
+      "size": "45.7KB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_In_House_GWAS_of_Lipids_and_Metabolisms.xlsx",
+      "note": null,
+      "related_skill": "cima-smr-gwas",
+      "relative_path": "xQTL/CIMA_In_House_GWAS_of_Lipids_and_Metabolisms.xlsx",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_In_House_GWAS_of_Lipids_and_Metabolisms.xlsx"
+    },
+    {
+      "category": "CIMA-CLM",
+      "name": "CIMA-CLM_Demo.tar.gz",
+      "size": "1.8MB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/CIMA-CLM/CIMA-CLM_Demo.tar.gz",
+      "note": "Small demo for in silico mutagenesis",
+      "related_skill": "cima-clm",
+      "relative_path": "CIMA-CLM/CIMA-CLM_Demo.tar.gz",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/CIMA-CLM/CIMA-CLM_Demo.tar.gz"
+    },
+    {
+      "category": "CIMA-CLM",
+      "name": "CIMA-CLM_Cell_Type_Models.tar.gz",
+      "size": "6.4GB",
+      "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/CIMA-CLM/CIMA-CLM_Cell_Type_Models.tar.gz",
+      "note": "Full cell-type CLM models",
+      "related_skill": "cima-clm",
+      "relative_path": "CIMA-CLM/CIMA-CLM_Cell_Type_Models.tar.gz",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/CIMA-CLM/CIMA-CLM_Cell_Type_Models.tar.gz"
+    },
+    {
+      "category": "Full Length",
+      "name": "ASLM_Sample_Information_Metadata.csv",
+      "size": "11KB",
+      "url": null,
+      "note": "ASLM long-read companion; get via portal RaySync if FTP path not listed; confirm Full_Length/ exists under local_root",
+      "related_skill": null,
+      "relative_path": "Full_Length/ASLM_Sample_Information_Metadata.csv",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Full_Length/ASLM_Sample_Information_Metadata.csv"
+    },
+    {
+      "category": "Full Length",
+      "name": "ASLM_Longread_103869cells_78401isoforms.h5ad",
+      "size": "77.2MB",
+      "url": null,
+      "note": "ASLM long-read isoforms; confirm Full_Length/ exists under local_root",
+      "related_skill": null,
+      "relative_path": "Full_Length/ASLM_Longread_103869cells_78401isoforms.h5ad",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Full_Length/ASLM_Longread_103869cells_78401isoforms.h5ad"
+    },
+    {
+      "category": "Full Length",
+      "name": "ASLM_Shortread_103869cells_30771genes.rds",
+      "size": "1.5GB",
+      "url": null,
+      "note": "ASLM short-read gene matrix; confirm Full_Length/ exists under local_root",
+      "related_skill": null,
+      "relative_path": "Full_Length/ASLM_Shortread_103869cells_30771genes.rds",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Full_Length/ASLM_Shortread_103869cells_30771genes.rds"
+    },
+    {
+      "category": "Full Length",
+      "name": "ASLM_scTCR_11027paired.rds",
+      "size": "1.3MB",
+      "url": null,
+      "note": "Paired scTCR; confirm Full_Length/ exists under local_root",
+      "related_skill": null,
+      "relative_path": "Full_Length/ASLM_scTCR_11027paired.rds",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Full_Length/ASLM_scTCR_11027paired.rds"
+    },
+    {
+      "category": "Full Length",
+      "name": "ASLM_scBCR_5678paired.rds",
+      "size": "665.6KB",
+      "url": null,
+      "note": "Paired scBCR; confirm Full_Length/ exists under local_root",
+      "related_skill": null,
+      "relative_path": "Full_Length/ASLM_scBCR_5678paired.rds",
+      "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/Full_Length/ASLM_scBCR_5678paired.rds"
+    }
+  ],
+  "local_root": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource",
+  "local_root_env": "CIMA_RESOURCE_ROOT",
+  "primary_location": "local"
+}

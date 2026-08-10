@@ -1,0 +1,2796 @@
+{
+  "source": "https://db.cngb.org/trueblood/cima/cellType",
+  "dataset": "Chinese Immune Multi-Omics Atlas",
+  "citation": "Yin et al., Science 2026; DOI 10.1126/science.adt3130",
+  "n_nodes": 125,
+  "n_leaves": 73,
+  "l1_lineages": [
+    "B cells",
+    "CD4 T",
+    "CD8 T",
+    "HSPC",
+    "ILC",
+    "Myeloid",
+    "NK",
+    "other T"
+  ],
+  "alias_to_canonical": {
+    "B": "B cells",
+    "CD4 Helper": "CD4 T Helper",
+    "CD4 Regulatory": "CD4 Regulatory",
+    "Transit. B": "Transitional B",
+    "Transit. B-MME": "Transitional B-SOX4",
+    "Transit.NK": "Transitional NK",
+    "Aptypical Bm": "Aptypical Bm",
+    "Unswit. Bm": "Unswitched Bm",
+    "pre-Swit. Bm": "pre-Switched Bm",
+    "Swit. Bm": "Switched Bm",
+    "ASC": "Total Plasma",
+    "Plasmablast": "Plsamablast",
+    "Plasma": "Plasma",
+    "Mono": "Monocyte",
+    "DC": "cDC",
+    "DC-CSF2RA": "cDC-CSF2RA",
+    "DC1-CLEC9A": "cDC1-BATF3",
+    "DC2-CD1C": "cDC2-CD1C",
+    "Prolif. T": "Cycling T",
+    "Prolif. T-MKI67": "Cycling T-MKI67",
+    "Prolif. NK": "Cycling NK",
+    "Prolif. NK-MKI67": "Cycling NK",
+    "immature T": "Pre-T-like",
+    "immature T-CABP4": "pre-T-like-CABP4",
+    "CD4 Tr1": "CD4 Tr1-like",
+    "CD4 Tr1-IL10": "CD4 Tr1-like-IL10"
+  },
+  "edges": [
+    {
+      "from": "immune cell",
+      "to": "CD4 T",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-"
+    },
+    {
+      "from": "CD4 T",
+      "to": "CD4 Naïve",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,TRABD2A+,MAL+,CCR7+,SELL+,LEF1+,TCF7+,GPR183-"
+    },
+    {
+      "from": "CD4 Naïve",
+      "to": "CD4 Tn-SOX4",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,SOX4+,TOX2+,GPR183-"
+    },
+    {
+      "from": "CD4 Naïve",
+      "to": "CD4 Tn-CCR7",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,GPR183-"
+    },
+    {
+      "from": "CD4 Naïve",
+      "to": "CD4 Tn-CXCR5",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,CXCR5+,GPR183-"
+    },
+    {
+      "from": "CD4 Naïve",
+      "to": "CD4 Tn-LIMS1",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,LIMS1+,GPR183-"
+    },
+    {
+      "from": "CD4 T",
+      "to": "CD4 Memory",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CD44+,S100A4+,GPR183+"
+    },
+    {
+      "from": "CD4 Memory",
+      "to": "CD4 Tcm",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CD44+,S100A4+,GPR183+,CCR7+"
+    },
+    {
+      "from": "CD4 Memory",
+      "to": "CD4 Tem",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CD44+,S100A4+,GPR183+,CCR7-"
+    },
+    {
+      "from": "CD4 Tcm",
+      "to": "CD4 Tcm-CXCR5",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,S100A4+,GPR183+,CXCR5+"
+    },
+    {
+      "from": "CD4 Tcm",
+      "to": "CD4 Tcm-IFI44L",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,S100A4+,GPR183+,IFI44L+"
+    },
+    {
+      "from": "CD4 Tem",
+      "to": "CD4 Tem-CCR7neg",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,S100A4+,GPR183+"
+    },
+    {
+      "from": "CD4 Tem",
+      "to": "CD4 Tem-CCR5",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,S100A4+,GPR183+,CCR5+,GZMK+,CXCR6+,FOXB1+,IL10+,CD84+,CTLA4+"
+    },
+    {
+      "from": "CD4 T",
+      "to": "CD4 T Helper",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CCR7-"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Tfh-like-CXCR5",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CR1+,CXCR5+,LIMS1+,CCR6+,PASK+,CD84+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th-CR1",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CR1+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th-LMNA",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,LMNA+,LGALS1+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th-CCR4",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CCR4+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th-TNFRSF11A",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,TNFRSF11A+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th1-like-GZMK",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,GZMK+,LYAR+,CCL5+,KLRB1+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th17-like-RORC",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,RORC+,KLRB1+,PDE4D+,CCR6+,IL4I1+,TNFSF13B+"
+    },
+    {
+      "from": "CD4 T Helper",
+      "to": "CD4 Th22-like-CCR10",
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CCR10+,LMNA+,LGALS3+"
+    },
+    {
+      "from": "CD4 T",
+      "to": "CD4 Regulatory",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CTLA4+"
+    },
+    {
+      "from": "CD4 Regulatory",
+      "to": "CD4 Tr1-like",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CTLA4+,FOXP3-,IL2RA-"
+    },
+    {
+      "from": "CD4 Regulatory",
+      "to": "CD4 Treg",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CTLA4+,FOXP3+,IL2RA+,IKZF2+,TIGIT+,RTKN2+"
+    },
+    {
+      "from": "CD4 Tr1-like",
+      "to": "CD4 Tr1-like-IL10",
+      "marker": "CD3D+,CD4+,CD8A-,CTLA4+,FOXP3-,IL2RA-,IL10+,HAVCR2+,EOMES+,GZMK+"
+    },
+    {
+      "from": "CD4 Treg",
+      "to": "CD4 Treg-FCRL3",
+      "marker": "CD3D+,CD4+,CD8A-,FOXP3+,IL2RA+,IKZF2+,TIGIT+,RTKN2+,FCRL3+,CTLA4-"
+    },
+    {
+      "from": "CD4 Treg",
+      "to": "CD4 Treg-FOXP3",
+      "marker": "CD3D+,CD4+,CD8A-,FOXP3+,IL2RA+,IKZF2+,TIGIT+,RTKN2+,FOXP3+,DUSP4+,CTLA4+"
+    },
+    {
+      "from": "CD4 T",
+      "to": "CD4 CTL",
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,IL7R-,CX3CR1+,GZMA+,GZMH+,NKG7+,GNLY+"
+    },
+    {
+      "from": "CD4 CTL",
+      "to": "CD4 CTL-GZMH",
+      "marker": "CD3D+,CD4+,CD8A-,IL7R-,CX3CR1+,GZMA+,GZMH+,FGFBP2+,CCL4+,S1PR5+"
+    },
+    {
+      "from": "immune cell",
+      "to": "CD8 T",
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-"
+    },
+    {
+      "from": "CD8 T",
+      "to": "CD8 Naïve",
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,TRABD2A+,MAL+,CCR7+,SELL+,LEF1+,TCF7+"
+    },
+    {
+      "from": "CD8 T",
+      "to": "CD8 Memory",
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,CD44+,S100A4+,GPR183+"
+    },
+    {
+      "from": "CD8 T",
+      "to": "CD8 CTL",
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,GZMA+,GZMH+,NKG7+,GNLY+"
+    },
+    {
+      "from": "CD8 Memory",
+      "to": "CD8 Tcm",
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,CD44+,S100A4+,GPR183+,CCR7+"
+    },
+    {
+      "from": "CD8 Memory",
+      "to": "CD8 Tem",
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,CD44+,S100A4+,GPR183+,CCR7-"
+    },
+    {
+      "from": "CD8 Naïve",
+      "to": "CD8 Tn-SOX4",
+      "marker": "CD3D+,CD4-,CD8A+,CCR7+,SELL+,SOX4+,LRRN3+,GPR183-"
+    },
+    {
+      "from": "CD8 Naïve",
+      "to": "CD8 Tn-CCR7",
+      "marker": "CD3D+,CD4-,CD8A+,CCR7+,SELL+,GPR183-"
+    },
+    {
+      "from": "CD8 Tcm",
+      "to": "CD8 Tcm-IFI44L",
+      "marker": "CD3D+,CD4-,CD8A+,CCR7+,SELL+,S100A4+,GPR183+,IFI44L+"
+    },
+    {
+      "from": "CD8 Tem",
+      "to": "CD8 Tem-CCR7neg",
+      "marker": "CD3D+,CD4-,CD8A+,CCR7-,SELL-,S100A4+,GPR183+,GZMK+,CCL5+,RGS1+,TIGIT+,CD84+,PIK3R1+,CMC1+"
+    },
+    {
+      "from": "CD8 CTL",
+      "to": "CD8 CTL-GZMK",
+      "marker": "CD3D+,CD4-,CD8A+,GZMK+,CD82+,RGS1+"
+    },
+    {
+      "from": "CD8 CTL",
+      "to": "CD8 CTL-IFI44L",
+      "marker": "CD3D+,CD4-,CD8A+,GZMK+,IFI44L+,IFIT1+,IFIT3+,MX1+,OAS1+,OAS3+"
+    },
+    {
+      "from": "CD8 CTL",
+      "to": "CD8 CTL-GZMB",
+      "marker": "CD3D+,CD4-,CD8A+,GZMB+,GZMH+,ZNF683+,ITGB1+,LILRB1+,NKG7+,FGFBP2+"
+    },
+    {
+      "from": "immune cell",
+      "to": "other T",
+      "marker": ""
+    },
+    {
+      "from": "other T",
+      "to": "Cycling T",
+      "marker": "CD3D+,MKI67+"
+    },
+    {
+      "from": "other T",
+      "to": "Pre-T-like",
+      "marker": "CD3D+,CD4low,CD8low,CABP4+,NOTCH1+"
+    },
+    {
+      "from": "other T",
+      "to": "γδT",
+      "marker": "CD3D+,TRDC+"
+    },
+    {
+      "from": "other T",
+      "to": "MAIT",
+      "marker": "CD3D+,SLC4A10+,KLRB1+"
+    },
+    {
+      "from": "other T",
+      "to": "NKT",
+      "marker": "CD3D+,NCAM1+,KLRF1+,KLRC2+,KLRC3+,TYROBP+,FCGR3A+"
+    },
+    {
+      "from": "γδT",
+      "to": "γδT 1",
+      "marker": "CD3D+,TRDC+,KLRC2+,FCGR3A+,TRGC2+,TRDV1+"
+    },
+    {
+      "from": "γδT",
+      "to": "γδT 2",
+      "marker": "CD3D+,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+"
+    },
+    {
+      "from": "Cycling T",
+      "to": "Cycling T-MKI67",
+      "marker": "CD3D+,CD4+,CD8A+,MKI67+,TYMS+,TOP2A+,KIT+"
+    },
+    {
+      "from": "Pre-T-like",
+      "to": "pre-T-like-CABP4",
+      "marker": "CD3D+,CD4low,CD8low,CABP4+,NOTCH1+,FOXP1+,STAB1+"
+    },
+    {
+      "from": "γδT 1",
+      "to": "γδT 1-TRDV1",
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC2+,FCGR3A+,TRGC2+,TRDV1+,RTKN2+,IKZF2+,MME+,SOX4+,CR1+,TOX2+"
+    },
+    {
+      "from": "γδT 2",
+      "to": "γδT 2-GZMK",
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+,GZMK+,TRDV2-,DUSP2+"
+    },
+    {
+      "from": "γδT 2",
+      "to": "γδT 2-IL12RB2",
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+,IL12RB2+,TRDV2+,GZMK+,DUSP2+,IL18RAP+,TRGV9+"
+    },
+    {
+      "from": "γδT 2",
+      "to": "γδT 2-GZMH",
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+,GZMH+,TRDV2+,GNLY+,KLRC1+,IL18RAP+,TRDV9+,ZNF683+"
+    },
+    {
+      "from": "MAIT",
+      "to": "MAIT-SLC4A10",
+      "marker": "CD3D+,CD4-,CD8A+,NCAM1-,SLC4A10+,KLRB1+,CCR6+,CXCR6+,GZMK+,LTK+,RORC+"
+    },
+    {
+      "from": "NKT",
+      "to": "NKT-NCR1",
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1+,NCR1+,KLRF1+,KLRC2+,KLRC3+,TYROBP+,FCGR3A+,IGFBP7+"
+    },
+    {
+      "from": "NKT",
+      "to": "NKT-IFNG",
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1lowKLRF1+,KLRC2+,KLRC3+,TYROBP+,FCGR3A+,IFNG+,NCR1+,TNF+,CCL3+"
+    },
+    {
+      "from": "immune cell",
+      "to": "B cells",
+      "marker": "CD79A+"
+    },
+    {
+      "from": "B cells",
+      "to": "Transitional B",
+      "marker": "CD79A+,CD19+,MS4A1+,NEIL1+,CD9+,CD24+,TCL1A+,SOX4+"
+    },
+    {
+      "from": "B cells",
+      "to": "Naïve B",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+"
+    },
+    {
+      "from": "B cells",
+      "to": "Memory B",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+"
+    },
+    {
+      "from": "B cells",
+      "to": "Total Plasma",
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+"
+    },
+    {
+      "from": "Memory B",
+      "to": "Aptypical Bm",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,ITGAX+,FCRL5+"
+    },
+    {
+      "from": "Memory B",
+      "to": "Unswitched Bm",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C+"
+    },
+    {
+      "from": "Memory B",
+      "to": "pre-Switched Bm",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C-"
+    },
+    {
+      "from": "Memory B",
+      "to": "Switched Bm",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-"
+    },
+    {
+      "from": "Total Plasma",
+      "to": "Plsamablast",
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67+"
+    },
+    {
+      "from": "Total Plasma",
+      "to": "Plasma",
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67-"
+    },
+    {
+      "from": "Transitional B",
+      "to": "Transitional B-SOX4",
+      "marker": "CD79A+,CD19+,MS4A1+,NEIL1+,CD9+,CD24+,TCL1A+,SOX4+,MME+"
+    },
+    {
+      "from": "Naïve B",
+      "to": "Bn-TCL1A",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+"
+    },
+    {
+      "from": "Naïve B",
+      "to": "Bn-IL6",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+,IL6+,KLF4+,CD83+,CR2+"
+    },
+    {
+      "from": "Naïve B",
+      "to": "Bn-IFIT3",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+,IFIT3+,IFI44L+,IFI44+,XAF1+"
+    },
+    {
+      "from": "Aptypical Bm",
+      "to": "Atypical Bm-ITGAX",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,ITGAX+,FCRL5+,ZEB2+,FCRL3+,SOX5+,LILRB2+,SIGLEC6+"
+    },
+    {
+      "from": "Unswitched Bm",
+      "to": "Unswitched Bm-IL6",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C+,IL6+,TNFSF9+,EGR1+,EGR3+,HES1+,NR4A1+,NR4A2+"
+    },
+    {
+      "from": "Unswitched Bm",
+      "to": "Unswitched Bm-CD1C",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C+,SOX7+,CPED1+"
+    },
+    {
+      "from": "pre-Switched Bm",
+      "to": "pre-Switched Bm-IFIT3",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C-,IFIT3+,IFIT1+,OAS3+,IFI44L+,IFI44+"
+    },
+    {
+      "from": "pre-Switched Bm",
+      "to": "pre-Switched Bm-JAM3",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C-,JAM3+"
+    },
+    {
+      "from": "Switched Bm",
+      "to": "Switched Bm-IGHDneg",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-"
+    },
+    {
+      "from": "Switched Bm",
+      "to": "Switched Bm-IGHE",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-,IGHE+,IGHEP1+,COCH+,CD82+"
+    },
+    {
+      "from": "Switched Bm",
+      "to": "Switched activated Bm-CD86",
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-,CD86+,S100A10+,COCH+,CRIP2+"
+    },
+    {
+      "from": "Plsamablast",
+      "to": "Plasmablast-MKI67",
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67+,TYMS+,CDC20+,UBE2C+,TOP2A+"
+    },
+    {
+      "from": "Plasma",
+      "to": "Plasma-IGHA1",
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67-,IGHGA1+"
+    },
+    {
+      "from": "Plasma",
+      "to": "Plasma-IGHG1",
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67-,IGHG1+,IGHGP+,IGHG4+,IGHG2+"
+    },
+    {
+      "from": "immune cell",
+      "to": "HSPC",
+      "marker": "CD34+"
+    },
+    {
+      "from": "HSPC",
+      "to": "HSPC-CD34",
+      "marker": "CD34+,CYTL1+,GATA2+,KIT+,SOX4+,CPA3+"
+    },
+    {
+      "from": "immune cell",
+      "to": "Myeloid",
+      "marker": "CD68+,AIF1+"
+    },
+    {
+      "from": "Myeloid",
+      "to": "MK",
+      "marker": "CD68+,GP9+,TUBB1+,PF4+,PPBP+"
+    },
+    {
+      "from": "Myeloid",
+      "to": "cDC",
+      "marker": "CD68+,ITGAX+,CD74+,HLA-DPB1+"
+    },
+    {
+      "from": "Myeloid",
+      "to": "pDC",
+      "marker": "CD68+,ITGAX-,LILRA4+,IRF4+,IL17A+"
+    },
+    {
+      "from": "Myeloid",
+      "to": "Monocyte",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+"
+    },
+    {
+      "from": "Monocyte",
+      "to": "cMono",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,S100A9+,S100A12+"
+    },
+    {
+      "from": "Monocyte",
+      "to": "intMono",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A+,S100A8+,S100A9+,S100A12+"
+    },
+    {
+      "from": "Monocyte",
+      "to": "ncMono",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+"
+    },
+    {
+      "from": "MK",
+      "to": "MK-GP9",
+      "marker": "GP9+,TUBB1+,PF4+,PPBP+"
+    },
+    {
+      "from": "cDC",
+      "to": "cDC-CSF2RA",
+      "marker": "CD68+,ITGAX+,CD74+,HLA-,DBP1+,CSF2RA+,PLGC2+"
+    },
+    {
+      "from": "cDC",
+      "to": "cDC1-BATF3",
+      "marker": "CD68+,ITGAX+,CD74+,HLA-,DBP1+,BATF3+,CLEC9A+,XCR1+,IDO1+"
+    },
+    {
+      "from": "cDC",
+      "to": "cDC2-CD1C",
+      "marker": "CD68+,ITGAX+,CD74+,HLA-,DBP1+,CD1C+,FCER1A+,CLEC10A+,AREG+,IL1R2+,FCGR2B+"
+    },
+    {
+      "from": "pDC",
+      "to": "AS-DC",
+      "marker": "CD68+,ITGAX-,LILRA4+,IRF4+,IL17A+,AXL+,SIGLEC6+,LILRA4+,CD74+"
+    },
+    {
+      "from": "pDC",
+      "to": "pDC-IRF4",
+      "marker": "CD68+,ITGAX-,LILRA4+,IRF4+,CD74-,GZMB+,DERL3+,CLEC4C+,TCF4+"
+    },
+    {
+      "from": "cMono",
+      "to": "cMono-CD14",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,S100A9+,S100A12+"
+    },
+    {
+      "from": "cMono",
+      "to": "cMono-CXCL10",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,CXCL10+,CCL2+,HERC5+,SIGLEC1+,IFIT1+,IFIT2+,IFIT3+,IFI44+,ISG15+"
+    },
+    {
+      "from": "cMono",
+      "to": "cMono-IL1B",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,IL1B+,CCL3+,CCL3L1+,CCL4+,CCL4L2+,CXCL2+,EREG+"
+    },
+    {
+      "from": "cMono",
+      "to": "cMono-IFI44L",
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,CXCL10-,IFIT1-,IFIT2-,IFIT3+,IFI44+,ISG15+,XAF1+"
+    },
+    {
+      "from": "intMono",
+      "to": "intMono-GFRA2",
+      "marker": "CD68+,CD14+,FCGR3A+,S100A8+,S100A9+,S100A12+,GFRA2+,FPR3+,IL4I1+,ATF5+,LIPA+"
+    },
+    {
+      "from": "ncMono",
+      "to": "ncMono-C1QA",
+      "marker": "CD68+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+,C1QA+,C1QB+,C1QC+,LYPD2-,CKB-"
+    },
+    {
+      "from": "ncMono",
+      "to": "ncMono-FCGR3A",
+      "marker": "CD68+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+,LYPD2+,CKB+"
+    },
+    {
+      "from": "ncMono",
+      "to": "ncMono-IFIT1",
+      "marker": "CD68+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+,LYPD2+,CKB+,IFIT1+,OAS1+,OAS3+,MS4A4A+,HERC5+,GBP1+"
+    },
+    {
+      "from": "immune cell",
+      "to": "ILC",
+      "marker": "CD3D-,IL7R+"
+    },
+    {
+      "from": "ILC",
+      "to": "ILC2",
+      "marker": "CD3D-,IL7R+,GATA3+,KIT+,FCGR3A-"
+    },
+    {
+      "from": "immune cell",
+      "to": "NK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+"
+    },
+    {
+      "from": "NK",
+      "to": "NKbright",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A-,CD160+,KLRC1+,XCL1+,GZMK+"
+    },
+    {
+      "from": "NK",
+      "to": "Transitional NK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A+,CD160+,KLRC1+,XCL1+,GZMK+"
+    },
+    {
+      "from": "NK",
+      "to": "NKdim",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+"
+    },
+    {
+      "from": "NK",
+      "to": "Cycling NK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,MKI67+,TYMS+,STMN1+"
+    },
+    {
+      "from": "NKdim",
+      "to": "Mature NK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+,CD160+"
+    },
+    {
+      "from": "NKdim",
+      "to": "Terminal NK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+,ZEB2+,CD160-"
+    },
+    {
+      "from": "ILC2",
+      "to": "ILC2-IL2RA",
+      "marker": "CD3D-,IL7R+,GATA3+,KIT+,FCGR3A-,IL2RA+,ILIR1+"
+    },
+    {
+      "from": "NKbright",
+      "to": "NKbright-XCL1",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A-,CD160+,KLRC1+,XCL1+,GZMK+,IGFBP4+,SELL+,TNFRSF11A+"
+    },
+    {
+      "from": "Transitional NK",
+      "to": "Transitional NK-GZMK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A-,CD160+,XCL1+,GZMK+,CXCR4+,ITGA6+,PIK3R1+,ITGA6+,PDE4B+"
+    },
+    {
+      "from": "Mature NK",
+      "to": "Mature NKdim-FCGR3A",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,CX3CR1+,CD160+,FGFBP2+,GZMB+,SPON2+"
+    },
+    {
+      "from": "Mature NK",
+      "to": "Inflamed NKdim-IFIT1",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,CX3CR1+,CD160+,IFIT1+,OAS3+,IFI44L+"
+    },
+    {
+      "from": "Terminal NK",
+      "to": "Ternimal NKdim-CD160neg",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+,ZEB2+,CD160-,LILRB1+,ZNF700+,PCSK7+,CLEC2D+"
+    },
+    {
+      "from": "NK",
+      "to": "Cycling NK",
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,MKI67+,TYMS+,STMN1+"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "B cells",
+      "id": "B_cells",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "B cells"
+      ],
+      "marker": "CD79A+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 T",
+      "id": "CD4_T",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "CD4 T"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 T",
+      "id": "CD8_T",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "CD8 T"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-",
+      "is_leaf": false,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "HSPC",
+      "id": "HSPC",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "HSPC"
+      ],
+      "marker": "CD34+",
+      "is_leaf": false,
+      "cell_type_l1": "HSPC",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "ILC",
+      "id": "ILC",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "ILC"
+      ],
+      "marker": "CD3D-,IL7R+",
+      "is_leaf": false,
+      "cell_type_l1": "ILC",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Myeloid",
+      "id": "Myeloid",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "Myeloid"
+      ],
+      "marker": "CD68+,AIF1+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "NK",
+      "id": "NK",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "NK"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+",
+      "is_leaf": false,
+      "cell_type_l1": "NK",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "other T",
+      "id": "other_T",
+      "level": 1,
+      "parent": null,
+      "path": [
+        "other T"
+      ],
+      "marker": "CD3D+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": null,
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 CTL",
+      "id": "CD4_CTL",
+      "level": 2,
+      "parent": "CD4 T",
+      "path": [
+        "CD4 T",
+        "CD4 CTL"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,IL7R-,CX3CR1+,GZMA+,GZMH+,NKG7+,GNLY+",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 CTL",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 Memory",
+      "id": "CD4_Memory",
+      "level": 2,
+      "parent": "CD4 T",
+      "path": [
+        "CD4 T",
+        "CD4 Memory"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CD44+,S100A4+,GPR183+",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 Naïve",
+      "id": "CD4_Naïve",
+      "level": 2,
+      "parent": "CD4 T",
+      "path": [
+        "CD4 T",
+        "CD4 Naïve"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,TRABD2A+,MAL+,CCR7+,SELL+,LEF1+,TCF7+,GPR183-",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Naïve",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 Regulatory",
+      "id": "CD4_Regulatory",
+      "level": 2,
+      "parent": "CD4 T",
+      "path": [
+        "CD4 T",
+        "CD4 Regulatory"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CTLA4+",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Regulatory",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 T Helper",
+      "id": "CD4_T_Helper",
+      "level": 2,
+      "parent": "CD4 T",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CCR7-",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 CTL",
+      "id": "CD8_CTL",
+      "level": 2,
+      "parent": "CD8 T",
+      "path": [
+        "CD8 T",
+        "CD8 CTL"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,GZMA+,GZMH+,NKG7+,GNLY+",
+      "is_leaf": false,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 CTL",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 Memory",
+      "id": "CD8_Memory",
+      "level": 2,
+      "parent": "CD8 T",
+      "path": [
+        "CD8 T",
+        "CD8 Memory"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,CD44+,S100A4+,GPR183+",
+      "is_leaf": false,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Memory",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 Naïve",
+      "id": "CD8_Naïve",
+      "level": 2,
+      "parent": "CD8 T",
+      "path": [
+        "CD8 T",
+        "CD8 Naïve"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,TRABD2A+,MAL+,CCR7+,SELL+,LEF1+,TCF7+",
+      "is_leaf": false,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Naïve",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Cycling NK",
+      "id": "Cycling_NK",
+      "level": 2,
+      "parent": "NK",
+      "path": [
+        "NK",
+        "Cycling NK"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,MKI67+,TYMS+,STMN1+",
+      "is_leaf": true,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "Cycling NK",
+      "cell_type_l3": null,
+      "cell_type_l4": "Cycling NK"
+    },
+    {
+      "name": "Cycling T",
+      "id": "Cycling_T",
+      "level": 2,
+      "parent": "other T",
+      "path": [
+        "other T",
+        "Cycling T"
+      ],
+      "marker": "CD3D+,MKI67+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "Cycling T",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "HSPC-CD34",
+      "id": "HSPC_CD34",
+      "level": 2,
+      "parent": "HSPC",
+      "path": [
+        "HSPC",
+        "HSPC-CD34"
+      ],
+      "marker": "CD34+,CYTL1+,GATA2+,KIT+,SOX4+,CPA3+",
+      "is_leaf": true,
+      "cell_type_l1": "HSPC",
+      "cell_type_l2": "HSPC-CD34",
+      "cell_type_l3": null,
+      "cell_type_l4": "HSPC-CD34"
+    },
+    {
+      "name": "ILC2",
+      "id": "ILC2",
+      "level": 2,
+      "parent": "ILC",
+      "path": [
+        "ILC",
+        "ILC2"
+      ],
+      "marker": "CD3D-,IL7R+,GATA3+,KIT+,FCGR3A-",
+      "is_leaf": false,
+      "cell_type_l1": "ILC",
+      "cell_type_l2": "ILC2",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "MAIT",
+      "id": "MAIT",
+      "level": 2,
+      "parent": "other T",
+      "path": [
+        "other T",
+        "MAIT"
+      ],
+      "marker": "CD3D+,SLC4A10+,KLRB1+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "MAIT",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "MK",
+      "id": "MK",
+      "level": 2,
+      "parent": "Myeloid",
+      "path": [
+        "Myeloid",
+        "MK"
+      ],
+      "marker": "CD68+,GP9+,TUBB1+,PF4+,PPBP+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "MK",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Memory B",
+      "id": "Memory_B",
+      "level": 2,
+      "parent": "B cells",
+      "path": [
+        "B cells",
+        "Memory B"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Monocyte",
+      "id": "Monocyte",
+      "level": 2,
+      "parent": "Myeloid",
+      "path": [
+        "Myeloid",
+        "Monocyte"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "NKT",
+      "id": "NKT",
+      "level": 2,
+      "parent": "other T",
+      "path": [
+        "other T",
+        "NKT"
+      ],
+      "marker": "CD3D+,NCAM1+,KLRF1+,KLRC2+,KLRC3+,TYROBP+,FCGR3A+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "NKT",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "NKbright",
+      "id": "NKbright",
+      "level": 2,
+      "parent": "NK",
+      "path": [
+        "NK",
+        "NKbright"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A-,CD160+,KLRC1+,XCL1+,GZMK+",
+      "is_leaf": false,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKbright",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "NKdim",
+      "id": "NKdim",
+      "level": 2,
+      "parent": "NK",
+      "path": [
+        "NK",
+        "NKdim"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+",
+      "is_leaf": false,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKdim",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Naïve B",
+      "id": "Naïve_B",
+      "level": 2,
+      "parent": "B cells",
+      "path": [
+        "B cells",
+        "Naïve B"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Naïve B",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Pre-T-like",
+      "id": "Pre_T_like",
+      "level": 2,
+      "parent": "other T",
+      "path": [
+        "other T",
+        "Pre-T-like"
+      ],
+      "marker": "CD3D+,CD4low,CD8low,CABP4+,NOTCH1+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "Pre-T-like",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Total Plasma",
+      "id": "Total_Plasma",
+      "level": 2,
+      "parent": "B cells",
+      "path": [
+        "B cells",
+        "Total Plasma"
+      ],
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Total Plasma",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Transitional B",
+      "id": "Transitional_B",
+      "level": 2,
+      "parent": "B cells",
+      "path": [
+        "B cells",
+        "Transitional B"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,NEIL1+,CD9+,CD24+,TCL1A+,SOX4+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Transitional B",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "Transitional NK",
+      "id": "Transitional_NK",
+      "level": 2,
+      "parent": "NK",
+      "path": [
+        "NK",
+        "Transitional NK"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A+,CD160+,KLRC1+,XCL1+,GZMK+",
+      "is_leaf": false,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "Transitional NK",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "cDC",
+      "id": "cDC",
+      "level": 2,
+      "parent": "Myeloid",
+      "path": [
+        "Myeloid",
+        "cDC"
+      ],
+      "marker": "CD68+,ITGAX+,CD74+,HLA-DPB1+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "cDC",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "pDC",
+      "id": "pDC",
+      "level": 2,
+      "parent": "Myeloid",
+      "path": [
+        "Myeloid",
+        "pDC"
+      ],
+      "marker": "CD68+,ITGAX-,LILRA4+,IRF4+,IL17A+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "pDC",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "γδT",
+      "id": "gdT",
+      "level": 2,
+      "parent": "other T",
+      "path": [
+        "other T",
+        "γδT"
+      ],
+      "marker": "CD3D+,TRDC+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": null,
+      "cell_type_l4": null
+    },
+    {
+      "name": "AS-DC",
+      "id": "AS_DC",
+      "level": 3,
+      "parent": "pDC",
+      "path": [
+        "Myeloid",
+        "pDC",
+        "AS-DC"
+      ],
+      "marker": "CD68+,ITGAX-,LILRA4+,IRF4+,IL17A+,AXL+,SIGLEC6+,LILRA4+,CD74+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "pDC",
+      "cell_type_l3": "AS-DC",
+      "cell_type_l4": "AS-DC"
+    },
+    {
+      "name": "Aptypical Bm",
+      "id": "Aptypical_Bm",
+      "level": 3,
+      "parent": "Memory B",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Aptypical Bm"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,ITGAX+,FCRL5+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Aptypical Bm",
+      "cell_type_l4": null
+    },
+    {
+      "name": "Bn-IFIT3",
+      "id": "Bn_IFIT3",
+      "level": 3,
+      "parent": "Naïve B",
+      "path": [
+        "B cells",
+        "Naïve B",
+        "Bn-IFIT3"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+,IFIT3+,IFI44L+,IFI44+,XAF1+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Naïve B",
+      "cell_type_l3": "Bn-IFIT3",
+      "cell_type_l4": "Bn-IFIT3"
+    },
+    {
+      "name": "Bn-IL6",
+      "id": "Bn_IL6",
+      "level": 3,
+      "parent": "Naïve B",
+      "path": [
+        "B cells",
+        "Naïve B",
+        "Bn-IL6"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+,IL6+,KLF4+,CD83+,CR2+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Naïve B",
+      "cell_type_l3": "Bn-IL6",
+      "cell_type_l4": "Bn-IL6"
+    },
+    {
+      "name": "Bn-TCL1A",
+      "id": "Bn_TCL1A",
+      "level": 3,
+      "parent": "Naïve B",
+      "path": [
+        "B cells",
+        "Naïve B",
+        "Bn-TCL1A"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27-,IGHD+,TCL1A+,IL4R+,FCER2+,BACH2+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Naïve B",
+      "cell_type_l3": "Bn-TCL1A",
+      "cell_type_l4": "Bn-TCL1A"
+    },
+    {
+      "name": "CD4 CTL-GZMH",
+      "id": "CD4_CTL_GZMH",
+      "level": 3,
+      "parent": "CD4 CTL",
+      "path": [
+        "CD4 T",
+        "CD4 CTL",
+        "CD4 CTL-GZMH"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,IL7R-,CX3CR1+,GZMA+,GZMH+,FGFBP2+,CCL4+,S1PR5+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 CTL",
+      "cell_type_l3": "CD4 CTL-GZMH",
+      "cell_type_l4": "CD4 CTL-GZMH"
+    },
+    {
+      "name": "CD4 Tcm",
+      "id": "CD4_Tcm",
+      "level": 3,
+      "parent": "CD4 Memory",
+      "path": [
+        "CD4 T",
+        "CD4 Memory",
+        "CD4 Tcm"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CD44+,S100A4+,GPR183+,CCR7+",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": "CD4 Tcm",
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 Tem",
+      "id": "CD4_Tem",
+      "level": 3,
+      "parent": "CD4 Memory",
+      "path": [
+        "CD4 T",
+        "CD4 Memory",
+        "CD4 Tem"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CD44+,S100A4+,GPR183+,CCR7-",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": "CD4 Tem",
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 Tfh-like-CXCR5",
+      "id": "CD4_Tfh_like_CXCR5",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Tfh-like-CXCR5"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CR1+,CXCR5+,LIMS1+,CCR6+,PASK+,CD84+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Tfh-like-CXCR5",
+      "cell_type_l4": "CD4 Tfh-like-CXCR5"
+    },
+    {
+      "name": "CD4 Th-CCR4",
+      "id": "CD4_Th_CCR4",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th-CCR4"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CCR4+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th-CCR4",
+      "cell_type_l4": "CD4 Th-CCR4"
+    },
+    {
+      "name": "CD4 Th-CR1",
+      "id": "CD4_Th_CR1",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th-CR1"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CR1+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th-CR1",
+      "cell_type_l4": "CD4 Th-CR1"
+    },
+    {
+      "name": "CD4 Th-LMNA",
+      "id": "CD4_Th_LMNA",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th-LMNA"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,LMNA+,LGALS1+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th-LMNA",
+      "cell_type_l4": "CD4 Th-LMNA"
+    },
+    {
+      "name": "CD4 Th-TNFRSF11A",
+      "id": "CD4_Th_TNFRSF11A",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th-TNFRSF11A"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,TNFRSF11A+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th-TNFRSF11A",
+      "cell_type_l4": "CD4 Th-TNFRSF11A"
+    },
+    {
+      "name": "CD4 Th1-like-GZMK",
+      "id": "CD4_Th1_like_GZMK",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th1-like-GZMK"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,GZMK+,LYAR+,CCL5+,KLRB1+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th1-like-GZMK",
+      "cell_type_l4": "CD4 Th1-like-GZMK"
+    },
+    {
+      "name": "CD4 Th17-like-RORC",
+      "id": "CD4_Th17_like_RORC",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th17-like-RORC"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,RORC+,KLRB1+,PDE4D+,CCR6+,IL4I1+,TNFSF13B+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th17-like-RORC",
+      "cell_type_l4": "CD4 Th17-like-RORC"
+    },
+    {
+      "name": "CD4 Th22-like-CCR10",
+      "id": "CD4_Th22_like_CCR10",
+      "level": 3,
+      "parent": "CD4 T Helper",
+      "path": [
+        "CD4 T",
+        "CD4 T Helper",
+        "CD4 Th22-like-CCR10"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,CCR10+,LMNA+,LGALS3+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 T Helper",
+      "cell_type_l3": "CD4 Th22-like-CCR10",
+      "cell_type_l4": "CD4 Th22-like-CCR10"
+    },
+    {
+      "name": "CD4 Tn-CCR7",
+      "id": "CD4_Tn_CCR7",
+      "level": 3,
+      "parent": "CD4 Naïve",
+      "path": [
+        "CD4 T",
+        "CD4 Naïve",
+        "CD4 Tn-CCR7"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,GPR183-",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Naïve",
+      "cell_type_l3": "CD4 Tn-CCR7",
+      "cell_type_l4": "CD4 Tn-CCR7"
+    },
+    {
+      "name": "CD4 Tn-CXCR5",
+      "id": "CD4_Tn_CXCR5",
+      "level": 3,
+      "parent": "CD4 Naïve",
+      "path": [
+        "CD4 T",
+        "CD4 Naïve",
+        "CD4 Tn-CXCR5"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,CXCR5+,GPR183-",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Naïve",
+      "cell_type_l3": "CD4 Tn-CXCR5",
+      "cell_type_l4": "CD4 Tn-CXCR5"
+    },
+    {
+      "name": "CD4 Tn-LIMS1",
+      "id": "CD4_Tn_LIMS1",
+      "level": 3,
+      "parent": "CD4 Naïve",
+      "path": [
+        "CD4 T",
+        "CD4 Naïve",
+        "CD4 Tn-LIMS1"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,LIMS1+,GPR183-",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Naïve",
+      "cell_type_l3": "CD4 Tn-LIMS1",
+      "cell_type_l4": "CD4 Tn-LIMS1"
+    },
+    {
+      "name": "CD4 Tn-SOX4",
+      "id": "CD4_Tn_SOX4",
+      "level": 3,
+      "parent": "CD4 Naïve",
+      "path": [
+        "CD4 T",
+        "CD4 Naïve",
+        "CD4 Tn-SOX4"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,SELL+,SOX4+,TOX2+,GPR183-",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Naïve",
+      "cell_type_l3": "CD4 Tn-SOX4",
+      "cell_type_l4": "CD4 Tn-SOX4"
+    },
+    {
+      "name": "CD4 Tr1-like",
+      "id": "CD4_Tr1_like",
+      "level": 3,
+      "parent": "CD4 Regulatory",
+      "path": [
+        "CD4 T",
+        "CD4 Regulatory",
+        "CD4 Tr1-like"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CTLA4+,FOXP3-,IL2RA-",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Regulatory",
+      "cell_type_l3": "CD4 Tr1-like",
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD4 Treg",
+      "id": "CD4_Treg",
+      "level": 3,
+      "parent": "CD4 Regulatory",
+      "path": [
+        "CD4 T",
+        "CD4 Regulatory",
+        "CD4 Treg"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CD8B-,CTLA4+,FOXP3+,IL2RA+,IKZF2+,TIGIT+,RTKN2+",
+      "is_leaf": false,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Regulatory",
+      "cell_type_l3": "CD4 Treg",
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 CTL-GZMB",
+      "id": "CD8_CTL_GZMB",
+      "level": 3,
+      "parent": "CD8 CTL",
+      "path": [
+        "CD8 T",
+        "CD8 CTL",
+        "CD8 CTL-GZMB"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,GZMB+,GZMH+,ZNF683+,ITGB1+,LILRB1+,NKG7+,FGFBP2+",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 CTL",
+      "cell_type_l3": "CD8 CTL-GZMB",
+      "cell_type_l4": "CD8 CTL-GZMB"
+    },
+    {
+      "name": "CD8 CTL-GZMK",
+      "id": "CD8_CTL_GZMK",
+      "level": 3,
+      "parent": "CD8 CTL",
+      "path": [
+        "CD8 T",
+        "CD8 CTL",
+        "CD8 CTL-GZMK"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,GZMK+,CD82+,RGS1+",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 CTL",
+      "cell_type_l3": "CD8 CTL-GZMK",
+      "cell_type_l4": "CD8 CTL-GZMK"
+    },
+    {
+      "name": "CD8 CTL-IFI44L",
+      "id": "CD8_CTL_IFI44L",
+      "level": 3,
+      "parent": "CD8 CTL",
+      "path": [
+        "CD8 T",
+        "CD8 CTL",
+        "CD8 CTL-IFI44L"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,GZMK+,IFI44L+,IFIT1+,IFIT3+,MX1+,OAS1+,OAS3+",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 CTL",
+      "cell_type_l3": "CD8 CTL-IFI44L",
+      "cell_type_l4": "CD8 CTL-IFI44L"
+    },
+    {
+      "name": "CD8 Tcm",
+      "id": "CD8_Tcm",
+      "level": 3,
+      "parent": "CD8 Memory",
+      "path": [
+        "CD8 T",
+        "CD8 Memory",
+        "CD8 Tcm"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,CD44+,S100A4+,GPR183+,CCR7+",
+      "is_leaf": false,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Memory",
+      "cell_type_l3": "CD8 Tcm",
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 Tem",
+      "id": "CD8_Tem",
+      "level": 3,
+      "parent": "CD8 Memory",
+      "path": [
+        "CD8 T",
+        "CD8 Memory",
+        "CD8 Tem"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CD8B+,NCAM1-,NCR1-,CD44+,S100A4+,GPR183+,CCR7-",
+      "is_leaf": false,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Memory",
+      "cell_type_l3": "CD8 Tem",
+      "cell_type_l4": null
+    },
+    {
+      "name": "CD8 Tn-CCR7",
+      "id": "CD8_Tn_CCR7",
+      "level": 3,
+      "parent": "CD8 Naïve",
+      "path": [
+        "CD8 T",
+        "CD8 Naïve",
+        "CD8 Tn-CCR7"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CCR7+,SELL+,GPR183-",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Naïve",
+      "cell_type_l3": "CD8 Tn-CCR7",
+      "cell_type_l4": "CD8 Tn-CCR7"
+    },
+    {
+      "name": "CD8 Tn-SOX4",
+      "id": "CD8_Tn_SOX4",
+      "level": 3,
+      "parent": "CD8 Naïve",
+      "path": [
+        "CD8 T",
+        "CD8 Naïve",
+        "CD8 Tn-SOX4"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CCR7+,SELL+,SOX4+,LRRN3+,GPR183-",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Naïve",
+      "cell_type_l3": "CD8 Tn-SOX4",
+      "cell_type_l4": "CD8 Tn-SOX4"
+    },
+    {
+      "name": "Cycling T-MKI67",
+      "id": "Cycling_T_MKI67",
+      "level": 3,
+      "parent": "Cycling T",
+      "path": [
+        "other T",
+        "Cycling T",
+        "Cycling T-MKI67"
+      ],
+      "marker": "CD3D+,CD4+,CD8A+,MKI67+,TYMS+,TOP2A+,KIT+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "Cycling T",
+      "cell_type_l3": "Cycling T-MKI67",
+      "cell_type_l4": "Cycling T-MKI67"
+    },
+    {
+      "name": "ILC2-IL2RA",
+      "id": "ILC2_IL2RA",
+      "level": 3,
+      "parent": "ILC2",
+      "path": [
+        "ILC",
+        "ILC2",
+        "ILC2-IL2RA"
+      ],
+      "marker": "CD3D-,IL7R+,GATA3+,KIT+,FCGR3A-,IL2RA+,ILIR1+",
+      "is_leaf": true,
+      "cell_type_l1": "ILC",
+      "cell_type_l2": "ILC2",
+      "cell_type_l3": "ILC2-IL2RA",
+      "cell_type_l4": "ILC2-IL2RA"
+    },
+    {
+      "name": "MAIT-SLC4A10",
+      "id": "MAIT_SLC4A10",
+      "level": 3,
+      "parent": "MAIT",
+      "path": [
+        "other T",
+        "MAIT",
+        "MAIT-SLC4A10"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,NCAM1-,SLC4A10+,KLRB1+,CCR6+,CXCR6+,GZMK+,LTK+,RORC+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "MAIT",
+      "cell_type_l3": "MAIT-SLC4A10",
+      "cell_type_l4": "MAIT-SLC4A10"
+    },
+    {
+      "name": "MK-GP9",
+      "id": "MK_GP9",
+      "level": 3,
+      "parent": "MK",
+      "path": [
+        "Myeloid",
+        "MK",
+        "MK-GP9"
+      ],
+      "marker": "GP9+,TUBB1+,PF4+,PPBP+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "MK",
+      "cell_type_l3": "MK-GP9",
+      "cell_type_l4": "MK-GP9"
+    },
+    {
+      "name": "Mature NK",
+      "id": "Mature_NK",
+      "level": 3,
+      "parent": "NKdim",
+      "path": [
+        "NK",
+        "NKdim",
+        "Mature NK"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+,CD160+",
+      "is_leaf": false,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKdim",
+      "cell_type_l3": "Mature NK",
+      "cell_type_l4": null
+    },
+    {
+      "name": "NKT-IFNG",
+      "id": "NKT_IFNG",
+      "level": 3,
+      "parent": "NKT",
+      "path": [
+        "other T",
+        "NKT",
+        "NKT-IFNG"
+      ],
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1lowKLRF1+,KLRC2+,KLRC3+,TYROBP+,FCGR3A+,IFNG+,NCR1+,TNF+,CCL3+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "NKT",
+      "cell_type_l3": "NKT-IFNG",
+      "cell_type_l4": "NKT-IFNG"
+    },
+    {
+      "name": "NKT-NCR1",
+      "id": "NKT_NCR1",
+      "level": 3,
+      "parent": "NKT",
+      "path": [
+        "other T",
+        "NKT",
+        "NKT-NCR1"
+      ],
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1+,NCR1+,KLRF1+,KLRC2+,KLRC3+,TYROBP+,FCGR3A+,IGFBP7+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "NKT",
+      "cell_type_l3": "NKT-NCR1",
+      "cell_type_l4": "NKT-NCR1"
+    },
+    {
+      "name": "NKbright-XCL1",
+      "id": "NKbright_XCL1",
+      "level": 3,
+      "parent": "NKbright",
+      "path": [
+        "NK",
+        "NKbright",
+        "NKbright-XCL1"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A-,CD160+,KLRC1+,XCL1+,GZMK+,IGFBP4+,SELL+,TNFRSF11A+",
+      "is_leaf": true,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKbright",
+      "cell_type_l3": "NKbright-XCL1",
+      "cell_type_l4": "NKbright-XCL1"
+    },
+    {
+      "name": "Plasma",
+      "id": "Plasma",
+      "level": 3,
+      "parent": "Total Plasma",
+      "path": [
+        "B cells",
+        "Total Plasma",
+        "Plasma"
+      ],
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67-",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Total Plasma",
+      "cell_type_l3": "Plasma",
+      "cell_type_l4": null
+    },
+    {
+      "name": "Plsamablast",
+      "id": "Plsamablast",
+      "level": 3,
+      "parent": "Total Plasma",
+      "path": [
+        "B cells",
+        "Total Plasma",
+        "Plsamablast"
+      ],
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Total Plasma",
+      "cell_type_l3": "Plsamablast",
+      "cell_type_l4": null
+    },
+    {
+      "name": "Switched Bm",
+      "id": "Switched_Bm",
+      "level": 3,
+      "parent": "Memory B",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Switched Bm"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Switched Bm",
+      "cell_type_l4": null
+    },
+    {
+      "name": "Terminal NK",
+      "id": "Terminal_NK",
+      "level": 3,
+      "parent": "NKdim",
+      "path": [
+        "NK",
+        "NKdim",
+        "Terminal NK"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+,ZEB2+,CD160-",
+      "is_leaf": false,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKdim",
+      "cell_type_l3": "Terminal NK",
+      "cell_type_l4": null
+    },
+    {
+      "name": "Transitional B-SOX4",
+      "id": "Transitional_B_SOX4",
+      "level": 3,
+      "parent": "Transitional B",
+      "path": [
+        "B cells",
+        "Transitional B",
+        "Transitional B-SOX4"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,NEIL1+,CD9+,CD24+,TCL1A+,SOX4+,MME+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Transitional B",
+      "cell_type_l3": "Transitional B-SOX4",
+      "cell_type_l4": "Transitional B-SOX4"
+    },
+    {
+      "name": "Transitional NK-GZMK",
+      "id": "Transitional_NK_GZMK",
+      "level": 3,
+      "parent": "Transitional NK",
+      "path": [
+        "NK",
+        "Transitional NK",
+        "Transitional NK-GZMK"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1+,FCGR3A-,CD160+,XCL1+,GZMK+,CXCR4+,ITGA6+,PIK3R1+,ITGA6+,PDE4B+",
+      "is_leaf": true,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "Transitional NK",
+      "cell_type_l3": "Transitional NK-GZMK",
+      "cell_type_l4": "Transitional NK-GZMK"
+    },
+    {
+      "name": "Unswitched Bm",
+      "id": "Unswitched_Bm",
+      "level": 3,
+      "parent": "Memory B",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Unswitched Bm"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C+",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Unswitched Bm",
+      "cell_type_l4": null
+    },
+    {
+      "name": "cDC-CSF2RA",
+      "id": "cDC_CSF2RA",
+      "level": 3,
+      "parent": "cDC",
+      "path": [
+        "Myeloid",
+        "cDC",
+        "cDC-CSF2RA"
+      ],
+      "marker": "CD68+,ITGAX+,CD74+,HLA-,DBP1+,CSF2RA+,PLGC2+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "cDC",
+      "cell_type_l3": "cDC-CSF2RA",
+      "cell_type_l4": "cDC-CSF2RA"
+    },
+    {
+      "name": "cDC1-BATF3",
+      "id": "cDC1_BATF3",
+      "level": 3,
+      "parent": "cDC",
+      "path": [
+        "Myeloid",
+        "cDC",
+        "cDC1-BATF3"
+      ],
+      "marker": "CD68+,ITGAX+,CD74+,HLA-,DBP1+,BATF3+,CLEC9A+,XCR1+,IDO1+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "cDC",
+      "cell_type_l3": "cDC1-BATF3",
+      "cell_type_l4": "cDC1-BATF3"
+    },
+    {
+      "name": "cDC2-CD1C",
+      "id": "cDC2_CD1C",
+      "level": 3,
+      "parent": "cDC",
+      "path": [
+        "Myeloid",
+        "cDC",
+        "cDC2-CD1C"
+      ],
+      "marker": "CD68+,ITGAX+,CD74+,HLA-,DBP1+,CD1C+,FCER1A+,CLEC10A+,AREG+,IL1R2+,FCGR2B+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "cDC",
+      "cell_type_l3": "cDC2-CD1C",
+      "cell_type_l4": "cDC2-CD1C"
+    },
+    {
+      "name": "cMono",
+      "id": "cMono",
+      "level": 3,
+      "parent": "Monocyte",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "cMono"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,S100A9+,S100A12+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "cMono",
+      "cell_type_l4": null
+    },
+    {
+      "name": "intMono",
+      "id": "intMono",
+      "level": 3,
+      "parent": "Monocyte",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "intMono"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A+,S100A8+,S100A9+,S100A12+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "intMono",
+      "cell_type_l4": null
+    },
+    {
+      "name": "ncMono",
+      "id": "ncMono",
+      "level": 3,
+      "parent": "Monocyte",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "ncMono"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+",
+      "is_leaf": false,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "ncMono",
+      "cell_type_l4": null
+    },
+    {
+      "name": "pDC-IRF4",
+      "id": "pDC_IRF4",
+      "level": 3,
+      "parent": "pDC",
+      "path": [
+        "Myeloid",
+        "pDC",
+        "pDC-IRF4"
+      ],
+      "marker": "CD68+,ITGAX-,LILRA4+,IRF4+,CD74-,GZMB+,DERL3+,CLEC4C+,TCF4+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "pDC",
+      "cell_type_l3": "pDC-IRF4",
+      "cell_type_l4": "pDC-IRF4"
+    },
+    {
+      "name": "pre-Switched Bm",
+      "id": "pre_Switched_Bm",
+      "level": 3,
+      "parent": "Memory B",
+      "path": [
+        "B cells",
+        "Memory B",
+        "pre-Switched Bm"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C-",
+      "is_leaf": false,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "pre-Switched Bm",
+      "cell_type_l4": null
+    },
+    {
+      "name": "pre-T-like-CABP4",
+      "id": "pre_T_like_CABP4",
+      "level": 3,
+      "parent": "Pre-T-like",
+      "path": [
+        "other T",
+        "Pre-T-like",
+        "pre-T-like-CABP4"
+      ],
+      "marker": "CD3D+,CD4low,CD8low,CABP4+,NOTCH1+,FOXP1+,STAB1+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "Pre-T-like",
+      "cell_type_l3": "pre-T-like-CABP4",
+      "cell_type_l4": "pre-T-like-CABP4"
+    },
+    {
+      "name": "γδT 1",
+      "id": "gdT_1",
+      "level": 3,
+      "parent": "γδT",
+      "path": [
+        "other T",
+        "γδT",
+        "γδT 1"
+      ],
+      "marker": "CD3D+,TRDC+,KLRC2+,FCGR3A+,TRGC2+,TRDV1+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": "γδT 1",
+      "cell_type_l4": null
+    },
+    {
+      "name": "γδT 2",
+      "id": "gdT_2",
+      "level": 3,
+      "parent": "γδT",
+      "path": [
+        "other T",
+        "γδT",
+        "γδT 2"
+      ],
+      "marker": "CD3D+,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+",
+      "is_leaf": false,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": "γδT 2",
+      "cell_type_l4": null
+    },
+    {
+      "name": "Atypical Bm-ITGAX",
+      "id": "Atypical_Bm_ITGAX",
+      "level": 4,
+      "parent": "Aptypical Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Aptypical Bm",
+        "Atypical Bm-ITGAX"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,ITGAX+,FCRL5+,ZEB2+,FCRL3+,SOX5+,LILRB2+,SIGLEC6+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Aptypical Bm",
+      "cell_type_l4": "Atypical Bm-ITGAX"
+    },
+    {
+      "name": "CD4 Tcm-CXCR5",
+      "id": "CD4_Tcm_CXCR5",
+      "level": 4,
+      "parent": "CD4 Tcm",
+      "path": [
+        "CD4 T",
+        "CD4 Memory",
+        "CD4 Tcm",
+        "CD4 Tcm-CXCR5"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,S100A4+,GPR183+,CXCR5+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": "CD4 Tcm",
+      "cell_type_l4": "CD4 Tcm-CXCR5"
+    },
+    {
+      "name": "CD4 Tcm-IFI44L",
+      "id": "CD4_Tcm_IFI44L",
+      "level": 4,
+      "parent": "CD4 Tcm",
+      "path": [
+        "CD4 T",
+        "CD4 Memory",
+        "CD4 Tcm",
+        "CD4 Tcm-IFI44L"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7+,S100A4+,GPR183+,IFI44L+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": "CD4 Tcm",
+      "cell_type_l4": "CD4 Tcm-IFI44L"
+    },
+    {
+      "name": "CD4 Tem-CCR5",
+      "id": "CD4_Tem_CCR5",
+      "level": 4,
+      "parent": "CD4 Tem",
+      "path": [
+        "CD4 T",
+        "CD4 Memory",
+        "CD4 Tem",
+        "CD4 Tem-CCR5"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,S100A4+,GPR183+,CCR5+,GZMK+,CXCR6+,FOXB1+,IL10+,CD84+,CTLA4+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": "CD4 Tem",
+      "cell_type_l4": "CD4 Tem-CCR5"
+    },
+    {
+      "name": "CD4 Tem-CCR7neg",
+      "id": "CD4_Tem_CCR7neg",
+      "level": 4,
+      "parent": "CD4 Tem",
+      "path": [
+        "CD4 T",
+        "CD4 Memory",
+        "CD4 Tem",
+        "CD4 Tem-CCR7neg"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CCR7-,S100A4+,GPR183+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Memory",
+      "cell_type_l3": "CD4 Tem",
+      "cell_type_l4": "CD4 Tem-CCR7neg"
+    },
+    {
+      "name": "CD4 Tr1-like-IL10",
+      "id": "CD4_Tr1_like_IL10",
+      "level": 4,
+      "parent": "CD4 Tr1-like",
+      "path": [
+        "CD4 T",
+        "CD4 Regulatory",
+        "CD4 Tr1-like",
+        "CD4 Tr1-like-IL10"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,CTLA4+,FOXP3-,IL2RA-,IL10+,HAVCR2+,EOMES+,GZMK+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Regulatory",
+      "cell_type_l3": "CD4 Tr1-like",
+      "cell_type_l4": "CD4 Tr1-like-IL10"
+    },
+    {
+      "name": "CD4 Treg-FCRL3",
+      "id": "CD4_Treg_FCRL3",
+      "level": 4,
+      "parent": "CD4 Treg",
+      "path": [
+        "CD4 T",
+        "CD4 Regulatory",
+        "CD4 Treg",
+        "CD4 Treg-FCRL3"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,FOXP3+,IL2RA+,IKZF2+,TIGIT+,RTKN2+,FCRL3+,CTLA4-",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Regulatory",
+      "cell_type_l3": "CD4 Treg",
+      "cell_type_l4": "CD4 Treg-FCRL3"
+    },
+    {
+      "name": "CD4 Treg-FOXP3",
+      "id": "CD4_Treg_FOXP3",
+      "level": 4,
+      "parent": "CD4 Treg",
+      "path": [
+        "CD4 T",
+        "CD4 Regulatory",
+        "CD4 Treg",
+        "CD4 Treg-FOXP3"
+      ],
+      "marker": "CD3D+,CD4+,CD8A-,FOXP3+,IL2RA+,IKZF2+,TIGIT+,RTKN2+,FOXP3+,DUSP4+,CTLA4+",
+      "is_leaf": true,
+      "cell_type_l1": "CD4 T",
+      "cell_type_l2": "CD4 Regulatory",
+      "cell_type_l3": "CD4 Treg",
+      "cell_type_l4": "CD4 Treg-FOXP3"
+    },
+    {
+      "name": "CD8 Tcm-IFI44L",
+      "id": "CD8_Tcm_IFI44L",
+      "level": 4,
+      "parent": "CD8 Tcm",
+      "path": [
+        "CD8 T",
+        "CD8 Memory",
+        "CD8 Tcm",
+        "CD8 Tcm-IFI44L"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CCR7+,SELL+,S100A4+,GPR183+,IFI44L+",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Memory",
+      "cell_type_l3": "CD8 Tcm",
+      "cell_type_l4": "CD8 Tcm-IFI44L"
+    },
+    {
+      "name": "CD8 Tem-CCR7neg",
+      "id": "CD8_Tem_CCR7neg",
+      "level": 4,
+      "parent": "CD8 Tem",
+      "path": [
+        "CD8 T",
+        "CD8 Memory",
+        "CD8 Tem",
+        "CD8 Tem-CCR7neg"
+      ],
+      "marker": "CD3D+,CD4-,CD8A+,CCR7-,SELL-,S100A4+,GPR183+,GZMK+,CCL5+,RGS1+,TIGIT+,CD84+,PIK3R1+,CMC1+",
+      "is_leaf": true,
+      "cell_type_l1": "CD8 T",
+      "cell_type_l2": "CD8 Memory",
+      "cell_type_l3": "CD8 Tem",
+      "cell_type_l4": "CD8 Tem-CCR7neg"
+    },
+    {
+      "name": "Inflamed NKdim-IFIT1",
+      "id": "Inflamed_NKdim_IFIT1",
+      "level": 4,
+      "parent": "Mature NK",
+      "path": [
+        "NK",
+        "NKdim",
+        "Mature NK",
+        "Inflamed NKdim-IFIT1"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,CX3CR1+,CD160+,IFIT1+,OAS3+,IFI44L+",
+      "is_leaf": true,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKdim",
+      "cell_type_l3": "Mature NK",
+      "cell_type_l4": "Inflamed NKdim-IFIT1"
+    },
+    {
+      "name": "Mature NKdim-FCGR3A",
+      "id": "Mature_NKdim_FCGR3A",
+      "level": 4,
+      "parent": "Mature NK",
+      "path": [
+        "NK",
+        "NKdim",
+        "Mature NK",
+        "Mature NKdim-FCGR3A"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,CX3CR1+,CD160+,FGFBP2+,GZMB+,SPON2+",
+      "is_leaf": true,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKdim",
+      "cell_type_l3": "Mature NK",
+      "cell_type_l4": "Mature NKdim-FCGR3A"
+    },
+    {
+      "name": "Plasma-IGHA1",
+      "id": "Plasma_IGHA1",
+      "level": 4,
+      "parent": "Plasma",
+      "path": [
+        "B cells",
+        "Total Plasma",
+        "Plasma",
+        "Plasma-IGHA1"
+      ],
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67-,IGHGA1+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Total Plasma",
+      "cell_type_l3": "Plasma",
+      "cell_type_l4": "Plasma-IGHA1"
+    },
+    {
+      "name": "Plasma-IGHG1",
+      "id": "Plasma_IGHG1",
+      "level": 4,
+      "parent": "Plasma",
+      "path": [
+        "B cells",
+        "Total Plasma",
+        "Plasma",
+        "Plasma-IGHG1"
+      ],
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67-,IGHG1+,IGHGP+,IGHG4+,IGHG2+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Total Plasma",
+      "cell_type_l3": "Plasma",
+      "cell_type_l4": "Plasma-IGHG1"
+    },
+    {
+      "name": "Plasmablast-MKI67",
+      "id": "Plasmablast_MKI67",
+      "level": 4,
+      "parent": "Plsamablast",
+      "path": [
+        "B cells",
+        "Total Plasma",
+        "Plsamablast",
+        "Plasmablast-MKI67"
+      ],
+      "marker": "CD79A+,CD19-,MS4A1-,SDC1+,JCHAIN1+,XBP1+,MZB1+,TNFRSF17+,MKI67+,TYMS+,CDC20+,UBE2C+,TOP2A+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Total Plasma",
+      "cell_type_l3": "Plsamablast",
+      "cell_type_l4": "Plasmablast-MKI67"
+    },
+    {
+      "name": "Switched Bm-IGHDneg",
+      "id": "Switched_Bm_IGHDneg",
+      "level": 4,
+      "parent": "Switched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Switched Bm",
+        "Switched Bm-IGHDneg"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Switched Bm",
+      "cell_type_l4": "Switched Bm-IGHDneg"
+    },
+    {
+      "name": "Switched Bm-IGHE",
+      "id": "Switched_Bm_IGHE",
+      "level": 4,
+      "parent": "Switched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Switched Bm",
+        "Switched Bm-IGHE"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-,IGHE+,IGHEP1+,COCH+,CD82+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Switched Bm",
+      "cell_type_l4": "Switched Bm-IGHE"
+    },
+    {
+      "name": "Switched activated Bm-CD86",
+      "id": "Switched_activated_Bm_CD86",
+      "level": 4,
+      "parent": "Switched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Switched Bm",
+        "Switched activated Bm-CD86"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD-,CD86+,S100A10+,COCH+,CRIP2+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Switched Bm",
+      "cell_type_l4": "Switched activated Bm-CD86"
+    },
+    {
+      "name": "Ternimal NKdim-CD160neg",
+      "id": "Ternimal_NKdim_CD160neg",
+      "level": 4,
+      "parent": "Terminal NK",
+      "path": [
+        "NK",
+        "NKdim",
+        "Terminal NK",
+        "Ternimal NKdim-CD160neg"
+      ],
+      "marker": "CD3D-,IL7R-,NCR1+,KLRC1+,KLRD1+,NCAM1-,FCGR3A+,B3GAT1+,CX3CR1+,ZEB2+,CD160-,LILRB1+,ZNF700+,PCSK7+,CLEC2D+",
+      "is_leaf": true,
+      "cell_type_l1": "NK",
+      "cell_type_l2": "NKdim",
+      "cell_type_l3": "Terminal NK",
+      "cell_type_l4": "Ternimal NKdim-CD160neg"
+    },
+    {
+      "name": "Unswitched Bm-CD1C",
+      "id": "Unswitched_Bm_CD1C",
+      "level": 4,
+      "parent": "Unswitched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Unswitched Bm",
+        "Unswitched Bm-CD1C"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C+,SOX7+,CPED1+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Unswitched Bm",
+      "cell_type_l4": "Unswitched Bm-CD1C"
+    },
+    {
+      "name": "Unswitched Bm-IL6",
+      "id": "Unswitched_Bm_IL6",
+      "level": 4,
+      "parent": "Unswitched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "Unswitched Bm",
+        "Unswitched Bm-IL6"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C+,IL6+,TNFSF9+,EGR1+,EGR3+,HES1+,NR4A1+,NR4A2+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "Unswitched Bm",
+      "cell_type_l4": "Unswitched Bm-IL6"
+    },
+    {
+      "name": "cMono-CD14",
+      "id": "cMono_CD14",
+      "level": 4,
+      "parent": "cMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "cMono",
+        "cMono-CD14"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,S100A9+,S100A12+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "cMono",
+      "cell_type_l4": "cMono-CD14"
+    },
+    {
+      "name": "cMono-CXCL10",
+      "id": "cMono_CXCL10",
+      "level": 4,
+      "parent": "cMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "cMono",
+        "cMono-CXCL10"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,CXCL10+,CCL2+,HERC5+,SIGLEC1+,IFIT1+,IFIT2+,IFIT3+,IFI44+,ISG15+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "cMono",
+      "cell_type_l4": "cMono-CXCL10"
+    },
+    {
+      "name": "cMono-IFI44L",
+      "id": "cMono_IFI44L",
+      "level": 4,
+      "parent": "cMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "cMono",
+        "cMono-IFI44L"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,CXCL10-,IFIT1-,IFIT2-,IFIT3+,IFI44+,ISG15+,XAF1+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "cMono",
+      "cell_type_l4": "cMono-IFI44L"
+    },
+    {
+      "name": "cMono-IL1B",
+      "id": "cMono_IL1B",
+      "level": 4,
+      "parent": "cMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "cMono",
+        "cMono-IL1B"
+      ],
+      "marker": "CD68+,FCN1+,LYZ+,CTSD+,CD14+,FCGR3A-,VCAN+,S100A8+,IL1B+,CCL3+,CCL3L1+,CCL4+,CCL4L2+,CXCL2+,EREG+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "cMono",
+      "cell_type_l4": "cMono-IL1B"
+    },
+    {
+      "name": "intMono-GFRA2",
+      "id": "intMono_GFRA2",
+      "level": 4,
+      "parent": "intMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "intMono",
+        "intMono-GFRA2"
+      ],
+      "marker": "CD68+,CD14+,FCGR3A+,S100A8+,S100A9+,S100A12+,GFRA2+,FPR3+,IL4I1+,ATF5+,LIPA+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "intMono",
+      "cell_type_l4": "intMono-GFRA2"
+    },
+    {
+      "name": "ncMono-C1QA",
+      "id": "ncMono_C1QA",
+      "level": 4,
+      "parent": "ncMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "ncMono",
+        "ncMono-C1QA"
+      ],
+      "marker": "CD68+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+,C1QA+,C1QB+,C1QC+,LYPD2-,CKB-",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "ncMono",
+      "cell_type_l4": "ncMono-C1QA"
+    },
+    {
+      "name": "ncMono-FCGR3A",
+      "id": "ncMono_FCGR3A",
+      "level": 4,
+      "parent": "ncMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "ncMono",
+        "ncMono-FCGR3A"
+      ],
+      "marker": "CD68+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+,LYPD2+,CKB+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "ncMono",
+      "cell_type_l4": "ncMono-FCGR3A"
+    },
+    {
+      "name": "ncMono-IFIT1",
+      "id": "ncMono_IFIT1",
+      "level": 4,
+      "parent": "ncMono",
+      "path": [
+        "Myeloid",
+        "Monocyte",
+        "ncMono",
+        "ncMono-IFIT1"
+      ],
+      "marker": "CD68+,CD14-,FCGR3A+,LYZ-,CDKN1C+,SIGLEC10+,SIM25+,LYPD2+,CKB+,IFIT1+,OAS1+,OAS3+,MS4A4A+,HERC5+,GBP1+",
+      "is_leaf": true,
+      "cell_type_l1": "Myeloid",
+      "cell_type_l2": "Monocyte",
+      "cell_type_l3": "ncMono",
+      "cell_type_l4": "ncMono-IFIT1"
+    },
+    {
+      "name": "pre-Switched Bm-IFIT3",
+      "id": "pre_Switched_Bm_IFIT3",
+      "level": 4,
+      "parent": "pre-Switched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "pre-Switched Bm",
+        "pre-Switched Bm-IFIT3"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C-,IFIT3+,IFIT1+,OAS3+,IFI44L+,IFI44+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "pre-Switched Bm",
+      "cell_type_l4": "pre-Switched Bm-IFIT3"
+    },
+    {
+      "name": "pre-Switched Bm-JAM3",
+      "id": "pre_Switched_Bm_JAM3",
+      "level": 4,
+      "parent": "pre-Switched Bm",
+      "path": [
+        "B cells",
+        "Memory B",
+        "pre-Switched Bm",
+        "pre-Switched Bm-JAM3"
+      ],
+      "marker": "CD79A+,CD19+,MS4A1+,CD27+,IGHA1+,IGHD+,CD1C-,JAM3+",
+      "is_leaf": true,
+      "cell_type_l1": "B cells",
+      "cell_type_l2": "Memory B",
+      "cell_type_l3": "pre-Switched Bm",
+      "cell_type_l4": "pre-Switched Bm-JAM3"
+    },
+    {
+      "name": "γδT 1-TRDV1",
+      "id": "gdT_1_TRDV1",
+      "level": 4,
+      "parent": "γδT 1",
+      "path": [
+        "other T",
+        "γδT",
+        "γδT 1",
+        "γδT 1-TRDV1"
+      ],
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC2+,FCGR3A+,TRGC2+,TRDV1+,RTKN2+,IKZF2+,MME+,SOX4+,CR1+,TOX2+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": "γδT 1",
+      "cell_type_l4": "γδT 1-TRDV1"
+    },
+    {
+      "name": "γδT 2-GZMH",
+      "id": "gdT_2_GZMH",
+      "level": 4,
+      "parent": "γδT 2",
+      "path": [
+        "other T",
+        "γδT",
+        "γδT 2",
+        "γδT 2-GZMH"
+      ],
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+,GZMH+,TRDV2+,GNLY+,KLRC1+,IL18RAP+,TRDV9+,ZNF683+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": "γδT 2",
+      "cell_type_l4": "γδT 2-GZMH"
+    },
+    {
+      "name": "γδT 2-GZMK",
+      "id": "gdT_2_GZMK",
+      "level": 4,
+      "parent": "γδT 2",
+      "path": [
+        "other T",
+        "γδT",
+        "γδT 2",
+        "γδT 2-GZMK"
+      ],
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+,GZMK+,TRDV2-,DUSP2+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": "γδT 2",
+      "cell_type_l4": "γδT 2-GZMK"
+    },
+    {
+      "name": "γδT 2-IL12RB2",
+      "id": "gdT_2_IL12RB2",
+      "level": 4,
+      "parent": "γδT 2",
+      "path": [
+        "other T",
+        "γδT",
+        "γδT 2",
+        "γδT 2-IL12RB2"
+      ],
+      "marker": "CD3D+,CD4-,CD8A-,NCAM1-,TRDC+,KLRC1+,KLRB1+,TRGC1+,IL7R+,IL12RB2+,TRDV2+,GZMK+,DUSP2+,IL18RAP+,TRGV9+",
+      "is_leaf": true,
+      "cell_type_l1": "other T",
+      "cell_type_l2": "γδT",
+      "cell_type_l3": "γδT 2",
+      "cell_type_l4": "γδT 2-IL12RB2"
+    }
+  ]
+}
