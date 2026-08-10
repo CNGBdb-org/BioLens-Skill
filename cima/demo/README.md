@@ -86,4 +86,4 @@ python ./scripts/cima_metacell_cpu.py \
 
 非配对跑通时 Step6 配对为 0。产物目录 `run_out/` 已 gitignore。
 
-GRN / xQTL / SMR / Resource / CLM 不依赖本目录 h5ad。数据清单与本地路径用 `cima-resource`。
+GRN / xQTL / SMR / Resource / CLM 不依赖本目录 h5ad。数据清单与 FTP 位置用 `cima-resource`。

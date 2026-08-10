@@ -45,9 +45,9 @@ metadata:
 
 | 维度 | 约定 |
 |------|------|
-| 疾病显著表（默认） | `…/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx` |
-| caQTL→eQTL SMR | `…/xQTL/CIMA_caQTL_eQTL_SMR.csv` |
-| 外网回退 | FTP → `~/.cache/cima-spatial/tables/` |
+| 疾病显著表（默认） | FTP `…/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx` |
+| caQTL→eQTL SMR | FTP `…/xQTL/CIMA_caQTL_eQTL_SMR.csv` |
+| 脚本取数 | FTP 下载 → 缓存 `~/.cache/cima-spatial/tables/`（本包无本地表） |
 
 ## Required inputs
 
@@ -85,7 +85,7 @@ bash ./scripts/smr.sh --source caqtl --gene ARL14EP --max 10
 
 ## Errors and fallback
 
-- 本地与 FTP 都失败 → 检查 `CIMA_RESOURCE_ROOT` / 网络 / `CIMA_CACHE`  
+- FTP / 缓存失败 → 检查网络 / `CIMA_CACHE`；表位置见 FTP xQTL 目录  
 - 无命中 → 换 gene（如 BLK/ORMDL3/IL18R1）或放宽 `--trait`  
 
 ## Examples

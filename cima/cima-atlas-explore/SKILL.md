@@ -31,7 +31,7 @@ metadata:
 
 | 需求 | 用 |
 |------|-----|
-| 有哪些可下载数据 / 本地路径 | `cima-resource` |
+| 有哪些可下载数据 / FTP 在哪 | `cima-resource` |
 | TF→靶基因 / eRegulon | `cima-grn-scenicplus` |
 | cis-eQTL / cis-caQTL | `cima-xqtl` |
 | SMR 基因–疾病关联 | `cima-smr-gwas` |

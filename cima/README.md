@@ -97,7 +97,7 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 
 | Skill | Depth | 用途 |
 |-------|-------|------|
-| `cima-resource` | L3 | CIMA 数据清单 / 本地路径（部署：`/public/.../CIMA_Resource`；外网门户·FTP） |
+| `cima-resource` | L3 | CIMA 数据清单 / 位置（公开 FTP；本包无本地 Resource） |
 | `cima-atlas-explore` | L4 | 门户图谱浏览：视图 / donor / 组成 / 基因 UMAP（不含 GRN·xQTL·SMR·清单） |
 | `cima-scrna-preprocessing` | L5 | scRNA QC → 聚类 → 系群拆分 |
 | `cima-cell-annotation` | L5 | TrueBlood marker 签名 → L1–L4（73 leaf） |
@@ -149,7 +149,7 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 
 | # | 用户说法（示例） | 触发 Skill |
 |---|------------------|------------|
-| 0 | CIMA 有哪些数据？在哪？/ TrueBlood resource 本地路径 / NK h5ad 在哪 | `cima-resource` |
+| 0 | CIMA 有哪些数据？在哪？/ TrueBlood resource / NK h5ad 在哪（答 FTP） | `cima-resource` |
 | 0b | CIMA 有哪些视图？/ B 视图画 CD8A UMAP / donor 临床表 | `cima-atlas-explore` |
 | 1 | 按 CIMA 流程预处理这个 PBMC h5ad / 对 raw counts 做 QC 聚类再按系群拆分 | `cima-scrna-preprocessing` |
 | 2 | 对 CIMA Annotation_1st 做系群子聚类 + L1–L4 marker 签名注释 | `cima-cell-annotation` |

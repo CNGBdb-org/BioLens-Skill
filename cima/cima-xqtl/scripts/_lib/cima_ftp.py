@@ -1,4 +1,4 @@
-"""Resolve CIMA tables: local deploy path first, then FTP cache."""
+"""Resolve CIMA tables: FTP/cache by default; use local only if already present."""
 from __future__ import annotations
 
 import os
@@ -36,8 +36,8 @@ def _download(url: str, dest: str) -> str:
 def fetch_ftp_table(key: str) -> str:
     """Return a readable CSV path for table *key*.
 
-    Prefer local mirror under CIMA_RESOURCE_ROOT / DEFAULT_LOCAL_ROOT;
-    otherwise download FTP into ~/.cache/cima-spatial/tables/.
+    Use local mirror only if present;
+    otherwise (typical) download FTP into ~/.cache/cima-spatial/tables/.
     """
     if key not in FTP_TABLES:
         raise KeyError(f"Unknown table key: {key!r}")

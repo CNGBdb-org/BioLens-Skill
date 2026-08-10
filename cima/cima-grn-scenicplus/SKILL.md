@@ -40,8 +40,8 @@ metadata:
 
 | 维度 | 约定 |
 |------|------|
-| 本地表（优先） | `/public/.../CIMA_Resource/GRN/`（`CIMA_RESOURCE_ROOT` 可覆盖） |
-| 外网回退 | FTP → `~/.cache/cima-spatial/tables/` |
+| 数据位置 | 公开 FTP：`https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/`（本包无本地表） |
+| 脚本取数 | FTP 下载 → 缓存 `~/.cache/cima-spatial/tables/` |
 
 ## Required inputs
 
@@ -76,7 +76,7 @@ bash ./scripts/grn.sh regulon_list --lineage B
 
 ## Errors and fallback
 
-- 本地与 FTP 都失败 → 检查 `CIMA_RESOURCE_ROOT` / 网络 / `CIMA_CACHE`  
+- FTP / 缓存失败 → 检查网络 / `CIMA_CACHE`；表位置见 FTP GRN 目录  
 
 ## Examples
 
@@ -90,6 +90,5 @@ bash ./scripts/grn.sh regulon_list --lineage B
 
 ## Citation
 
-Local: `/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/GRN/`  
-FTP mirror: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/  
+FTP: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/GRN/  
 Yin et al., Science 2026 — DOI [10.1126/science.adt3130](https://doi.org/10.1126/science.adt3130)

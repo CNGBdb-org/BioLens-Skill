@@ -29,7 +29,7 @@ CIMA 数据体量大（428 名中国成人 donor、千万级 PBMC、73 种 `cell
 
 ### 资源与图谱
 
-- CIMA 有哪些可下载数据？本地路径在哪？  
+- CIMA 有哪些可下载数据？FTP 在哪？  
 - 门户上可以探索哪些谱系子集（全血 PBMC、CD4T、CD8T、B、髓系、NK）？  
 - 428 人队列的年龄、性别大概怎么分布？  
 
@@ -62,7 +62,7 @@ scRNA 预处理与 L1–L4 注释 → pseudobulk → scATAC → 多组学标签�
 
 | Skill | 用途 |
 |-------|------|
-| `cima-resource` | 数据清单与本地 / FTP 路径 |
+| `cima-resource` | 数据清单与 **公开 FTP** 位置（本包无本地 Resource） |
 | `cima-atlas-explore` | 谱系子集浏览、donor、组成、基因 UMAP（不含 GRN/xQTL/SMR/清单） |
 | `cima-scrna-preprocessing` | scRNA QC → 聚类 → 系群拆分 |
 | `cima-cell-annotation` | TrueBlood L1–L4 marker 注释 |
@@ -80,13 +80,14 @@ scRNA 预处理与 L1–L4 注释 → pseudobulk → scATAC → 多组学标签�
 
 ---
 
-## 部署数据提示
+## 数据位置提示
 
-公开 Resource 与部署环境本地镜像一致时，回答「在哪」优先：
+本 Skill 包**不附带** CIMA Resource 本地数据。问「有哪些 / 在哪」时回答公开 FTP：
 
-`/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/`
+`https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/`
 
-（可用环境变量 `CIMA_RESOURCE_ROOT` 覆盖。）
+门户：https://db.cngb.org/trueblood/cima/resource  
+大文件可用 RaySync：https://ftp.cngb.org/pub/course/tool/raysync/
 
 ---
 

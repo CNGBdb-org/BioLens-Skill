@@ -5,11 +5,11 @@
   "readme": "https://db.cngb.org/trueblood/readme.en.txt",
   "citation": "Yin et al., Science 2026; DOI 10.1126/science.adt3130",
   "download_tips": [
-    "Deployed CNGBdb agents: data lives under /public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource (override with env CIMA_RESOURCE_ROOT).",
-    "Answer users with local absolute paths first; portal/FTP are mirrors for external download only.",
+    "This skill package has no local CIMA_Resource data — answer “where” with public FTP URLs.",
+    "Public FTP root: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/",
     "Portal catalog: https://db.cngb.org/trueblood/cima/resource",
-    "Public FTP mirror: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/",
-    "Large external downloads may use RaySync; on internal deploy prefer reading local_path directly."
+    "Large downloads may use RaySync: https://ftp.cngb.org/pub/course/tool/raysync/",
+    "Do not invent /public/... local paths unless the user already has a local mirror."
   ],
   "categories": [
     "Metadata",
