@@ -15,9 +15,9 @@ RNA 与 ATAC **共享 8 个 donor**（`CIMA_H048`…），可做标签迁移 + m
 ### 一键跑通（配对）
 
 ```bash
-DEMO=demo
+DEMO=cima/demo
 OUT="$DEMO/paired_run_out"
-SK=.
+SK=cima
 mkdir -p "$OUT"
 
 # 1 scRNA

@@ -4,15 +4,15 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Demo pipeline outputs (regenerate locally; see demo/README.md)
-demo/run_out/
-demo/paired_run_out/
-demo/paired_run_out_v2/
-demo/**/*.log
+# Demo pipeline outputs (regenerate locally; see cima/demo/README.md)
+cima/demo/run_out/
+cima/demo/paired_run_out/
+cima/demo/paired_run_out_v2/
+cima/demo/**/*.log
 
 # Oversized binaries (GitHub hard limit 100MB)
 *.h5ad
-!demo/demo_*.h5ad
-!demo/paired_demo_rna.h5ad
-!demo/paired_demo_atac.h5ad
-!demo/paired_demo_atac_gene.h5ad
+!cima/demo/demo_*.h5ad
+!cima/demo/paired_demo_rna.h5ad
+!cima/demo/paired_demo_atac.h5ad
+!cima/demo/paired_demo_atac_gene.h5ad
