@@ -20,7 +20,7 @@ cima/
 
 ## 安装方式
 
-### 0. Python 依赖（先装）
+### Python 依赖（先装）
 
 ```bash
 git clone https://github.com/CNGBdb-org/BioLens-Skill.git
