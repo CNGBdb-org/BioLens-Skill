@@ -4,7 +4,8 @@ CIMA / TrueBlood **本地流水线与独立查询 Skill**（[BioLens-Skill](http
 
 ```text
 cima/
-├── install-to-agent.sh
+├── install-to-agent.sh   # 安装到 Cursor / Claude / Codex …
+├── requirements.txt      # Python 依赖
 ├── README.md
 ├── demo/
 ├── cima-resource/
@@ -18,6 +19,16 @@ cima/
 ---
 
 ## 安装方式
+
+### 0. Python 依赖（先装）
+
+```bash
+git clone https://github.com/CNGBdb-org/BioLens-Skill.git
+cd BioLens-Skill/cima
+python -m pip install -r requirements.txt
+```
+
+覆盖查询 Skill（resource / atlas / GRN / xQTL / SMR）与流水线 Skill（scanpy 等）。可选包见 `requirements.txt` 末尾注释（`harmonypy` / `cosg` / `logomaker`）。各叶子细节也写在对应 `SKILL.md` 的 `compatibility` 字段。
 
 ### 主流 Agent 路径
 
@@ -35,7 +46,6 @@ cima/
 ### 方式一：安装脚本（推荐，离线/内网友好）
 
 ```bash
-git clone https://github.com/CNGBdb-org/BioLens-Skill.git
 cd BioLens-Skill/cima
 chmod +x ./install-to-agent.sh
 
@@ -55,12 +65,11 @@ chmod +x ./install-to-agent.sh
 ./install-to-agent.sh ~/.codex/skills
 ```
 
-脚本会把本目录下各 `cima-*/` **软链**到目标目录下的同名叶子。
+脚本会把本目录下各 `cima-*/` **软链**到目标目录下的同名叶子，并链接 `requirements.txt`。
 
 ### 方式二：手动拷贝
 
 ```bash
-git clone https://github.com/CNGBdb-org/BioLens-Skill.git
 DEST=/path/to/project/.cursor/skills   # 换成上表路径
 mkdir -p "$DEST"
 for d in BioLens-Skill/cima/cima-*/; do
@@ -68,6 +77,8 @@ for d in BioLens-Skill/cima/cima-*/; do
   [[ -f "$d/SKILL.md" ]] || continue
   cp -R "$d" "$DEST/$name"
 done
+# 可选：一并拷贝依赖清单
+cp BioLens-Skill/cima/requirements.txt "$DEST/"
 ```
 
 只装一个 Skill：
@@ -87,9 +98,7 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-xqtl -a claude-code -a code
 npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 ```
 
-### 依赖
-
-各叶子 Skill 依赖见对应 `<name>/SKILL.md`。常见：`scanpy` / `anndata`；可选 `statsmodels`、`harmony-pytorch` / `harmonypy`、`cosg`。
+装完后仍需在本机执行：`pip install -r BioLens-Skill/cima/requirements.txt`。
 
 ---
 

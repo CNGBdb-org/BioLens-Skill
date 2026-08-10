@@ -18,6 +18,7 @@
 #   copilot      -> <root>/.agents/skills          | ~/.copilot/skills
 #
 # Examples:
+#   pip install -r requirements.txt
 #   ./install-to-agent.sh --agent cursor
 #   ./install-to-agent.sh --agent claude /path/to/project
 #   ./install-to-agent.sh --agent cursor --global
