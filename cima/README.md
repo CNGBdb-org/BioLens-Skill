@@ -1,26 +1,28 @@
 # CIMA Pipeline Skills
 
-CIMA / TrueBlood **本地流水线与独立查询 Skill**（[BioLens-Skill](https://github.com/CNGBdb-org/BioLens-Skill)）。本目录共 **12** 个叶子 Skill。
+面向 [CIMA / TrueBlood](https://db.cngb.org/trueblood/cima/)（Chinese Immune Multi-Omics Atlas）的 Agent Skills 集合，收录于 [BioLens-Skill](https://github.com/CNGBdb-org/BioLens-Skill)。本目录包含 **12** 个可独立安装的叶子 Skill，覆盖数据资源定位、门户图谱浏览、预计算查询，以及本地分析流水线。
+
+文献：Yin et al., *Science* 2026；DOI [10.1126/science.adt3130](https://doi.org/10.1126/science.adt3130)
 
 ```text
 cima/
-├── install-to-agent.sh   # 安装到 Cursor / Claude / Codex …
+├── install-to-agent.sh   # 安装至各类 Agent
 ├── requirements.txt      # Python 依赖
 ├── README.md
-├── demo/
+├── demo/                 # 合成演示数据（非论文复现）
 ├── cima-resource/
 ├── cima-atlas-explore/
 ├── cima-scrna-preprocessing/
 └── …
 ```
 
-安装后形态：`<skills-dir>/<skill-name>/SKILL.md`（Agent 只认展平后的叶子目录）。
+安装完成后，Agent 侧目录形态为：`<skills-dir>/<skill-name>/SKILL.md`。
 
 ---
 
-## 安装方式
+## 安装
 
-### Python 依赖（先装）
+### Python 依赖
 
 ```bash
 git clone https://github.com/CNGBdb-org/BioLens-Skill.git
@@ -28,9 +30,9 @@ cd BioLens-Skill/cima
 python -m pip install -r requirements.txt
 ```
 
-覆盖查询 Skill（resource / atlas / GRN / xQTL / SMR）与流水线 Skill（scanpy 等）。可选包见 `requirements.txt` 末尾注释（`harmonypy` / `cosg` / `logomaker`）。各叶子细节也写在对应 `SKILL.md` 的 `compatibility` 字段。
+该依赖清单覆盖资源查询、图谱浏览、GRN / xQTL / SMR 查询，以及基于 Scanpy 的流水线 Skill。可选组件（如 `harmonypy`、`cosg`、`logomaker`）见 `requirements.txt` 末尾注释；各 Skill 的兼容性说明亦见对应 `SKILL.md`。
 
-### 主流 Agent 路径
+### Agent 目标路径
 
 | Agent | 项目级 | 用户级（全局） |
 |-------|--------|----------------|
@@ -43,53 +45,55 @@ python -m pip install -r requirements.txt
 | Windsurf | `.windsurf/skills/` | `~/.codeium/windsurf/skills/` |
 | GitHub Copilot | `.agents/skills/` | `~/.copilot/skills/` |
 
-### 方式一：安装脚本（推荐，离线/内网友好）
+### 方式一：安装脚本（推荐）
+
+适用于离线或内网环境；将叶子 Skill 软链接至目标目录。
 
 ```bash
 cd BioLens-Skill/cima
 chmod +x ./install-to-agent.sh
 
-# 装到当前项目（Cursor）
+# 当前项目（以 Cursor 为例）
 ./install-to-agent.sh --agent cursor
 
 # 其他 Agent
 ./install-to-agent.sh --agent claude
 ./install-to-agent.sh --agent codex /path/to/project
 
-# 用户全局
+# 用户全局目录
 ./install-to-agent.sh --agent cursor --global
 ./install-to-agent.sh --agent claude --global
 
-# 或直接指定目标目录
+# 直接指定目标路径
 ./install-to-agent.sh /path/to/project/.claude/skills
 ./install-to-agent.sh ~/.codex/skills
 ```
 
-脚本会把本目录下各 `cima-*/` **软链**到目标目录下的同名叶子，并链接 `requirements.txt`。
+安装脚本会链接全部 `cima-*/` 叶子目录，并同步链接 `requirements.txt`。
 
-### 方式二：手动拷贝
+### 方式二：手动复制
 
 ```bash
-DEST=/path/to/project/.cursor/skills   # 换成上表路径
+DEST=/path/to/project/.cursor/skills   # 请替换为上表对应路径
 mkdir -p "$DEST"
 for d in BioLens-Skill/cima/cima-*/; do
   name=$(basename "$d")
   [[ -f "$d/SKILL.md" ]] || continue
   cp -R "$d" "$DEST/$name"
 done
-# 可选：一并拷贝依赖清单
 cp BioLens-Skill/cima/requirements.txt "$DEST/"
 ```
 
-只装一个 Skill：
+仅安装单个 Skill：
 
 ```bash
-cp -R BioLens-Skill/cima/cima-scrna-preprocessing /path/to/project/.cursor/skills/cima-scrna-preprocessing
+cp -R BioLens-Skill/cima/cima-scrna-preprocessing \
+  /path/to/project/.cursor/skills/cima-scrna-preprocessing
 ```
 
-### 方式三：通用 CLI `npx skills add`（需 Node.js）
+### 方式三：`npx skills add`（需 Node.js）
 
-与 [vercel-labs/skills](https://github.com/vercel-labs/skills) 生态兼容：
+兼容 [vercel-labs/skills](https://github.com/vercel-labs/skills) 生态：
 
 ```bash
 npx skills add CNGBdb-org/BioLens-Skill --list
@@ -98,48 +102,54 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-xqtl -a claude-code -a code
 npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 ```
 
-装完后仍需在本机执行：`pip install -r BioLens-Skill/cima/requirements.txt`。
+完成后请在本机执行：`pip install -r BioLens-Skill/cima/requirements.txt`。
 
 ---
 
 ## Skill 一览
 
-| Skill | Depth | 用途 |
+| Skill | Depth | 说明 |
 |-------|-------|------|
-| `cima-resource` | L3 | CIMA 数据清单 / 位置（公开 FTP；本包无本地 Resource） |
-| `cima-atlas-explore` | L4 | 门户图谱浏览：视图 / donor / 组成 / 基因 UMAP（不含 GRN·xQTL·SMR·清单） |
-| `cima-scrna-preprocessing` | L5 | scRNA QC → 聚类 → 系群拆分 |
-| `cima-cell-annotation` | L5 | TrueBlood marker 签名 → L1–L4（73 leaf） |
-| `cima-pseudobulk-variance` | L5 | Pseudobulk 聚合 + 方差分解 |
-| `cima-scratac-preprocessing` | L5 | scATAC peak 预处理 + 可选 gene activity（CPU） |
-| `cima-multiomics-integration` | L5 | scRNA+scATAC 整合（ATAC 可为 peak 或 gene） |
-| `cima-metacell` | L5 | Metacell 聚合（CPU，无 SEACells） |
-| `cima-grn-scenicplus` | L4 | 预计算 eRegulon / GRN 查询（独立，不依赖 explore `cima`） |
-| `cima-xqtl` | L4 | 预计算 cis-xQTL 查询（独立） |
-| `cima-smr-gwas` | L4 | 预计算 SMR/GWAS 查询（独立） |
-| `cima-clm` | L5 | CLM in silico 变异效应 demo（预计算结果） |
+| `cima-resource` | L3 | CIMA / TrueBlood 可下载资源清单与公开 FTP 位置 |
+| `cima-atlas-explore` | L4 | 门户图谱浏览（视图、donor、组成、基因 UMAP） |
+| `cima-scrna-preprocessing` | L5 | scRNA 质控、聚类与系群拆分 |
+| `cima-cell-annotation` | L5 | TrueBlood marker 签名注释（L1–L4，73 leaf） |
+| `cima-pseudobulk-variance` | L5 | Pseudobulk 聚合与方差分解 |
+| `cima-scratac-preprocessing` | L5 | scATAC peak 预处理（可选 gene activity，CPU） |
+| `cima-multiomics-integration` | L5 | scRNA 与 scATAC 整合（ATAC 可为 peak 或 gene activity） |
+| `cima-metacell` | L5 | Metacell 聚合（CPU，不依赖 SEACells） |
+| `cima-grn-scenicplus` | L4 | 预计算 eRegulon / GRN 查询 |
+| `cima-xqtl` | L4 | 预计算 cis-xQTL 查询 |
+| `cima-smr-gwas` | L4 | 预计算 SMR / GWAS 关联查询 |
+| `cima-clm` | L5 | CIMA-CLM in silico 变异效应演示（预计算结果） |
+
+公开数据目录：
+
+- FTP：https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/
+- 门户：https://db.cngb.org/trueblood/cima/resource
 
 ## 流水线关系
 
-- 图谱浏览：`cima-atlas-explore`（视图 / donor / UMAP；清单与 GRN/xQTL/SMR 见专用 Skill）
+- 资源定位：`cima-resource`
+- 图谱浏览：`cima-atlas-explore`
 - scRNA 主线：`cima-scrna-preprocessing` → `cima-cell-annotation` → `cima-pseudobulk-variance` → `cima-xqtl` / `cima-smr-gwas`
-- 多组学主线：… → `cima-scratac-preprocessing` → `cima-multiomics-integration` → `cima-metacell` → `cima-grn-scenicplus`
-- 独立：`cima-resource`、`cima-clm`
+- 多组学主线：`cima-scratac-preprocessing` → `cima-multiomics-integration` → `cima-metacell` → `cima-grn-scenicplus`
+- 独立模块：`cima-clm`
 
 ## 使用示例
 
-每个 Skill 的 `SKILL.md` 均有 **Examples**。本目录提供合成 demo（仅冒烟，非论文复现）：
+各 Skill 的详细用法见对应目录下的 `SKILL.md`。`demo/` 提供合成演示数据，仅用于流程验证，不构成论文结果复现。
 
-| 文件 | 用途 |
+| 文件 | 说明 |
 |------|------|
-| [`demo/paired_demo_rna.h5ad`](demo/paired_demo_rna.h5ad) | **推荐** scRNA（与 ATAC 共享 8 donor）→ Steps 1–3 / 5–6 |
-| [`demo/paired_demo_atac.h5ad`](demo/paired_demo_atac.h5ad) | **推荐** scATAC peaks → Step 4（可出 gene activity） |
-| [`demo/paired_demo_atac_gene.h5ad`](demo/paired_demo_atac_gene.h5ad) | **推荐** gene-level ATAC → 直喂 Step 5 |
-| `demo/demo_nk_raw.h5ad` + `demo/demo_atac_raw.h5ad` | 更小；样本不重叠 → Step6 配对为 0 |
+| [`demo/paired_demo_rna.h5ad`](demo/paired_demo_rna.h5ad) | 配对 scRNA（与 ATAC 共享 8 个 donor） |
+| [`demo/paired_demo_atac.h5ad`](demo/paired_demo_atac.h5ad) | 配对 scATAC peaks |
+| [`demo/paired_demo_atac_gene.h5ad`](demo/paired_demo_atac_gene.h5ad) | 配对 gene-level ATAC |
+| `demo/demo_nk_raw.h5ad`、`demo/demo_atac_raw.h5ad` | 更小规模演示集（样本不重叠） |
 
-完整 Steps 1–6 命令见 [`demo/README.md`](demo/README.md)。下面是命令速查（路径相对叶子 Skill，demo 在 `../demo/`）。
+完整 Steps 1–6 命令见 [`demo/README.md`](demo/README.md)。下列命令均在对应叶子 Skill 目录下执行，演示数据路径为 `../demo/`。
 
-| Skill | 一键示例 |
+| Skill | 示例命令 |
 |-------|----------|
 | `cima-resource` | `python ./scripts/cima_resource_lookup.py overview` |
 | `cima-atlas-explore` | `python ./scripts/query.py catalog list_datasets` |
@@ -154,19 +164,21 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 | `cima-smr-gwas` | `bash ./scripts/smr.sh --gene ARL14EP --max 10` |
 | `cima-clm` | `python ./scripts/run_demo.py /path/to/CIMA-CLM_Demo --out ./clm_out` |
 
-### Agent 侧怎么触发（自然语言示例）
+### 自然语言触发示例
 
-| # | 用户说法（示例） | 触发 Skill |
-|---|------------------|------------|
-| 1 | CIMA 有哪些数据？在哪？/ TrueBlood resource / NK h5ad 在哪（答 FTP） | `cima-resource` |
-| 2 | CIMA 有哪些视图？/ B 视图画 CD8A UMAP / donor 临床表 | `cima-atlas-explore` |
-| 3 | 按 CIMA 流程预处理这个 PBMC h5ad / 对 raw counts 做 QC 聚类再按系群拆分 | `cima-scrna-preprocessing` |
-| 4 | 对 CIMA Annotation_1st 做系群子聚类 + L1–L4 marker 签名注释 | `cima-cell-annotation` |
-| 5 | 按 sample×celltype 做 pseudobulk，看看 age/sex 各解释多少方差 | `cima-pseudobulk-variance` |
-| 6 | 没有 GPU，用 CPU 预处理这个 scATAC peak 矩阵 | `cima-scratac-preprocessing` |
-| 7 | 把 scRNA 的细胞类型迁到 scATAC（不用 SCGLUE） | `cima-multiomics-integration` |
-| 8 | SEACells 装不了，用 CPU 做 CIMA metacell | `cima-metacell` |
-| 9 | FOXP3 在 CIMA 里调控哪些基因？/ 列一下 B 系群 eRegulon | `cima-grn-scenicplus` |
-| 10 | 查 CDC42 的 cis-eQTL / Bn_TCL1A 的 cis-caQTL | `cima-xqtl` |
-| 11 | ARL14EP（或某基因）在 CIMA SMR 里有哪些免疫疾病关联？ | `cima-smr-gwas` |
-| 12 | 跑一下 CIMA-CLM in silico mutagenesis demo | `cima-clm` |
+安装至 Agent 后，可按下列问法路由至对应 Skill：
+
+| # | 示例问法 | 对应 Skill |
+|---|----------|------------|
+| 1 | CIMA 有哪些可下载数据？TrueBlood Resource 在哪里？NK 的 scRNA h5ad 如何获取？ | `cima-resource` |
+| 2 | CIMA 门户有哪些谱系视图？请在 B 视图绘制 CD8A 的 UMAP，并查看 donor 临床信息。 | `cima-atlas-explore` |
+| 3 | 请按 CIMA 流程对这份 PBMC h5ad 做质控、聚类，并按系群拆分。 | `cima-scrna-preprocessing` |
+| 4 | 请对 Annotation_1st 结果做系群子聚类，并用 L1–L4 marker 签名进行注释。 | `cima-cell-annotation` |
+| 5 | 请按 sample × cell type 聚合为 pseudobulk，并估计 age / sex 对表达方差的贡献。 | `cima-pseudobulk-variance` |
+| 6 | 请在 CPU 环境下预处理该 scATAC peak 矩阵。 | `cima-scratac-preprocessing` |
+| 7 | 请将 scRNA 细胞类型标签迁移至配对的 scATAC 数据。 | `cima-multiomics-integration` |
+| 8 | 请在 CPU 环境下完成 CIMA metacell 聚合。 | `cima-metacell` |
+| 9 | FOXP3 在 CIMA 中调控哪些下游基因？请列出 B 系群相关 eRegulon。 | `cima-grn-scenicplus` |
+| 10 | 请查询 CDC42 的 cis-eQTL，以及 Bn_TCL1A 的 cis-caQTL。 | `cima-xqtl` |
+| 11 | 请查询某基因（如 ARL14EP）在 CIMA SMR 结果中与哪些免疫相关性状关联。 | `cima-smr-gwas` |
+| 12 | 请运行 CIMA-CLM in silico mutagenesis 演示。 | `cima-clm` |

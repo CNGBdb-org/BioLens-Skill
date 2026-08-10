@@ -62,7 +62,7 @@ scRNA 预处理与 L1–L4 注释 → pseudobulk → scATAC → 多组学标签�
 
 | Skill | 用途 |
 |-------|------|
-| `cima-resource` | 数据清单与 **公开 FTP** 位置（本包无本地 Resource） |
+| `cima-resource` | 数据清单与公开 FTP 位置 |
 | `cima-atlas-explore` | 谱系子集浏览、donor、组成、基因 UMAP（不含 GRN/xQTL/SMR/清单） |
 | `cima-scrna-preprocessing` | scRNA QC → 聚类 → 系群拆分 |
 | `cima-cell-annotation` | TrueBlood L1–L4 marker 注释 |
