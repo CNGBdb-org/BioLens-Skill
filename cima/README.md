@@ -158,15 +158,15 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 
 | # | 用户说法（示例） | 触发 Skill |
 |---|------------------|------------|
-| 0 | CIMA 有哪些数据？在哪？/ TrueBlood resource / NK h5ad 在哪（答 FTP） | `cima-resource` |
-| 0b | CIMA 有哪些视图？/ B 视图画 CD8A UMAP / donor 临床表 | `cima-atlas-explore` |
-| 1 | 按 CIMA 流程预处理这个 PBMC h5ad / 对 raw counts 做 QC 聚类再按系群拆分 | `cima-scrna-preprocessing` |
-| 2 | 对 CIMA Annotation_1st 做系群子聚类 + L1–L4 marker 签名注释 | `cima-cell-annotation` |
-| 3 | 按 sample×celltype 做 pseudobulk，看看 age/sex 各解释多少方差 | `cima-pseudobulk-variance` |
-| 4 | 没有 GPU，用 CPU 预处理这个 scATAC peak 矩阵 | `cima-scratac-preprocessing` |
-| 5 | 把 scRNA 的细胞类型迁到 scATAC（不用 SCGLUE） | `cima-multiomics-integration` |
-| 6 | SEACells 装不了，用 CPU 做 CIMA metacell | `cima-metacell` |
-| 7 | FOXP3 在 CIMA 里调控哪些基因？/ 列一下 B 系群 eRegulon | `cima-grn-scenicplus` |
-| 8 | 查 CDC42 的 cis-eQTL / Bn_TCL1A 的 cis-caQTL | `cima-xqtl` |
-| 9 | ARL14EP（或某基因）在 CIMA SMR 里有哪些免疫疾病关联？ | `cima-smr-gwas` |
-| 10 | 跑一下 CIMA-CLM in silico mutagenesis demo | `cima-clm` |
+| 1 | CIMA 有哪些数据？在哪？/ TrueBlood resource / NK h5ad 在哪（答 FTP） | `cima-resource` |
+| 2 | CIMA 有哪些视图？/ B 视图画 CD8A UMAP / donor 临床表 | `cima-atlas-explore` |
+| 3 | 按 CIMA 流程预处理这个 PBMC h5ad / 对 raw counts 做 QC 聚类再按系群拆分 | `cima-scrna-preprocessing` |
+| 4 | 对 CIMA Annotation_1st 做系群子聚类 + L1–L4 marker 签名注释 | `cima-cell-annotation` |
+| 5 | 按 sample×celltype 做 pseudobulk，看看 age/sex 各解释多少方差 | `cima-pseudobulk-variance` |
+| 6 | 没有 GPU，用 CPU 预处理这个 scATAC peak 矩阵 | `cima-scratac-preprocessing` |
+| 7 | 把 scRNA 的细胞类型迁到 scATAC（不用 SCGLUE） | `cima-multiomics-integration` |
+| 8 | SEACells 装不了，用 CPU 做 CIMA metacell | `cima-metacell` |
+| 9 | FOXP3 在 CIMA 里调控哪些基因？/ 列一下 B 系群 eRegulon | `cima-grn-scenicplus` |
+| 10 | 查 CDC42 的 cis-eQTL / Bn_TCL1A 的 cis-caQTL | `cima-xqtl` |
+| 11 | ARL14EP（或某基因）在 CIMA SMR 里有哪些免疫疾病关联？ | `cima-smr-gwas` |
+| 12 | 跑一下 CIMA-CLM in silico mutagenesis demo | `cima-clm` |
