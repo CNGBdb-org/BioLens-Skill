@@ -1,0 +1,15 @@
+competing_skills:
+  - sc-ingest
+  - scanpy-preprocess
+  - spatial-qc
+  - hesta
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "对这个 h5ad 做 QC"
+    expected_skill: scanpy-qc
+  - query: "Leiden 聚类"
+    not: scanpy-qc
+  - query: "找 GEO 数据"
+    not: scanpy-qc

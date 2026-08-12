@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "标准化并选高变基因",
+    "做 PCA 预处理",
+    "scanpy preprocess"
+  ],
+  "should_not_trigger": [
+    "做 QC 过滤",
+    "找 marker 基因",
+    "空间解卷积"
+  ]
+}

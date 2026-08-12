@@ -1,0 +1,14 @@
+competing_skills:
+  - scanpy-cluster
+  - hesta
+  - spatial-svg
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "各群 marker 基因"
+    expected_skill: scanpy-markers
+  - query: "做 Leiden"
+    not: scanpy-markers
+  - query: "空间 Moran SVG"
+    not: scanpy-markers

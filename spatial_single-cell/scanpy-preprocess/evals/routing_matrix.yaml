@@ -1,0 +1,13 @@
+competing_skills:
+  - scanpy-qc
+  - scanpy-cluster
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "标准化并选高变基因"
+    expected_skill: scanpy-preprocess
+  - query: "做 QC 过滤"
+    not: scanpy-preprocess
+  - query: "找 marker 基因"
+    not: scanpy-preprocess

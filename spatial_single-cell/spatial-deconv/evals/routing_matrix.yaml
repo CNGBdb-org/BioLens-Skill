@@ -1,0 +1,14 @@
+competing_skills:
+  - hesta
+  - spatial-interaction
+  - scanpy-cluster
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "空间解卷积"
+    expected_skill: spatial-deconv
+  - query: "空间邻域互作"
+    not: spatial-deconv
+  - query: "找 GEO"
+    not: spatial-deconv

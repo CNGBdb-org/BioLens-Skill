@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "几个 GSE 合在一起",
+    "多数据集去批次",
+    "批次混匀报告"
+  ],
+  "should_not_trigger": [
+    "只用 Leiden 聚类一个样本",
+    "HESTA 空间图",
+    "scVI 模型训练"
+  ]
+}

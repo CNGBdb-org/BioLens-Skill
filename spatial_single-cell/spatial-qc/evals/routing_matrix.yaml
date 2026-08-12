@@ -1,0 +1,14 @@
+competing_skills:
+  - scanpy-qc
+  - hesta
+  - spatial-svg
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "空间质控"
+    expected_skill: spatial-qc
+  - query: "scanpy mito 过滤非空间"
+    not: spatial-qc
+  - query: "HESTA 子结构"
+    not: spatial-qc

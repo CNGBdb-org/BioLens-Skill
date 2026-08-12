@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "空间质控",
+    "Visium QC 图",
+    "spatial qc metrics"
+  ],
+  "should_not_trigger": [
+    "scanpy mito 过滤非空间",
+    "HESTA 子结构",
+    "NMF 解卷积"
+  ]
+}

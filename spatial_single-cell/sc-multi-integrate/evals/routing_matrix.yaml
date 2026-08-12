@@ -1,0 +1,14 @@
+competing_skills:
+  - scvi-integrate
+  - scanpy-cluster
+  - geo-sra
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "几个 GSE 合在一起"
+    expected_skill: sc-multi-integrate
+  - query: "只用 Leiden 聚类一个样本"
+    not: sc-multi-integrate
+  - query: "HESTA 空间图"
+    not: sc-multi-integrate

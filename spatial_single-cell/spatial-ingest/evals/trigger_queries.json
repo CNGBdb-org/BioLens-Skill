@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "读入 Visium h5ad",
+    "生成空间 demo 数据",
+    "spatial ingest"
+  ],
+  "should_not_trigger": [
+    "HESTA CS23 SOX2",
+    "普通 10x 单细胞 ingest",
+    "空间 SVG"
+  ]
+}

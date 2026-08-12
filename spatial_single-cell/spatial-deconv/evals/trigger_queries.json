@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "空间解卷积",
+    "spot 细胞组成",
+    "NMF deconvolution"
+  ],
+  "should_not_trigger": [
+    "空间邻域互作",
+    "找 GEO",
+    "ClinVar"
+  ]
+}

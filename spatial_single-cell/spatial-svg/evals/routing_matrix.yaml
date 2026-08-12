@@ -1,0 +1,14 @@
+competing_skills:
+  - scanpy-markers
+  - hesta
+  - spatial-interaction
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "空间可变基因"
+    expected_skill: spatial-svg
+  - query: "Leiden marker"
+    not: spatial-svg
+  - query: "HESTA SOX2 图"
+    not: spatial-svg

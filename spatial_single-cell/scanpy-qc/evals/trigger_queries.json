@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "对这个 h5ad 做 QC",
+    "按 mito 过滤细胞",
+    "单细胞质控"
+  ],
+  "should_not_trigger": [
+    "Leiden 聚类",
+    "找 GEO 数据",
+    "空间可变基因"
+  ]
+}

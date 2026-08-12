@@ -1,0 +1,14 @@
+competing_skills:
+  - hesta
+  - sc-ingest
+  - geo-sra
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "读入 Visium h5ad"
+    expected_skill: spatial-ingest
+  - query: "HESTA CS23 SOX2"
+    not: spatial-ingest
+  - query: "普通 10x 单细胞 ingest"
+    not: spatial-ingest

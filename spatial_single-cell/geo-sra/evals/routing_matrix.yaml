@@ -1,0 +1,20 @@
+competing_skills:
+  - hesta
+  - ensembl
+  - clinvar
+  - gnomad
+exclusions:
+  - Do not run clustering or cell annotation
+  - Do not invent GSE/SRR accessions without script output
+near_miss_cases:
+  - query: "找人肝单细胞 GEO 数据集"
+    expected_skill: geo-sra
+    not: hesta
+  - query: "GSE149614 有没有矩阵"
+    expected_skill: geo-sra
+  - query: "HESTA CS23 SOX2 空间表达"
+    expected_skill: hesta
+    not: geo-sra
+  - query: "rs80357906 致病吗"
+    expected_skill: clinvar
+    not: geo-sra

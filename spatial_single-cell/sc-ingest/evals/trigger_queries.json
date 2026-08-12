@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "把 10x 矩阵读成 h5ad",
+    "生成单细胞 demo 数据",
+    "ingest scRNA matrix"
+  ],
+  "should_not_trigger": [
+    "找肝脏单细胞 GEO",
+    "HESTA SOX2 空间图",
+    "rs80357906 致病吗"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "should_trigger": [
+    "有没有人肝脏单细胞 RNA-seq 的 GEO",
+    "GSE149614 原始数据怎么下",
+    "查一下 PRJNA629369",
+    "搜 PBMC COVID scRNA-seq"
+  ],
+  "should_not_trigger": [
+    "HESTA CS23 SOX2 空间图",
+    "rs80357906 致病吗",
+    "对这个 h5ad 做 Leiden 聚类"
+  ]
+}

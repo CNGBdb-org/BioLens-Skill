@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "做 Leiden 聚类",
+    "画 UMAP",
+    "单细胞分群"
+  ],
+  "should_not_trigger": [
+    "各群 marker 是什么",
+    "找公开 GEO",
+    "HESTA CS23"
+  ]
+}

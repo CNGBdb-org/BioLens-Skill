@@ -1,0 +1,14 @@
+competing_skills:
+  - spatial-deconv
+  - hesta
+  - scanpy-markers
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "谁和谁空间相邻"
+    expected_skill: spatial-interaction
+  - query: "NMF 解卷积"
+    not: spatial-interaction
+  - query: "HESTA CS23"
+    not: spatial-interaction

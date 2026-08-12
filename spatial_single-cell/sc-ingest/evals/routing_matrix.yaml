@@ -1,0 +1,14 @@
+competing_skills:
+  - geo-sra
+  - hesta
+  - spatial-ingest
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "把 10x 矩阵读成 h5ad"
+    expected_skill: sc-ingest
+  - query: "找肝脏单细胞 GEO"
+    not: sc-ingest
+  - query: "HESTA SOX2 空间图"
+    not: sc-ingest

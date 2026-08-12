@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 scVI 去批次",
+    "scvi-tools 整合",
+    "深度生成批次校正"
+  ],
+  "should_not_trigger": [
+    "只要 Leiden",
+    "空间邻域互作",
+    "找 GEO"
+  ]
+}

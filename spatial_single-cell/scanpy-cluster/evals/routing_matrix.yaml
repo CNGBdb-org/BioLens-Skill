@@ -1,0 +1,14 @@
+competing_skills:
+  - scanpy-markers
+  - hesta
+  - sc-multi-integrate
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "做 Leiden 聚类"
+    expected_skill: scanpy-cluster
+  - query: "各群 marker 是什么"
+    not: scanpy-cluster
+  - query: "找公开 GEO"
+    not: scanpy-cluster

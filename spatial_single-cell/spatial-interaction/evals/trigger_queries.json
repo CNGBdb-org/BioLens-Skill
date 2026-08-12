@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "谁和谁空间相邻",
+    "邻域共现矩阵",
+    "spatial interaction"
+  ],
+  "should_not_trigger": [
+    "NMF 解卷积",
+    "HESTA CS23",
+    "rsID 查询"
+  ]
+}

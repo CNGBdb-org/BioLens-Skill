@@ -1,0 +1,13 @@
+competing_skills:
+  - sc-multi-integrate
+  - scanpy-cluster
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "用 scVI 去批次"
+    expected_skill: scvi-integrate
+  - query: "只要 Leiden"
+    not: scvi-integrate
+  - query: "空间邻域互作"
+    not: scvi-integrate

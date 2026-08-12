@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "空间可变基因",
+    "Moran I SVG",
+    "哪些基因有空间模式"
+  ],
+  "should_not_trigger": [
+    "Leiden marker",
+    "HESTA SOX2 图",
+    "邻域互作"
+  ]
+}

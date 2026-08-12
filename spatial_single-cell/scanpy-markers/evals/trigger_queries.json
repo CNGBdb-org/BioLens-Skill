@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "各群 marker 基因",
+    "找 cluster markers",
+    "wilcoxon 差异基因"
+  ],
+  "should_not_trigger": [
+    "做 Leiden",
+    "空间 Moran SVG",
+    "ClinVar 致病"
+  ]
+}
