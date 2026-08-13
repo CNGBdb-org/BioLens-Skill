@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "空间拟时序",
+    "DPT 轨迹画在组织上",
+    "spatial trajectory"
+  ],
+  "should_not_trigger": [
+    "多切片配准",
+    "Moran I SVG",
+    "组织域"
+  ]
+}

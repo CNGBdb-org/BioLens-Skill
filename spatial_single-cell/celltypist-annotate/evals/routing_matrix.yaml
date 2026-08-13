@@ -1,0 +1,18 @@
+competing_skills:
+  - scanpy-markers
+  - cima-cell-annotation
+  - scanpy-cluster
+  - spatial-deconv
+exclusions:
+  - Do not invent cell-type fractions without script output
+  - Do not route CIMA TrueBlood ontology annotation here
+  - Do not use for spatial spot NMF deconvolution
+near_miss_cases:
+  - query: "用 CellTypist 注释 PBMC"
+    expected_skill: celltypist-annotate
+  - query: "各群 marker 是什么"
+    not: celltypist-annotate
+  - query: "按 CIMA L1–L4 做注释"
+    not: celltypist-annotate
+  - query: "spot 细胞组成解卷积"
+    not: celltypist-annotate

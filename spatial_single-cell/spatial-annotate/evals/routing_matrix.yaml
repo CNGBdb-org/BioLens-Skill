@@ -1,0 +1,15 @@
+competing_skills:
+  - celltypist-annotate
+  - spatial-deconv
+  - spatial-domains
+  - scanpy-markers
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "Visium 用 marker 注释"
+    expected_skill: spatial-annotate
+  - query: "用 CellTypist 注释 PBMC"
+    not: spatial-annotate
+  - query: "spot NMF 比例"
+    not: spatial-annotate

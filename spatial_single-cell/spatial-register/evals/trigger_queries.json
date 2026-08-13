@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "多切片配准",
+    "对齐两张 Visium 坐标",
+    "spatial register Procrustes"
+  ],
+  "should_not_trigger": [
+    "Harmony 去批次",
+    "单切片划域",
+    "DPT 拟时序"
+  ]
+}

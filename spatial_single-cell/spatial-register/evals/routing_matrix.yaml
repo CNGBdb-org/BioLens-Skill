@@ -1,0 +1,14 @@
+competing_skills:
+  - spatial-integrate
+  - sc-multi-integrate
+  - spatial-trajectory
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "两张切片坐标对齐"
+    expected_skill: spatial-register
+  - query: "多样本表达整合"
+    not: spatial-register
+  - query: "拟时序轨迹"
+    not: spatial-register

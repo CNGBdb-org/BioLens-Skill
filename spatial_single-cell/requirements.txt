@@ -20,7 +20,11 @@ anndata>=0.8
 igraph>=0.10
 leidenalg>=0.9
 
+# Cell type annotation (celltypist-annotate)
+celltypist>=1.6.0
+
 # Optional (uncomment if needed):
 # scvi-tools          # scvi-integrate deep batch correction
 # squidpy             # spatial-qc / spatial-svg preferred path
+# harmonypy           # spatial-integrate preferred batch correction
 # spatialdata         # SpatialData-oriented workflows

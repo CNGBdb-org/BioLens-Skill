@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "空间数据打细胞类型",
+    "用 marker 注释 Visium",
+    "spatial annotate"
+  ],
+  "should_not_trigger": [
+    "CellTypist PBMC 注释",
+    "NMF 解卷积",
+    "组织域分区"
+  ]
+}

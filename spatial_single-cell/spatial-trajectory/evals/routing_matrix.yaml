@@ -1,0 +1,14 @@
+competing_skills:
+  - spatial-register
+  - spatial-svg
+  - spatial-domains
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "做 DPT 并空间着色"
+    expected_skill: spatial-trajectory
+  - query: "切片配准"
+    not: spatial-trajectory
+  - query: "找空间可变基因"
+    not: spatial-trajectory

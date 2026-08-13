@@ -29,6 +29,7 @@ metadata:
 |------|------|
 | 预处理 | `scanpy-preprocess` |
 | 找 marker | `scanpy-markers` |
+| 自动细胞类型注释 | `celltypist-annotate` |
 | HESTA 子结构/空间图 | `hesta` |
 
 ## Domain recognition
@@ -97,7 +98,7 @@ python ./scripts/query.py <h5ad> [-o outdir]
 ## 联动
 
 - 找公开数据：`geo-sra`
-- 单细胞：`sc-ingest` → `scanpy-qc` → `scanpy-preprocess` → `scanpy-cluster` → `scanpy-markers`
+- 单细胞：`sc-ingest` → `scanpy-qc` → `scanpy-preprocess` → `scanpy-cluster` → `celltypist-annotate` → `scanpy-markers`
 - 多批次：`sc-multi-integrate` / `scvi-integrate`
 - 空间：`spatial-ingest` → `spatial-qc` → `spatial-svg` / `spatial-deconv` / `spatial-interaction`
 - HESTA 人胚胎图谱：`hesta`（不要与通用空间流水线混用）

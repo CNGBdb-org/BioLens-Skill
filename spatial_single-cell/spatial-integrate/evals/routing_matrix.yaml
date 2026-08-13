@@ -1,0 +1,14 @@
+competing_skills:
+  - spatial-register
+  - sc-multi-integrate
+  - scvi-integrate
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "多切片表达去批次"
+    expected_skill: spatial-integrate
+  - query: "先把坐标对齐"
+    not: spatial-integrate
+  - query: "普通 scRNA Combat"
+    not: spatial-integrate

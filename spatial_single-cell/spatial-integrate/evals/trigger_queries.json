@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "多样本空间整合",
+    "Harmony 整合 Visium",
+    "spatial integrate"
+  ],
+  "should_not_trigger": [
+    "多切片坐标配准",
+    "scVI 整合 PBMC",
+    "空间拟时序"
+  ]
+}

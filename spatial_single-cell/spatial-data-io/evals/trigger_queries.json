@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "读入 Visium 目录",
+    "把空间 10x 转成带坐标的 h5ad",
+    "spatial data io"
+  ],
+  "should_not_trigger": [
+    "空间质控",
+    "找公开 GEO",
+    "HESTA CS23"
+  ]
+}

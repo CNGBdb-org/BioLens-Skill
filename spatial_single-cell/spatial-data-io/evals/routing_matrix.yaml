@@ -1,0 +1,15 @@
+competing_skills:
+  - spatial-ingest
+  - sc-ingest
+  - geo-sra
+  - hesta
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "读入 Visium 并写出 spatial h5ad"
+    expected_skill: spatial-data-io
+  - query: "做空间 QC"
+    not: spatial-data-io
+  - query: "普通 scRNA ingest"
+    not: spatial-data-io

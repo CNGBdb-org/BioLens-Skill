@@ -1,0 +1,15 @@
+competing_skills:
+  - spatial-svg
+  - spatial-annotate
+  - spatial-deconv
+  - scanpy-cluster
+exclusions:
+  - Do not invent statistics without script output
+  - Do not route HESTA atlas queries here
+near_miss_cases:
+  - query: "给组织划 domain"
+    expected_skill: spatial-domains
+  - query: "找 Moran I SVG"
+    not: spatial-domains
+  - query: "打细胞类型标签"
+    not: spatial-domains

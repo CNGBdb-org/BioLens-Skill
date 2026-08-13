@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 CellTypist 做细胞注释",
+    "自动标注 PBMC 细胞类型",
+    "下载 Immune_All_Low 模型并注释"
+  ],
+  "should_not_trigger": [
+    "各群 marker 是什么",
+    "CIMA TrueBlood L1–L4 注释",
+    "空间 spot 解卷积"
+  ]
+}

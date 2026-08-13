@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "划分组织域",
+    "spatial domains",
+    "组织分区 Leiden"
+  ],
+  "should_not_trigger": [
+    "空间可变基因",
+    "spot 解卷积",
+    "CellTypist 注释"
+  ]
+}
