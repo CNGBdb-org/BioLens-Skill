@@ -1,0 +1,4 @@
+label,positive,negative
+T_like,"CD3D,ACAP1",NKG7
+NK_like,"NKG7,GNLY,FCGR3A,TYROBP",CD3D
+Myeloid_like,"LYZ,ACTB",NKG7

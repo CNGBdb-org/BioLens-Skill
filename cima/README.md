@@ -4,6 +4,10 @@
 
 文献：Yin et al., *Science* 2026；DOI [10.1126/science.adt3130](https://doi.org/10.1126/science.adt3130)
 
+**定位**：CIMA 图谱 / 遗传查询 + 论文对齐预实验流水线。  
+**不做**：通用 R 分析栈替代、用户队列全基因组 eQTL/SMR 重算、完全无人值守的人工级注释。  
+问免疫病 SMR → `cima-smr-gwas`（默认 `CIMA_Significant_SMR_Pleiotropic_Associations.xlsx`）。
+
 ```text
 cima/
 ├── install-to-agent.sh   # 安装至各类 Agent
@@ -110,31 +114,31 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 
 | Skill | Depth | 说明 |
 |-------|-------|------|
-| `cima-resource` | L3 | CIMA / TrueBlood 可下载资源清单与公开 FTP 位置 |
-| `cima-atlas-explore` | L4 | 门户图谱浏览（视图、donor、组成、基因 UMAP） |
-| `cima-scrna-preprocessing` | L5 | scRNA 质控、聚类与系群拆分 |
-| `cima-cell-annotation` | L5 | TrueBlood marker 签名注释（L1–L4，73 leaf） |
-| `cima-pseudobulk-variance` | L5 | Pseudobulk 聚合与方差分解 |
-| `cima-scratac-preprocessing` | L5 | scATAC peak 预处理（可选 gene activity，CPU） |
-| `cima-multiomics-integration` | L5 | scRNA 与 scATAC 整合（ATAC 可为 peak 或 gene activity） |
-| `cima-metacell` | L5 | Metacell 聚合（CPU，不依赖 SEACells） |
+| `cima-resource` | L3 | CIMA 数据清单 / 本地路径（部署：`/public/.../CIMA_Resource`；外网门户·FTP） |
+| `cima-atlas-explore` | L4 | 门户图谱浏览：视图 / donor / 组成 / 基因 UMAP（不含 GRN·xQTL·SMR·清单） |
+| `cima-scrna-preprocessing` | L5 | scRNA QC → 聚类 → 系群拆分（支持 `--profile auto\|small\|large`） |
+| `cima-cell-annotation` | L5 | TrueBlood marker 签名 → L1–L4（73 leaf）；支持自定义 marker / 多轮 refine / transfer |
+| `cima-pseudobulk-variance` | L5 | Pseudobulk 聚合 + 方差分解 |
+| `cima-scratac-preprocessing` | L5 | scATAC peak 预处理 + 可选 gene activity（CPU） |
+| `cima-multiomics-integration` | L5 | scRNA+scATAC 整合（ATAC 可为 peak 或 gene） |
+| `cima-metacell` | L5 | Metacell 聚合（CPU，无 SEACells） |
 | `cima-grn-scenicplus` | L4 | 预计算 eRegulon / GRN 查询 |
 | `cima-xqtl` | L4 | 预计算 cis-xQTL 查询 |
-| `cima-smr-gwas` | L4 | 预计算 SMR / GWAS 关联查询 |
-| `cima-clm` | L5 | CIMA-CLM in silico 变异效应演示（预计算结果） |
+| `cima-smr-gwas` | L4 | 预计算 SMR/GWAS 查询 |
+| `cima-clm` | L5 | CLM in silico 变异效应 demo（预计算结果） |
 
 公开数据目录：
 
 - FTP：https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/
 - 门户：https://db.cngb.org/trueblood/cima/resource
+- 部署本地（若可用）：`/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/`（可用 `CIMA_RESOURCE_ROOT` 覆盖）
 
 ## 流水线关系
 
-- 资源定位：`cima-resource`
-- 图谱浏览：`cima-atlas-explore`
+- 图谱浏览：`cima-atlas-explore`（视图 / donor / UMAP；清单与 GRN/xQTL/SMR 见专用 Skill）
 - scRNA 主线：`cima-scrna-preprocessing` → `cima-cell-annotation` → `cima-pseudobulk-variance` → `cima-xqtl` / `cima-smr-gwas`
-- 多组学主线：`cima-scratac-preprocessing` → `cima-multiomics-integration` → `cima-metacell` → `cima-grn-scenicplus`
-- 独立模块：`cima-clm`
+- 多组学主线：… → `cima-scratac-preprocessing` → `cima-multiomics-integration` → `cima-metacell` → `cima-grn-scenicplus`
+- 独立：`cima-resource`、`cima-clm`
 
 ## 使用示例
 
@@ -142,10 +146,10 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 
 | 文件 | 说明 |
 |------|------|
-| [`demo/paired_demo_rna.h5ad`](demo/paired_demo_rna.h5ad) | 配对 scRNA（与 ATAC 共享 8 个 donor） |
-| [`demo/paired_demo_atac.h5ad`](demo/paired_demo_atac.h5ad) | 配对 scATAC peaks |
-| [`demo/paired_demo_atac_gene.h5ad`](demo/paired_demo_atac_gene.h5ad) | 配对 gene-level ATAC |
-| `demo/demo_nk_raw.h5ad`、`demo/demo_atac_raw.h5ad` | 更小规模演示集（样本不重叠） |
+| [`demo/paired_demo_rna.h5ad`](demo/paired_demo_rna.h5ad) | **推荐** scRNA（与 ATAC 共享 8 donor）→ Steps 1–3 / 5–6 |
+| [`demo/paired_demo_atac.h5ad`](demo/paired_demo_atac.h5ad) | **推荐** scATAC peaks → Step 4（可出 gene activity） |
+| [`demo/paired_demo_atac_gene.h5ad`](demo/paired_demo_atac_gene.h5ad) | **推荐** gene-level ATAC → 直喂 Step 5 |
+| `demo/demo_nk_raw.h5ad`、`demo/demo_atac_raw.h5ad` | 更小；样本不重叠 → Step6 配对为 0 |
 
 完整 Steps 1–6 命令见 [`demo/README.md`](demo/README.md)。下列命令均在对应叶子 Skill 目录下执行，演示数据路径为 `../demo/`。
 
@@ -153,7 +157,7 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 |-------|----------|
 | `cima-resource` | `python ./scripts/cima_resource_lookup.py overview` |
 | `cima-atlas-explore` | `python ./scripts/query.py catalog list_datasets` |
-| `cima-scrna-preprocessing` | `python ./scripts/cima_scrna_preprocessing_cpu.py --input ../demo/paired_demo_rna.h5ad --output ./out --hvg-n 1500 --skip-subsampling` |
+| `cima-scrna-preprocessing` | `python ./scripts/cima_scrna_preprocessing_cpu.py --input ../demo/paired_demo_rna.h5ad --output ./out --profile auto` |
 | `cima-cell-annotation` | `python ./scripts/cima_cell_annotation_cpu.py --input Annotation_1st_fullgenes.h5ad --output ./out --lineage all` |
 | `cima-pseudobulk-variance` | `python ./scripts/cima_pseudobulk_variance_cpu.py --input Annotation_1st.h5ad --output ./out --covariates age sex` |
 | `cima-scratac-preprocessing` | `python ./scripts/cima_scratac_cpu.py --input ../demo/paired_demo_atac.h5ad --output ./out --rna rna.h5ad` |
@@ -161,7 +165,7 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 | `cima-metacell` | `python ./scripts/cima_metacell_cpu.py --rna rna.h5ad --atac atac_labeled.h5ad --output ./out` |
 | `cima-grn-scenicplus` | `bash ./scripts/grn.sh grn_lookup --tf FOXP3 --max 20` |
 | `cima-xqtl` | `bash ./scripts/xqtl.sh --gene CDC42 --max 20` |
-| `cima-smr-gwas` | `bash ./scripts/smr.sh --gene ARL14EP --max 10` |
+| `cima-smr-gwas` | `bash ./scripts/smr.sh --gene CTLA4 --max 10` |
 | `cima-clm` | `python ./scripts/run_demo.py /path/to/CIMA-CLM_Demo --out ./clm_out` |
 
 ### 自然语言触发示例
@@ -170,15 +174,15 @@ npx skills add CNGBdb-org/BioLens-Skill --skill cima-clm -a cursor -g -y
 
 | # | 示例问法 | 对应 Skill |
 |---|----------|------------|
-| 1 | CIMA 有哪些可下载数据？TrueBlood Resource 在哪里？NK 的 scRNA h5ad 如何获取？ | `cima-resource` |
-| 2 | CIMA 门户有哪些谱系视图？请在 B 视图绘制 CD8A 的 UMAP，并查看 donor 临床信息。 | `cima-atlas-explore` |
-| 3 | 请按 CIMA 流程对这份 PBMC h5ad 做质控、聚类，并按系群拆分。 | `cima-scrna-preprocessing` |
-| 4 | 请对 Annotation_1st 结果做系群子聚类，并用 L1–L4 marker 签名进行注释。 | `cima-cell-annotation` |
-| 5 | 请按 sample × cell type 聚合为 pseudobulk，并估计 age / sex 对表达方差的贡献。 | `cima-pseudobulk-variance` |
-| 6 | 请在 CPU 环境下预处理该 scATAC peak 矩阵。 | `cima-scratac-preprocessing` |
-| 7 | 请将 scRNA 细胞类型标签迁移至配对的 scATAC 数据。 | `cima-multiomics-integration` |
-| 8 | 请在 CPU 环境下完成 CIMA metacell 聚合。 | `cima-metacell` |
-| 9 | FOXP3 在 CIMA 中调控哪些下游基因？请列出 B 系群相关 eRegulon。 | `cima-grn-scenicplus` |
-| 10 | 请查询 CDC42 的 cis-eQTL，以及 Bn_TCL1A 的 cis-caQTL。 | `cima-xqtl` |
-| 11 | 请查询某基因（如 ARL14EP）在 CIMA SMR 结果中与哪些免疫相关性状关联。 | `cima-smr-gwas` |
-| 12 | 请运行 CIMA-CLM in silico mutagenesis 演示。 | `cima-clm` |
+| 0 | CIMA 有哪些数据？在哪？/ TrueBlood resource 本地路径 / NK h5ad 在哪 | `cima-resource` |
+| 0b | CIMA 有哪些视图？/ B 视图画 CD8A UMAP / donor 临床表 | `cima-atlas-explore` |
+| 1 | 按 CIMA 流程预处理这个 PBMC h5ad / 对 raw counts 做 QC 聚类再按系群拆分 | `cima-scrna-preprocessing` |
+| 2 | 对 CIMA Annotation_1st 做系群子聚类 + L1–L4 marker 签名注释 | `cima-cell-annotation` |
+| 3 | 按 sample×celltype 做 pseudobulk，看看 age/sex 各解释多少方差 | `cima-pseudobulk-variance` |
+| 4 | 没有 GPU，用 CPU 预处理这个 scATAC peak 矩阵 | `cima-scratac-preprocessing` |
+| 5 | 把 scRNA 的细胞类型迁到 scATAC（不用 SCGLUE） | `cima-multiomics-integration` |
+| 6 | SEACells 装不了，用 CPU 做 CIMA metacell | `cima-metacell` |
+| 7 | FOXP3 在 CIMA 里调控哪些基因？/ 列一下 B 系群 eRegulon | `cima-grn-scenicplus` |
+| 8 | 查 CDC42 的 cis-eQTL / Bn_TCL1A 的 cis-caQTL | `cima-xqtl` |
+| 9 | CTLA4 / BLK 在显著 SMR 里和哪些免疫病有关？（默认疾病表，勿用 caQTL CSV） | `cima-smr-gwas` |
+| 10 | 跑一下 CIMA-CLM in silico mutagenesis demo | `cima-clm` |

@@ -5,11 +5,11 @@
   "readme": "https://db.cngb.org/trueblood/readme.en.txt",
   "citation": "Yin et al., Science 2026; DOI 10.1126/science.adt3130",
   "download_tips": [
-    "This skill package has no local CIMA_Resource data — answer “where” with public FTP URLs.",
-    "Public FTP root: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/",
+    "Deployed CNGBdb agents: data lives under /public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource (override with env CIMA_RESOURCE_ROOT).",
+    "Answer users with local absolute paths first; portal/FTP are mirrors for external download only.",
     "Portal catalog: https://db.cngb.org/trueblood/cima/resource",
-    "Large downloads may use RaySync: https://ftp.cngb.org/pub/course/tool/raysync/",
-    "Do not invent /public/... local paths unless the user already has a local mirror."
+    "Public FTP mirror: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/",
+    "Large external downloads may use RaySync; on internal deploy prefer reading local_path directly."
   ],
   "categories": [
     "Metadata",
@@ -316,7 +316,7 @@
       "name": "CIMA_caQTL_eQTL_SMR.csv",
       "size": "3.5MB",
       "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_caQTL_eQTL_SMR.csv",
-      "note": "caQTL–eQTL SMR links",
+      "note": "caQTL→eQTL molecular SMR only (NOT gene–disease); use cima-smr-gwas --source caqtl",
       "related_skill": "cima-smr-gwas",
       "relative_path": "xQTL/CIMA_caQTL_eQTL_SMR.csv",
       "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_caQTL_eQTL_SMR.csv"
@@ -326,7 +326,7 @@
       "name": "CIMA_Significant_SMR_Pleiotropic_Associations.xlsx",
       "size": "398.7KB",
       "url": "https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx",
-      "note": null,
+      "note": "DEFAULT for immune-disease SMR questions (gene–trait); cima-smr-gwas default table",
       "related_skill": "cima-smr-gwas",
       "relative_path": "xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx",
       "local_path": "/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/CIMA_Significant_SMR_Pleiotropic_Associations.xlsx"

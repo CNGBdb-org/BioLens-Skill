@@ -15,9 +15,9 @@ RNA 与 ATAC **共享 8 个 donor**（`CIMA_H048`…），可做标签迁移 + m
 ### 一键跑通（配对）
 
 ```bash
-DEMO=cima/demo
+DEMO=skills/cima/demo
 OUT="$DEMO/paired_run_out"
-SK=cima
+SK=skills/cima
 mkdir -p "$OUT"
 
 # 1 scRNA
@@ -86,4 +86,4 @@ python ./scripts/cima_metacell_cpu.py \
 
 非配对跑通时 Step6 配对为 0。产物目录 `run_out/` 已 gitignore。
 
-GRN / xQTL / SMR / Resource / CLM 不依赖本目录 h5ad。数据清单与 FTP 位置用 `cima-resource`。
+GRN / xQTL / SMR / Resource / CLM 不依赖本目录 h5ad。数据清单与本地路径用 `cima-resource`。

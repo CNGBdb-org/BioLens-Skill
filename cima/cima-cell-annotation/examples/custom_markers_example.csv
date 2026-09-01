@@ -1,0 +1,7 @@
+label,markers,cell_type_l1
+Naive_B_like,"MS4A1+,CD79A+,CD27-,IGHD+",B cells
+Memory_B_like,"MS4A1+,CD79A+,CD27+,IGHD-",B cells
+CD4_Tn_like,"CD3D+,CD4+,CD8A-,CCR7+,SELL+",CD4 T
+CD8_CTL_like,"CD3D+,CD8A+,GZMB+,NKG7+",CD8 T
+NK_CD16_like,"NKG7+,FCGR3A+,CD3D-",NK
+Mono_CD14_like,"LYZ+,CD14+,FCGR3A-",Myeloid

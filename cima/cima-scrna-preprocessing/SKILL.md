@@ -3,14 +3,13 @@ name: cima-scrna-preprocessing
 description: >-
   CIMA scRNA-seq preprocessing: QC filtering, stratified subsampling, HVG, PCA,
   Harmony batch correction, UMAP, Leiden, and lineage split (B/myeloid/TNK/erythrocyte).
-  Use for CIMA-compatible raw h5ad → Annotation_1st. Not for generic Scanpy-only QC
-  (use scanpy-qc / scanpy-preprocess / scanpy-cluster), already-annotated subtype
-  work (use cima-cell-annotation), portal explore/GRN/xQTL/SMR (use cima), or spatial
-  (use spatial-qc / hesta).
+  Supports --profile auto|small|large for <100-sample cohorts. Use for CIMA-compatible
+  raw h5ad → Annotation_1st. Not for subtype annotation (use cima-cell-annotation) or
+  portal explore (use cima-atlas-explore).
 compatibility: Python 3.10+, scanpy, igraph; optional harmony-pytorch
 metadata:
   author: cngbdb-skill-team
-  version: "1.0.0"
+  version: "1.1.0"
   scope: database-unique
   depth: L5
   domain: single-cell
@@ -53,37 +52,56 @@ CIMA 流水线 Step 1（L5）：raw h5ad → QC → HVG → PCA → Harmony → 
 |------|------|------|
 | `--input` | 是 | raw h5ad |
 | `--output` | 是 | 输出目录 |
-| `--n-target` | 否 | 抽样目标细胞数（默认 50000） |
-| `--hvg-n` | 否 | HVG 数（默认 2500） |
+| `--profile` | 否 | `auto`（默认）/ `small` / `large` |
+| `--n-target` | 否 | 抽样目标（large 默认 50000；small 不抽样） |
+| `--hvg-n` | 否 | HVG 数（large 2500 / small 1500） |
+| `--resolution` | 否 | Leiden（large 1.5 / small 1.0） |
 | `--celltype-col` | 否 | 已有注释列 |
 | `--sample-col` | 否 | 样本列 |
 | `--batch-key` | 否 | Harmony 批次键 |
 
+## Profiles
+
+| profile | 何时 | 行为 |
+|---------|------|------|
+| `auto` | 默认 | `n_samples < 100` 或 `n_obs < 15000` → small，否则 large |
+| `small` | 小队列 / 预实验 | 不抽样；样本少时跳过 Harmony；更少 HVG/PC/neighbors |
+| `large` | CIMA 规模 | 原论文对齐默认 |
+
+写出 `preprocessing_profile.json` 便于核对。
+
 ## Necessary questions
 
 1. 未给本地 h5ad 路径 → 补问路径（或先 `geo-sra` / `sc-ingest`）
-2. 用户只要门户查询而非本地预处理 → 改用 `cima`
-3. 非 CIMA 通用流水线 → 确认是否改用 `scanpy-*`
+2. 样本数是否 &lt;100 → 确认走 `small`（或 `--profile auto`）
+3. 用户只要门户查询而非本地预处理 → 改用 `cima-atlas-explore`
 
 ## Workflow
 
-1. **Gather**：确认输入 h5ad、输出目录、是否抽样 / Harmony  
+1. **Gather**：确认输入 h5ad、输出目录、profile  
 2. **Act**：只跑 `./scripts/cima_scrna_preprocessing_cpu.py`  
-3. **Verify**：检查 `CIMA_Annotation_1st.h5ad` 与 figures；不编造聚类结果  
+3. **Verify**：检查 `CIMA_Annotation_1st.h5ad`、`preprocessing_profile.json` 与 figures  
 
 ## Commands
 
 ```bash
+# 自动识别小样本
 python ./scripts/cima_scrna_preprocessing_cpu.py \
   --input /path/to/raw.h5ad \
   --output ./step1_output/ \
-  --n-target 5000 \
-  --hvg-n 2000
+  --profile auto
+
+# 强制小样本预实验参数
+python ./scripts/cima_scrna_preprocessing_cpu.py \
+  --input /path/to/raw.h5ad \
+  --output ./step1_small/ \
+  --profile small
 ```
 
 ## Output contract
 
 - `CIMA_Annotation_1st.h5ad` — 主结果（UMAP + Leiden）
+- `preprocessing_profile.json` — 实际选用的 profile / 参数
 - `CIMA_B_cells.h5ad` / `CIMA_myeloid.h5ad` / `CIMA_TNK.h5ad` — 系群拆分
 - `CIMA_hvg_keep.csv`、`figures/umap_*.pdf`
 - 无脚本产物不得虚构细胞数 / 聚类标签

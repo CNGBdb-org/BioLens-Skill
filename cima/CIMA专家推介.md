@@ -12,6 +12,25 @@
 
 ---
 
+## 适用场景与边界（对内 / 对外口径）
+
+**核心价值**：帮科研人员**快速读懂并调用 CIMA 资产**，以及用论文对齐默认把 **预实验流水线跑通**——不是替代成熟下游定制脚本，也不是通用「万能单细胞 Agent」。
+
+| 适合 | 不适合（请改预期或换工具） |
+|------|---------------------------|
+| 查 CIMA 数据在哪、图谱组成 / 衰老 / 基因表达 | 把 Seurat / ArchR / Signac 全流程换成 R 一键替代 |
+| 查预计算 GRN / cis-xQTL / 免疫病 SMR | 对用户自己队列**从零重算**全基因组 eQTL / SMR |
+| 按 CIMA 步骤做 scRNA→注释→pseudobulk、scATAC→整合 demo | 复杂多轮人工注释的完全自动替代（迭代注释在演进中） |
+| 小规模配对 demo / 预实验摸底 | 默认大队列参数硬套到 &lt;100 样本课题（需 small profile） |
+
+**差异化不在「又一个聚类算法」**，而在：中国人免疫多组学现成结果（xQTL / SMR / GRN / 73 型本体）+ 可复现的 Skill 路由。
+
+问「基因和免疫病有没有 SMR」时，必须走 `cima-smr-gwas` **默认疾病表**  
+`CIMA_Significant_SMR_Pleiotropic_Associations.xlsx`；  
+`CIMA_caQTL_eQTL_SMR.csv` 只是 caQTL→eQTL 分子层链接，**不是**疾病性状表。
+
+---
+
 ## 为什么做
 
 CIMA 数据体量大（428 名中国成人 donor、千万级 PBMC、73 种 `cell_type_l4`），门户和 FTP 资源齐全，但日常使用仍常卡在：
@@ -29,7 +48,7 @@ CIMA 数据体量大（428 名中国成人 donor、千万级 PBMC、73 种 `cell
 
 ### 资源与图谱
 
-- CIMA 有哪些可下载数据？FTP 在哪？  
+- CIMA 有哪些可下载数据？本地路径在哪？  
 - 门户上可以探索哪些谱系子集（全血 PBMC、CD4T、CD8T、B、髓系、NK）？  
 - 428 人队列的年龄、性别大概怎么分布？  
 
@@ -62,7 +81,7 @@ scRNA 预处理与 L1–L4 注释 → pseudobulk → scATAC → 多组学标签�
 
 | Skill | 用途 |
 |-------|------|
-| `cima-resource` | 数据清单与公开 FTP 位置 |
+| `cima-resource` | 数据清单与本地 / FTP 路径 |
 | `cima-atlas-explore` | 谱系子集浏览、donor、组成、基因 UMAP（不含 GRN/xQTL/SMR/清单） |
 | `cima-scrna-preprocessing` | scRNA QC → 聚类 → 系群拆分 |
 | `cima-cell-annotation` | TrueBlood L1–L4 marker 注释 |
@@ -80,20 +99,19 @@ scRNA 预处理与 L1–L4 注释 → pseudobulk → scATAC → 多组学标签�
 
 ---
 
-## 数据位置提示
+## 部署数据提示
 
-本 Skill 包**不附带** CIMA Resource 本地数据。问「有哪些 / 在哪」时回答公开 FTP：
+公开 Resource 与部署环境本地镜像一致时，回答「在哪」优先：
 
-`https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/`
+`/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/`
 
-门户：https://db.cngb.org/trueblood/cima/resource  
-大文件可用 RaySync：https://ftp.cngb.org/pub/course/tool/raysync/
+（可用环境变量 `CIMA_RESOURCE_ROOT` 覆盖。）
 
 ---
 
 ## 一句话对外口径
 
-> 覆盖图谱浏览、组成衰老、调控与遗传，再到本地分析流水线——让「读一篇 Science」变成「对着专家把问题问清楚」。
+> CIMA 专家：用问答打开中国人免疫多组学资产与预实验流水线——查图谱 / xQTL / SMR / GRN，并按论文默认跑通本地步骤；不替代下游定制分析，也不假装能从零重算全基因组 QTL。
 
 ---
 

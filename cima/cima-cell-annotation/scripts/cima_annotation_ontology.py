@@ -276,10 +276,19 @@ def annotate_adata(
     onto: dict | None = None,
     prefer_l1_from: str | None = "celltype_1st",
     min_margin: float = 0.0,
+    force_l1: str | None = None,
 ):
-    """In-place write cell_type_l1..l4 (+ score columns)."""
+    """In-place write cell_type_l1..l4 (+ score columns).
+
+    force_l1: if set (e.g. \"Custom\"), skip L1 scoring and assign every cell that label.
+    """
     onto = onto or load_ontology()
-    adata.obs["cell_type_l1"] = assign_l1(adata, onto=onto, prefer_existing=prefer_l1_from).values
+    if force_l1:
+        adata.obs["cell_type_l1"] = str(force_l1)
+    else:
+        adata.obs["cell_type_l1"] = assign_l1(
+            adata, onto=onto, prefer_existing=prefer_l1_from
+        ).values
     assigned = assign_hierarchical(
         adata,
         cluster_key=cluster_key,
@@ -289,4 +298,307 @@ def annotate_adata(
     )
     for col in assigned.columns:
         adata.obs[col] = assigned[col].values
+    # Mirror leaf into custom_label when ontology came from a user marker table
+    if onto.get("source_kind") in {"custom_marker_table", "merged_marker_table"}:
+        adata.obs["custom_label"] = assigned["annotation_leaf"].astype(str).values
     return adata
+
+
+# ---------------------------------------------------------------------------
+# Custom / merge marker tables
+# ---------------------------------------------------------------------------
+
+_LABEL_COLS = ("label", "celltype", "cell_type", "name", "annotation")
+_MARKER_COLS = ("markers", "marker", "signature")
+_POS_COLS = ("positive", "pos", "markers_pos")
+_NEG_COLS = ("negative", "neg", "markers_neg")
+_L1_COLS = ("cell_type_l1", "l1", "lineage", "lineage_l1")
+
+
+def _pick_col(columns: list[str], candidates: tuple[str, ...]) -> str | None:
+    lower = {c.lower(): c for c in columns}
+    for cand in candidates:
+        if cand in lower:
+            return lower[cand]
+    return None
+
+
+def _genes_to_marker_string(positive: list[str], negative: list[str]) -> str:
+    parts = [f"{g}+" for g in positive] + [f"{g}-" for g in negative]
+    return ",".join(parts)
+
+
+def load_marker_table(path: str | Path) -> pd.DataFrame:
+    """Load a user marker table (csv/tsv).
+
+    Accepted columns (case-insensitive):
+      - label | celltype | name  (required)
+      - markers | marker         (TrueBlood-style: GENE+,GENE-)
+      - OR positive / negative   (comma/semicolon/space separated gene lists)
+      - cell_type_l1 | l1        (optional; required for merge of *new* labels)
+    """
+    path = Path(path)
+    if not path.is_file():
+        raise FileNotFoundError(f"Marker table not found: {path}")
+    sep = "\t" if path.suffix.lower() in {".tsv", ".txt"} else ","
+    df = pd.read_csv(path, sep=sep)
+    if df.empty:
+        raise ValueError(f"Marker table is empty: {path}")
+
+    label_col = _pick_col(list(df.columns), _LABEL_COLS)
+    if not label_col:
+        raise ValueError(
+            f"Marker table needs a label column ({'/'.join(_LABEL_COLS)}). Got: {list(df.columns)}"
+        )
+    marker_col = _pick_col(list(df.columns), _MARKER_COLS)
+    pos_col = _pick_col(list(df.columns), _POS_COLS)
+    neg_col = _pick_col(list(df.columns), _NEG_COLS)
+    l1_col = _pick_col(list(df.columns), _L1_COLS)
+
+    if not marker_col and not pos_col:
+        raise ValueError(
+            "Marker table needs 'markers' (GENE+,GENE-) or 'positive'[/negative] columns."
+        )
+
+    rows = []
+    for _, r in df.iterrows():
+        label = str(r[label_col]).strip()
+        if not label or label.lower() == "nan":
+            continue
+        if marker_col and pd.notna(r.get(marker_col)) and str(r[marker_col]).strip():
+            marker = str(r[marker_col]).strip()
+            pos, neg = parse_marker_string(marker)
+        else:
+            def _split_genes(val) -> list[str]:
+                if val is None or (isinstance(val, float) and np.isnan(val)):
+                    return []
+                text = str(val).strip()
+                if not text or text.lower() == "nan":
+                    return []
+                parts = re.split(r"[,;|\s]+", text)
+                return [p.strip() for p in parts if p.strip()]
+
+            pos = _split_genes(r[pos_col]) if pos_col else []
+            neg = _split_genes(r[neg_col]) if neg_col else []
+            marker = _genes_to_marker_string(pos, neg)
+        if not pos and not neg:
+            raise ValueError(f"Row '{label}' has no usable markers.")
+        l1 = None
+        if l1_col and pd.notna(r.get(l1_col)) and str(r[l1_col]).strip():
+            l1 = str(r[l1_col]).strip()
+        rows.append(
+            {
+                "label": label,
+                "marker": marker,
+                "positive": pos,
+                "negative": neg,
+                "cell_type_l1": l1,
+            }
+        )
+    if not rows:
+        raise ValueError(f"No valid marker rows in {path}")
+    return pd.DataFrame(rows)
+
+
+def ontology_from_marker_table(
+    table: pd.DataFrame,
+    *,
+    default_l1: str = "Custom",
+    source_path: str | None = None,
+) -> dict:
+    """Build a minimal ontology: each row is a leaf under its L1 (or default_l1)."""
+    l1_names: list[str] = []
+    for v in table["cell_type_l1"].tolist():
+        name = v if isinstance(v, str) and v else default_l1
+        if name not in l1_names:
+            l1_names.append(name)
+
+    nodes: list[dict] = []
+    for l1 in l1_names:
+        nodes.append(
+            {
+                "id": f"custom_l1_{l1}",
+                "name": l1,
+                "level": 1,
+                "is_leaf": False,
+                "marker": "",
+                "cell_type_l1": l1,
+                "cell_type_l4": None,
+                "path": [l1],
+            }
+        )
+
+    for i, r in table.iterrows():
+        l1 = r["cell_type_l1"] if isinstance(r["cell_type_l1"], str) and r["cell_type_l1"] else default_l1
+        label = str(r["label"])
+        nodes.append(
+            {
+                "id": f"custom_leaf_{i}_{label}",
+                "name": label,
+                "level": 4,
+                "is_leaf": True,
+                "marker": r["marker"],
+                "cell_type_l1": l1,
+                "cell_type_l2": label,
+                "cell_type_l3": label,
+                "cell_type_l4": label,
+                "path": [l1, label],
+            }
+        )
+
+    return {
+        "source": source_path or "custom_marker_table",
+        "source_kind": "custom_marker_table",
+        "dataset": "user-provided markers",
+        "n_nodes": len(nodes),
+        "n_leaves": int(sum(1 for n in nodes if n.get("is_leaf"))),
+        "l1_lineages": l1_names,
+        "alias_to_canonical": {},
+        "edges": [],
+        "nodes": nodes,
+    }
+
+
+def merge_ontologies(builtin: dict, custom_table: pd.DataFrame, *, source_path: str | None = None) -> dict:
+    """Merge user markers into TrueBlood ontology.
+
+    - Matching leaf *name* → override marker string.
+    - New label → add leaf under cell_type_l1 (required).
+    """
+    import copy
+
+    onto = copy.deepcopy(builtin)
+    by_name = {n["name"]: n for n in onto["nodes"]}
+    added = 0
+    overridden = 0
+
+    for i, r in custom_table.iterrows():
+        label = str(r["label"])
+        if label in by_name and by_name[label].get("is_leaf"):
+            by_name[label]["marker"] = r["marker"]
+            overridden += 1
+            continue
+        l1 = r["cell_type_l1"]
+        if not isinstance(l1, str) or not l1:
+            raise ValueError(
+                f"New custom label '{label}' needs cell_type_l1/l1 for --marker-mode merge "
+                f"(or use --marker-mode custom)."
+            )
+        if l1 not in by_name:
+            # allow new L1 bucket
+            node_l1 = {
+                "id": f"custom_l1_{l1}",
+                "name": l1,
+                "level": 1,
+                "is_leaf": False,
+                "marker": "",
+                "cell_type_l1": l1,
+                "cell_type_l4": None,
+                "path": [l1],
+            }
+            onto["nodes"].append(node_l1)
+            by_name[l1] = node_l1
+            lineages = list(onto.get("l1_lineages") or [])
+            if l1 not in lineages:
+                lineages.append(l1)
+                onto["l1_lineages"] = lineages
+
+        leaf = {
+            "id": f"custom_leaf_{i}_{label}",
+            "name": label,
+            "level": 4,
+            "is_leaf": True,
+            "marker": r["marker"],
+            "cell_type_l1": l1,
+            "cell_type_l2": label,
+            "cell_type_l3": label,
+            "cell_type_l4": label,
+            "path": [l1, label],
+        }
+        onto["nodes"].append(leaf)
+        by_name[label] = leaf
+        added += 1
+
+    onto["n_nodes"] = len(onto["nodes"])
+    onto["n_leaves"] = int(sum(1 for n in onto["nodes"] if n.get("is_leaf")))
+    onto["source_kind"] = "merged_marker_table"
+    onto["custom_marker_source"] = source_path
+    onto["merge_stats"] = {"overridden": overridden, "added": added}
+    return onto
+
+
+def resolve_ontology(
+    *,
+    marker_table: str | None,
+    marker_mode: str = "builtin",
+    ontology_path: str | None = None,
+) -> tuple[dict, str | None]:
+    """Return (ontology, force_l1).
+
+    force_l1 is \"Custom\" when using a flat custom table with no per-row L1.
+    """
+    mode = (marker_mode or "builtin").lower()
+    if mode not in {"builtin", "custom", "merge"}:
+        raise ValueError(f"Unknown marker_mode: {marker_mode!r}")
+
+    builtin = load_ontology(ontology_path)
+
+    if mode == "builtin":
+        if marker_table:
+            raise ValueError("--marker-table requires --marker-mode custom or merge")
+        return builtin, None
+
+    if not marker_table:
+        raise ValueError(f"--marker-mode {mode} requires --marker-table")
+
+    table = load_marker_table(marker_table)
+    if mode == "custom":
+        has_l1 = table["cell_type_l1"].notna().any()
+        onto = ontology_from_marker_table(
+            table,
+            default_l1="Custom",
+            source_path=str(marker_table),
+        )
+        force = None if has_l1 else "Custom"
+        return onto, force
+
+    onto = merge_ontologies(builtin, table, source_path=str(marker_table))
+    return onto, None
+
+
+def marker_gene_coverage(adata, onto: dict) -> dict[str, object]:
+    """Summarize how many marker genes are present in adata.var_names."""
+    var = set(map(str, adata.var_names))
+    total_pos = total_neg = hit_pos = hit_neg = 0
+    missing: list[str] = []
+    for node in onto["nodes"]:
+        if not node.get("is_leaf"):
+            continue
+        pos, neg = parse_marker_string(node.get("marker") or "")
+        total_pos += len(pos)
+        total_neg += len(neg)
+        for g in pos:
+            if g in var:
+                hit_pos += 1
+            else:
+                missing.append(g)
+        for g in neg:
+            if g in var:
+                hit_neg += 1
+            else:
+                missing.append(g)
+    # unique missing, preserve order
+    seen = set()
+    missing_u = []
+    for g in missing:
+        if g not in seen:
+            seen.add(g)
+            missing_u.append(g)
+    return {
+        "leaf_markers_pos": total_pos,
+        "leaf_markers_neg": total_neg,
+        "present_pos": hit_pos,
+        "present_neg": hit_neg,
+        "missing_genes": missing_u[:40],
+        "n_missing": len(missing_u),
+    }

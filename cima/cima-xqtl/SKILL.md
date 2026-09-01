@@ -22,7 +22,9 @@ metadata:
 
 # CIMA cis-xQTL Lookup
 
-独立查询预计算 cis-eQTL / cis-caQTL（自带脚本，**不依赖**探索 Skill `cima`）。
+独立查询**预计算** cis-eQTL / cis-caQTL（自带脚本，**不依赖**探索 Skill `cima`）。
+
+> **边界**：本 Skill 是查 CIMA 已发布 lead 表，**不是**对用户自有表达矩阵跑 tensorQTL / sc-eQTL。若用户要「自己算 eQTL」，应说明能力边界并改用外部流程。
 
 ## Use When
 
@@ -33,16 +35,17 @@ metadata:
 
 | 需求 | 交给 |
 |------|------|
-| SMR / 免疫疾病因果关联 | `cima-smr-gwas` |
-| 门户表达 UMAP / donor | `cima-atlas-explore`（或 `cima`） |
+| SMR / 免疫疾病因果关联 | `cima-smr-gwas`（默认疾病 xlsx，不是 caQTL→eQTL CSV） |
+| 门户表达 UMAP / donor | `cima-atlas-explore` |
 | 本地 pseudobulk 矩阵 | `cima-pseudobulk-variance` |
+| 用户数据从头算 eQTL | 超出本 Skill；勿假装已覆盖 |
 
 ## Domain recognition
 
 | 维度 | 约定 |
 |------|------|
-| 数据位置 | 公开 FTP：`https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/`（本包无本地表） |
-| 脚本取数 | FTP 下载 → 缓存 `~/.cache/cima-spatial/tables/` |
+| 本地表（优先） | `/public/.../CIMA_Resource/xQTL/`（`CIMA_RESOURCE_ROOT` 可覆盖） |
+| 外网回退 | FTP → `~/.cache/cima-spatial/tables/` |
 
 ## Required inputs
 
@@ -74,7 +77,7 @@ bash ./scripts/xqtl.sh --analysis cis-caQTL --celltype Bn_TCL1A --max 20
 
 ## Errors and fallback
 
-- FTP / 缓存失败 → 检查网络 / `CIMA_CACHE`；表位置见 FTP xQTL 目录  
+- 本地与 FTP 都失败 → 检查 `CIMA_RESOURCE_ROOT` / 网络 / `CIMA_CACHE`  
 - 无命中 → 放宽 celltype 或换 gene  
 
 ## Examples
@@ -88,5 +91,6 @@ bash ./scripts/xqtl.sh --gene CDC42 --analysis cis-eQTL --max 20
 
 ## Citation
 
-FTP: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/  
+Local: `/public/database/CNGBdb/pub/SciRAID/cdcp/cima/CIMA_Resource/xQTL/`  
+FTP mirror: https://ftp.cngb.org/pub/SciRAID/trueblood/cima/CIMA_Resource/xQTL/  
 Yin et al., Science 2026 — DOI [10.1126/science.adt3130](https://doi.org/10.1126/science.adt3130)
