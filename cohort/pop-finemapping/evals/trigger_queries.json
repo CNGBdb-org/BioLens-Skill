@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "对这个 locus 做 SuSiE 精细定位",
+    "计算 PIP 和 95% credible set",
+    "画 LocusZoom"
+  ],
+  "should_not_trigger": [
+    "全基因组 GWAS 关联",
+    "共定位 coloc",
+    "孟德尔随机化"
+  ]
+}

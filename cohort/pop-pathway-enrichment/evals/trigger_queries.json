@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "GWAS sumstats 做 MAGMA 通路富集",
+    "基因水平关联聚合到 GO/KEGG",
+    "组织特异性富集"
+  ],
+  "should_not_trigger": [
+    "查 GO 术语定义",
+    "查 KEGG 通路图",
+    "LDSC 遗传度"
+  ]
+}

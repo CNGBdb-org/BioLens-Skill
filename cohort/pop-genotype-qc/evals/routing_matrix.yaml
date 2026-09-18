@@ -1,0 +1,14 @@
+competing_skills:
+- pop-structure-pca
+- pop-gwas-association
+- pop-variant-annotation
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 帮我跑 GWAS
+  expected_skill: pop-gwas-association
+  not: pop-genotype-qc
+- query: 做 PCA 看群体结构
+  expected_skill: pop-structure-pca
+  not: pop-genotype-qc

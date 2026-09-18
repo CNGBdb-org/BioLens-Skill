@@ -1,0 +1,17 @@
+competing_skills:
+  - gwascatalog
+  - pharmgkb
+  - clinvar
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "EGFR 关联哪些疾病"
+    expected_skill: opentargets
+  - query: "BRCA1 breast cancer Open Targets"
+    expected_skill: opentargets
+  - query: "CPIC warfarin"
+    expected_skill: gwascatalog
+    not: opentargets
+  - query: "ClinVar VUS"
+    expected_skill: gwascatalog
+    not: opentargets

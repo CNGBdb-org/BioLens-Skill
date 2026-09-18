@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "检测 ROH 纯合片段",
+    "计算近交系数 F(ROH)",
+    "Fhat 近交"
+  ],
+  "should_not_trigger": [
+    "选择信号 iHS",
+    "LD 衰减",
+    "亲缘关系 IBD 质控"
+  ]
+}

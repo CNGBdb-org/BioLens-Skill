@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "rs80357906 在哪条染色体",
+    "坐标 17:43057062 对应哪个 rsID",
+    "HGVS 转 rsID"
+  ],
+  "should_not_trigger": [
+    "这个变异致病吗",
+    "gnomAD AF 多少",
+    "HESTA 基因表达"
+  ]
+}

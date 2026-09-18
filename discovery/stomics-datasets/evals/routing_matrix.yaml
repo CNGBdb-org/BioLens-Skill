@@ -1,0 +1,17 @@
+cases:
+  - query: CNGB Brain spatial atlases
+    expected_skill: stomics-datasets
+  - query: STDS0000001 list samples
+    expected_skill: stomics-datasets
+  - query: HESTA CS23 SOX2
+    expected_skill: hesta
+    not: stomics-datasets
+  - query: CIMA CD8A UMAP
+    expected_skill: cima
+    not: stomics-datasets
+  - query: MOSTA Sox2
+    expected_skill: mosta
+    not: stomics-datasets
+  - query: GEO liver scRNA
+    expected_skill: geo-sra
+    not: stomics-datasets

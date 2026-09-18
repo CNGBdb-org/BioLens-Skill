@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "这段区域有哪些 CNV",
+    "nsv516481"
+  ],
+  "should_not_trigger": [
+    "rs80357906 致病",
+    "gnomAD SNV AF"
+  ]
+}

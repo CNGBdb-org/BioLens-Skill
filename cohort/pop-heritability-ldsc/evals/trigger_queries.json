@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 LDSC 估计遗传度 h2",
+    "分区遗传度富集",
+    "两个性状遗传相关 rg"
+  ],
+  "should_not_trigger": [
+    "跑 GWAS 关联",
+    "MAGMA 通路富集",
+    "算 PRS"
+  ]
+}

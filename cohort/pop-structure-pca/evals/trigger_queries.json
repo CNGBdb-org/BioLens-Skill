@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "帮我做 PCA 分析群体结构",
+    "这个群体有没有分层，帮我聚类",
+    "画 PC1 vs PC2 散点图并检测离群样本"
+  ],
+  "should_not_trigger": [
+    "GWAS 前质控 missingness",
+    "跑 PLINK 关联分析",
+    "计算 PRS"
+  ]
+}

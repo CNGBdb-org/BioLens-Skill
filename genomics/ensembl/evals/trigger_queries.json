@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "BRCA1 Ensembl ID",
+    "VEP 注释这个 HGVS",
+    "TP53 同源基因"
+  ],
+  "should_not_trigger": [
+    "致病吗",
+    "gnomAD AF",
+    "UniProt P38398 功能"
+  ]
+}

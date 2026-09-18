@@ -1,0 +1,14 @@
+competing_skills:
+- pop-gwas-association
+- gwascatalog
+- pop-finemapping
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 用 PLINK 跑关联
+  expected_skill: pop-gwas-association
+  not: pop-gwas-visualization
+- query: 这个 SNP 在 GWAS Catalog 关联什么
+  expected_skill: gwascatalog
+  not: pop-gwas-visualization

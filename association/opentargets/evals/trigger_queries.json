@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "EGFR 关联哪些疾病",
+    "BRCA1 breast cancer Open Targets"
+  ],
+  "should_not_trigger": [
+    "CPIC warfarin",
+    "ClinVar VUS"
+  ]
+}

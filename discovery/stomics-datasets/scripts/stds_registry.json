@@ -1,0 +1,2732 @@
+{
+  "STDS0000001": {
+    "species": "人",
+    "api_prefix": "STDS0000001_",
+    "default_obs": "clusters",
+    "display": "Multimodal Analysis of Composition and Spatial Architecture in Human Squamous Cell Carcinoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000001/",
+    "spatial_count": 16,
+    "h5ad_count": 16,
+    "technology": "10x Visium"
+  },
+  "STDS0000002": {
+    "species": "人",
+    "api_prefix": "STDS0000002_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal analysis of human intestinal development at single-cell resolution",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000002/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000003": {
+    "species": "鸡",
+    "api_prefix": "STDS0000003_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal single-cell RNA sequencing of developing chicken hearts identifies interplay between cellular differentiation and morphogenesis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000003/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000004": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000004_",
+    "default_obs": "cell_type",
+    "display": "A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000004/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000005": {
+    "species": "人",
+    "api_prefix": "STDS0000005_",
+    "default_obs": "clusters",
+    "display": "Transcriptome-scale spatial gene expression in the human dorsolateral prefrontal cortex",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000005/",
+    "spatial_count": 12,
+    "h5ad_count": 12,
+    "technology": "10x Visium"
+  },
+  "STDS0000006": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000006_",
+    "default_obs": "clusters",
+    "display": "A coordinated progression of progenitor cell states initiates urinary tract development",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000006/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000007": {
+    "species": "小鼠 / 人",
+    "api_prefix": "STDS0000007_",
+    "default_obs": "clusters",
+    "display": "Integration of spatial and single-cell transcriptomics localizes epithelial cell-immune cross-talk in kidney injury",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000007/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000008": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000008_",
+    "default_obs": "clusters",
+    "display": "The orchestrated cellular and molecular responses of the kidney to endotoxin define a precise sepsis timeline",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000008/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000009": {
+    "species": "人",
+    "api_prefix": "STDS0000009_",
+    "default_obs": "clusters",
+    "display": "Integrating Spatial Transcriptomics and Single-Cell RNA-seq Reveals the Gene Expression Profling of the Human Embryonic Liver",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000009/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000010": {
+    "species": "野猪",
+    "api_prefix": "STDS0000010_",
+    "default_obs": "clusters",
+    "display": "A pig BodyMap transcriptome reveals diverse tissue physiologies and evolutionary dynamics of transcription",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000010/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000011": {
+    "species": "人",
+    "api_prefix": "STDS0000011_",
+    "default_obs": "clusters",
+    "display": "Vitamin D sufficiency enhances differentiation of patient-derived prostate epithelial organoids",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000011/",
+    "spatial_count": 0,
+    "h5ad_count": 6,
+    "technology": "10x Visium"
+  },
+  "STDS0000012": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000012_",
+    "default_obs": "clusters",
+    "display": "Spatial Transcriptomics Reveals Genes Associated with Dysregulated Mitochondrial Functions and Stress Signaling in Alzheimer Disease",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000012/",
+    "spatial_count": 48,
+    "h5ad_count": 48,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000013": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000013_",
+    "default_obs": "clusters",
+    "display": "Single-cell spatial transcriptomic analysis reveals common and divergent features of developing postnatal granule cerebellar cells and medulloblastoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000013/",
+    "spatial_count": 0,
+    "h5ad_count": 9,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000014": {
+    "species": "人",
+    "api_prefix": "STDS0000014_",
+    "default_obs": "clusters",
+    "display": "Spatial detection of fetal marker genes expressed at low level in adult human heart tissue",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000014/",
+    "spatial_count": 10,
+    "h5ad_count": 10,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000015": {
+    "species": "人",
+    "api_prefix": "STDS0000015_",
+    "default_obs": "clusters",
+    "display": "A Spatiotemporal Organ-Wide Gene Expression and Cell Atlas of the Developing Human Heart",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000015/",
+    "spatial_count": 1,
+    "h5ad_count": 2,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000016": {
+    "species": "人",
+    "api_prefix": "STDS0000016_",
+    "default_obs": "clusters",
+    "display": "Exploring inflammatory signatures in arthritic joint biopsies with Spatial Transcriptomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000016/",
+    "spatial_count": 18,
+    "h5ad_count": 18,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000017": {
+    "species": "小鼠 / 人",
+    "api_prefix": "STDS0000017_",
+    "default_obs": "clusters",
+    "display": "Visualization and analysis of gene expression in tissue sections by spatial transcriptomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000017/",
+    "spatial_count": 16,
+    "h5ad_count": 16,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000018": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000018_",
+    "default_obs": "clusters",
+    "display": "Mouse Brain Serial Section 1 (Sagittal-Anterior)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000018/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000019": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000019_",
+    "default_obs": "clusters",
+    "display": "Mouse Brain Serial Section 2 (Sagittal-Anterior)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000019/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000020": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000020_",
+    "default_obs": "clusters",
+    "display": "Mouse Brain Serial Section 2 (Sagittal-Posterior)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000020/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000021": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000021_",
+    "default_obs": "clusters",
+    "display": "Mouse Brain Serial Section 1 (Sagittal-Posterior)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000021/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000022": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000022_",
+    "default_obs": "clusters",
+    "display": "Mouse Brain Section (Coronal)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000022/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000023": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000023_",
+    "default_obs": "clusters",
+    "display": "Mouse Kidney Section (Coronal)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000023/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000024": {
+    "species": "人",
+    "api_prefix": "STDS0000024_",
+    "default_obs": "clusters",
+    "display": "Human Lymph Node",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000024/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000025": {
+    "species": "人",
+    "api_prefix": "STDS0000025_",
+    "default_obs": "clusters",
+    "display": "Human Heart",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000025/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000026": {
+    "species": "人",
+    "api_prefix": "STDS0000026_",
+    "default_obs": "clusters",
+    "display": "Human Breast Cancer (Block A Section 2)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000026/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000027": {
+    "species": "人",
+    "api_prefix": "STDS0000027_",
+    "default_obs": "clusters",
+    "display": "Human Breast Cancer (Block A Section 1)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000027/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000028": {
+    "species": "人",
+    "api_prefix": "STDS0000028_",
+    "default_obs": "clusters",
+    "display": "Invasive Ductal Carcinoma Stained With Fluorescent CD3 Antibody",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000028/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000029": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000029_",
+    "default_obs": "clusters",
+    "display": "Adult Mouse Brain Section 1 (Coronal). Stains: DAPI, Anti-NeuN",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000029/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000030": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000030_",
+    "default_obs": "clusters",
+    "display": "Adult Mouse Brain Section 2 (Coronal). Stains: DAPI, Anti-GFAP, Anti-NeuN",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000030/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000031": {
+    "species": "人",
+    "api_prefix": "STDS0000031_",
+    "default_obs": "clusters",
+    "display": "Adult Human Brain 2 (Cerebral Cortex, Unknown orientation). Stains: Anti-SNAP25, Anti-NFH",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000031/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000032": {
+    "species": "人",
+    "api_prefix": "STDS0000032_",
+    "default_obs": "clusters",
+    "display": "Adult Human Brain 1 (Cerebral Cortex, Unknown orientation). Stains: Anti-GFAP, Anti-NFH",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000032/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000033": {
+    "species": "人",
+    "api_prefix": "STDS0000033_",
+    "default_obs": "clusters",
+    "display": "Human Colorectal Cancer: Whole Transcriptome Analysis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000033/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000034": {
+    "species": "人",
+    "api_prefix": "STDS0000034_",
+    "default_obs": "clusters",
+    "display": "Human Colorectal Cancer: Targeted, Gene Signature Panel",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000034/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000035": {
+    "species": "人",
+    "api_prefix": "STDS0000035_",
+    "default_obs": "clusters",
+    "display": "Human Ovarian Cancer: Whole Transcriptome Analysis. Stains: DAPI, Anti-PanCK, Anti-CD45",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000035/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000036": {
+    "species": "人",
+    "api_prefix": "STDS0000036_",
+    "default_obs": "clusters",
+    "display": "Human Ovarian Cancer: Targeted, Immunology Panel.  Stains: DAPI, Anti-PanCK, Anti-CD45",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000036/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000037": {
+    "species": "人",
+    "api_prefix": "STDS0000037_",
+    "default_obs": "clusters",
+    "display": "Human Ovarian Cancer: Targeted, Pan-Cancer Panel. Stains: DAPI, Anti-PanCK, Anti-CD45",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000037/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000038": {
+    "species": "人",
+    "api_prefix": "STDS0000038_",
+    "default_obs": "clusters",
+    "display": "Human Breast Cancer: Whole Transcriptome Analysis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000038/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000039": {
+    "species": "人",
+    "api_prefix": "STDS0000039_",
+    "default_obs": "clusters",
+    "display": "Human Breast Cancer: Targeted, Immunology Panel",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000039/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000040": {
+    "species": "人",
+    "api_prefix": "STDS0000040_",
+    "default_obs": "clusters",
+    "display": "Human Glioblastoma: Whole Transcriptome Analysis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000040/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000041": {
+    "species": "人",
+    "api_prefix": "STDS0000041_",
+    "default_obs": "clusters",
+    "display": "Human Glioblastoma: Targeted, Pan-Cancer Panel",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000041/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000042": {
+    "species": "人",
+    "api_prefix": "STDS0000042_",
+    "default_obs": "clusters",
+    "display": "Human Spinal Cord: Whole Transcriptome Analysis. Stains: DAPI, Anti-SNAP25, Anti-GFAP, Anti-Myelin CNPase",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000042/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000043": {
+    "species": "人",
+    "api_prefix": "STDS0000043_",
+    "default_obs": "clusters",
+    "display": "Human Spinal Cord: Targeted, Neuroscience Panel. Stains: DAPI, Anti-SNAP25, Anti-GFAP, Anti-Myelin CNPase",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000043/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000044": {
+    "species": "人",
+    "api_prefix": "STDS0000044_",
+    "default_obs": "clusters",
+    "display": "Human Cerebellum: Whole Transcriptome Analysis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000044/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000045": {
+    "species": "人",
+    "api_prefix": "STDS0000045_",
+    "default_obs": "clusters",
+    "display": "Human Cerebellum: Targeted, Neuroscience Panel",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000045/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000046": {
+    "species": "人",
+    "api_prefix": "STDS0000046_",
+    "default_obs": "clusters",
+    "display": "Human Prostate Cancer, Adenocarcinoma with Invasive Carcinoma (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000046/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000047": {
+    "species": "人",
+    "api_prefix": "STDS0000047_",
+    "default_obs": "clusters",
+    "display": "Human Prostate Cancer, Adjacent Normal Section with IF staining (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000047/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000048": {
+    "species": "人",
+    "api_prefix": "STDS0000048_",
+    "default_obs": "clusters",
+    "display": "Normal Human Prostate (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000048/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000049": {
+    "species": "人",
+    "api_prefix": "STDS0000049_",
+    "default_obs": "clusters",
+    "display": "Human Breast Cancer: Ductal Carcinoma In Situ, Invasive Carcinoma (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000049/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000050": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000050_",
+    "default_obs": "clusters",
+    "display": "Adult Mouse Brain, IF stained (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000050/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000051": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000051_",
+    "default_obs": "clusters",
+    "display": "Adult Mouse Kidney (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000051/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000052": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000052_",
+    "default_obs": "clusters",
+    "display": "Adult Mouse Brain (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000052/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000053": {
+    "species": "人",
+    "api_prefix": "STDS0000053_",
+    "default_obs": "clusters",
+    "display": "Spatial maps of prostate cancer transcriptomes reveal an unexplored landscape of heterogeneity",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000053/",
+    "spatial_count": 14,
+    "h5ad_count": 14,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000054": {
+    "species": "人",
+    "api_prefix": "STDS0000054_",
+    "default_obs": "clusters",
+    "display": "Spatially Resolved Transcriptomics Enables Dissection of Genetic Heterogeneity in Stage III Cutaneous Malignant Melanoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000054/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000055": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000055_",
+    "default_obs": "clusters",
+    "display": "Spatial Transcriptome for the Molecular Annotation of Lineage Fates and Cell Identity in Mid-gastrula Mouse Embryo",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000055/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "Geo-seq"
+  },
+  "STDS0000062": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000062_",
+    "default_obs": "annotation",
+    "display": "Spatial transcriptome uncovers the mouse lung architectures and functions",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000062/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000063": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000063_",
+    "default_obs": "clusters",
+    "display": "10x Visium Spatial transcriptomics of murine colon at d14 (mucosa healing) in B cell sufficient/deficient mice",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000063/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000064": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000064_",
+    "default_obs": "clusters",
+    "display": "High-definition spatial transcriptomics for in situ tissue profiling",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000064/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "HDST"
+  },
+  "STDS0000065": {
+    "species": "人",
+    "api_prefix": "STDS0000065_",
+    "default_obs": "clusters",
+    "display": "Atlas of Subcellular RNA Localization Revealed by APEX-Seq",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000065/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "APEX-seq"
+  },
+  "STDS0000066": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000066_",
+    "default_obs": "cell_type",
+    "display": "Molecular atlas of the adult mouse brain.",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000066/",
+    "spatial_count": 75,
+    "h5ad_count": 75,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000067": {
+    "species": "人",
+    "api_prefix": "STDS0000067_",
+    "default_obs": "clusters",
+    "display": "A new epithelial cell subpopulation predicts response to surgery, chemotherapy, and immunotherapy in bladder cancer",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000067/",
+    "spatial_count": 4,
+    "h5ad_count": 7,
+    "technology": "10x Visium"
+  },
+  "STDS0000068": {
+    "species": "人",
+    "api_prefix": "STDS0000068_",
+    "default_obs": "clusters",
+    "display": "Onco-fetal reprogramming of endothelial cells drives immunosuppressive macrophages in Hepatocellular Carcinoma (Nanostring)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000068/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000069": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000069_",
+    "default_obs": "clusters",
+    "display": "High-depth spatial transcriptome analysis by photo-isolation chemistry",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000069/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "PIC-seq"
+  },
+  "STDS0000070": {
+    "species": "斑马鱼 / 鸡 / 人 / 小鼠",
+    "api_prefix": "STDS0000070_",
+    "default_obs": "clusters",
+    "display": "Multi-species tomo-sequencing identifies new major hematopoietic stem cell regulators in the microenvironment of the embryonic aorta",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000070/",
+    "spatial_count": 0,
+    "h5ad_count": 27,
+    "technology": "Tomo-seq"
+  },
+  "STDS0000071": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000071_",
+    "default_obs": "Animal_sex",
+    "display": "Molecular, spatial, and functional single-cell profiling of the hypothalamic preoptic region.",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000071/",
+    "spatial_count": 1,
+    "h5ad_count": 2,
+    "technology": "MERFISH"
+  },
+  "STDS0000072": {
+    "species": "人",
+    "api_prefix": "STDS0000072_",
+    "default_obs": "clusters",
+    "display": "LCM-Seq analysis of microscopically defined human embryo HSC microenvironment",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000072/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "LCM-seq"
+  },
+  "STDS0000073": {
+    "species": "人",
+    "api_prefix": "STDS0000073_",
+    "default_obs": "cell_type",
+    "display": "Integrating microarray-based spatial transcriptomics and single-cell RNA-seq reveals tissue architecture in pancreatic ductal adenocarcinomas 9606",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000073/",
+    "spatial_count": 9,
+    "h5ad_count": 9,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000074": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000074_",
+    "default_obs": "clusters",
+    "display": "Single-cell and spatial transcriptomics reveal somitogenesis in gastruloids",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000074/",
+    "spatial_count": 0,
+    "h5ad_count": 53,
+    "technology": "Tomo-seq"
+  },
+  "STDS0000075": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000075_",
+    "default_obs": "clusters",
+    "display": "High spatial resolution multi-omics atlas sequencing of mouse embryos",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000075/",
+    "spatial_count": 15,
+    "h5ad_count": 15,
+    "technology": "DBiT-seq"
+  },
+  "STDS0000076": {
+    "species": "斑马鱼 / common platanna / 蝾螈",
+    "api_prefix": "STDS0000076_",
+    "default_obs": "clusters",
+    "display": "Spatio-temporal mRNA tracking in the early zebrafish embryo",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000076/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "Tomo-seq"
+  },
+  "STDS0000077": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000077_",
+    "default_obs": "clusters",
+    "display": "Molecular architecture of lineage specification and tissue organization in early mouse embryo",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000077/",
+    "spatial_count": 0,
+    "h5ad_count": 9,
+    "technology": "Geo-seq"
+  },
+  "STDS0000078": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000078_",
+    "default_obs": "clusters",
+    "display": "Spatially mapped single-cell chromatin accessibility",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000078/",
+    "spatial_count": 0,
+    "h5ad_count": 5,
+    "technology": "sci-ATAC-seq,sciMAP-ATAC-seq"
+  },
+  "STDS0000079": {
+    "species": "roundworm",
+    "api_prefix": "STDS0000079_",
+    "default_obs": "clusters",
+    "display": "Spatial Transcriptomics of C. elegans Males and Hermaphrodites Identifies Sex-Specific Differences in Gene Expression Patterns",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000079/",
+    "spatial_count": 0,
+    "h5ad_count": 10,
+    "technology": "Tomo-seq"
+  },
+  "STDS0000080": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000080_",
+    "default_obs": "clusters",
+    "display": "Sci-Space E14 Mouse Embryo Data",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000080/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "sci-Space"
+  },
+  "STDS0000081": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000081_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal dynamics of molecular pathology in amyotrophic lateral sclerosis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000081/",
+    "spatial_count": 331,
+    "h5ad_count": 331,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000083": {
+    "species": "人",
+    "api_prefix": "STDS0000083_",
+    "default_obs": "clusters",
+    "display": "Spatial Transcriptomics of Human Cardiac Tissue",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000083/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000084": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000084_",
+    "default_obs": "cell_type",
+    "display": "Spatial Transcriptomics and In Situ Sequencing to Study Alzheimerâ€™s Disease",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000084/",
+    "spatial_count": 20,
+    "h5ad_count": 20,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000085": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000085_",
+    "default_obs": "cell_type",
+    "display": "Cell types and clonal relations in the mouse brain revealed by single-cell and spatial transcriptomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000085/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000086": {
+    "species": "斑马鱼",
+    "api_prefix": "STDS0000086_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved transcriptomics reveals the architecture of the tumor-microenvironment interface",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000086/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000087": {
+    "species": "",
+    "api_prefix": "STDS0000087_",
+    "default_obs": "clusters",
+    "display": "STDS0000087",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000087/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000088": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000088_",
+    "default_obs": "clusters",
+    "display": "Neuroinflammatory astrocyte subtypes in the mouse brain [Visium]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000088/",
+    "spatial_count": 0,
+    "h5ad_count": 6,
+    "technology": "10x Visium"
+  },
+  "STDS0000089": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000089_",
+    "default_obs": "cell_type",
+    "display": "Interleukin-17 governs hypoxic adaptation of injured epithelium [spatial transcriptomics]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000089/",
+    "spatial_count": 6,
+    "h5ad_count": 6,
+    "technology": "10x Visium"
+  },
+  "STDS0000090": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000090_",
+    "default_obs": "clusters",
+    "display": "Multi-resolution deconvolution of spatial transcriptomics data reveals continuous patterns of inflammation (Spatial scRNA-Seq)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000090/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000091": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000091_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics reveals a role for sensory nerves in preserving cranial suture patency through modulation of BMP/TGFÎ² signaling",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000091/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000092": {
+    "species": "人",
+    "api_prefix": "STDS0000092_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of human brain metastases",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000092/",
+    "spatial_count": 0,
+    "h5ad_count": 6,
+    "technology": "10x Visium"
+  },
+  "STDS0000093": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000093_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptome analysis of gastric cancer which GAN-KP transplanted C57BL/6J mouse",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000093/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000094": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000094_",
+    "default_obs": "clusters",
+    "display": "Clump sequencing exposes the spatial expression programs of intestinal secretory cells",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000094/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "ClumpSeq"
+  },
+  "STDS0000096": {
+    "species": "人",
+    "api_prefix": "STDS0000096_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics unveils ZBTB11 as a regulator of cardiomyocyte degeneration in cardiomyopathy",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000096/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "Tomo-seq"
+  },
+  "STDS0000100": {
+    "species": "人",
+    "api_prefix": "STDS0000100_",
+    "default_obs": "clusters",
+    "display": "Comparison of spatial sequencing in leprosy lesions from lepromatous and reversal reaction patients",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000100/",
+    "spatial_count": 0,
+    "h5ad_count": 6,
+    "technology": "10x Visium"
+  },
+  "STDS0000101": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000101_",
+    "default_obs": "clusters",
+    "display": "Seq-Scope: Submicrometer-resolution spatial barcoding technology that enables microscopic examination of tissue transcriptome at single cell and subcellular levels",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000101/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "Seq-Scope"
+  },
+  "STDS0000102": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000102_",
+    "default_obs": "clusters",
+    "display": "PRDM16 Functions as A Compact Myocardium-Enriched Transcription Factor Required to Maintain Compact Myocardial Cardiomyocyte Identity in Left Ventricle (Spatial Transcriptomics)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000102/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000103": {
+    "species": "人",
+    "api_prefix": "STDS0000103_",
+    "default_obs": "clusters",
+    "display": "Single-Cell, Single-Nucleus and Spatial RNA Sequencing of the Human Liver Identifies Hepatic Stellate Cell and Cholangiocyte Heterogeneity",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000103/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000104": {
+    "species": "拟南芥",
+    "api_prefix": "STDS0000104_",
+    "default_obs": "cell_type",
+    "display": "The Single-cell Stereo-seq reveals region-specific cell subtypes and transcriptome profiling in Arabidopsis leaves",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000104/",
+    "spatial_count": 26,
+    "h5ad_count": 26,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000105": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000105_",
+    "default_obs": "clusters",
+    "display": "10X Visium spatial RNA-seq from adult mouse brain sections paired to single-nucleus RNA-seq",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000105/",
+    "spatial_count": 5,
+    "h5ad_count": 5,
+    "technology": "10x Visium"
+  },
+  "STDS0000106": {
+    "species": "人",
+    "api_prefix": "STDS0000106_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomic reference of the endometrium and myometrium of women in reproductive age",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000106/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000107": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000107_",
+    "default_obs": "cell_type",
+    "display": "The spatial landscape of gene expression isoforms in tissue sections",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000107/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000108": {
+    "species": "",
+    "api_prefix": "STDS0000108_",
+    "default_obs": "clusters",
+    "display": "STDS0000108",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000108/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000109": {
+    "species": "",
+    "api_prefix": "STDS0000109_",
+    "default_obs": "clusters",
+    "display": "STDS0000109",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000109/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000110": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000110_",
+    "default_obs": "clusters",
+    "display": "Nrf1 promotes heart regeneration and repair by regulating proteostasis and redox balance [Spatial transcriptome]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000110/",
+    "spatial_count": 0,
+    "h5ad_count": 5,
+    "technology": "10x Visium"
+  },
+  "STDS0000111": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000111_",
+    "default_obs": "clusters",
+    "display": "10X Visium Spatial transcriptomics of murine colon in steady state and during recovery after DSS colitis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000111/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000112": {
+    "species": "",
+    "api_prefix": "STDS0000112_",
+    "default_obs": "clusters",
+    "display": "STDS0000112",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000112/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000113": {
+    "species": "人",
+    "api_prefix": "STDS0000113_",
+    "default_obs": "clusters",
+    "display": "Human Cervical Cancer (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000113/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000114": {
+    "species": "人",
+    "api_prefix": "STDS0000114_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved transcriptomics revised human distal lung epithelial hierarchy [spatial transcriptomics]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000114/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000115": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000115_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics (Visium, Spatial 3' V1, 10x Genomics) analysis of heart tissues in a murine model of Kawasaki disease vasculitis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000115/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000116": {
+    "species": "人",
+    "api_prefix": "STDS0000116_",
+    "default_obs": "clusters",
+    "display": "Human prostate luminal epithelia adopt a club-like state in response to low androgen levels",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000116/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000117": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000117_",
+    "default_obs": "clusters",
+    "display": "Comprehensive Atlas of the Mouse Urinary Bladder",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000117/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000118": {
+    "species": "人",
+    "api_prefix": "STDS0000118_",
+    "default_obs": "clusters",
+    "display": "Integrated analysis of single-cell and spatial transcriptomics in keloids",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000118/",
+    "spatial_count": 0,
+    "h5ad_count": 7,
+    "technology": "10x Visium"
+  },
+  "STDS0000119": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000119_",
+    "default_obs": "cell_type",
+    "display": "Spatial transcriptome analysis defines heme as a hemopexin-targetable inflammatoxin in the brain",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000119/",
+    "spatial_count": 7,
+    "h5ad_count": 7,
+    "technology": "10x Visium"
+  },
+  "STDS0000120": {
+    "species": "小鼠 / 人",
+    "api_prefix": "STDS0000120_",
+    "default_obs": "clusters",
+    "display": "Dietary palmitic acid promotes a prometastatic memory based on Schwann Cell activation",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000120/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000121": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000121_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved transcriptomic analysis of acute kidney injury in a female murine model",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000121/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000122": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000122_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomic studies of the small intestine from WT and DDX5△IEC (KO) mice",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000122/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000123": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000123_",
+    "default_obs": "clusters",
+    "display": "Fundamentals of Vaping-Associated Pulmonary Injury  Leading to Severe Respiratory Distress [Visium]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000123/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000124": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000124_",
+    "default_obs": "cell_type",
+    "display": "Characterizing Neonatal Heart Maturation, Regeneration, and Scar Resolution Using Spatial Transcriptomics [spatial]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000124/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000125": {
+    "species": "人",
+    "api_prefix": "STDS0000125_",
+    "default_obs": "cell_type",
+    "display": "Spatiotemporal transcriptional atlas of lung adenocarcinoma from adenocarcinoma in situ to invasive carcinoma [ST]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000125/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000126": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000126_",
+    "default_obs": "clusters",
+    "display": "Time-course single-cell and spatial transcriptomics of reovirus-induced myocarditis in neonatal mice",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000126/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000127": {
+    "species": "",
+    "api_prefix": "STDS0000127_",
+    "default_obs": "clusters",
+    "display": "STDS0000127",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000127/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000128": {
+    "species": "小鼠 / 人",
+    "api_prefix": "STDS0000128_",
+    "default_obs": "cell_type",
+    "display": "Spatial proteogenomics reveals distinct and evolutionarily-conserved hepatic macrophage niches (spatial)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000128/",
+    "spatial_count": 15,
+    "h5ad_count": 15,
+    "technology": "10x Visium"
+  },
+  "STDS0000129": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000129_",
+    "default_obs": "cell_type",
+    "display": "Perturb-map coupled with spatial transcriptomics identifies mutation associated gene signatures in a mouse model of lung adenocarcinoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000129/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000130": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000130_",
+    "default_obs": "cell_type",
+    "display": "Excitatory SST neurons in the medial paralemniscal nucleus control repetitive self-grooming and encode reward",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000130/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000131": {
+    "species": "人",
+    "api_prefix": "STDS0000131_",
+    "default_obs": "clusters",
+    "display": "Human Prostate Cancer, Acinar Cell Carcinoma (FFPE)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000131/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000132": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000132_",
+    "default_obs": "cell_type",
+    "display": "Spatial transcriptome of FFPE sample by DBiT-seq",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000132/",
+    "spatial_count": 5,
+    "h5ad_count": 5,
+    "technology": "DBiT-seq"
+  },
+  "STDS0000133": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000133_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved single-cell RNA-sequencing reveals expression heterogeneity in tumor microenvironment",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000133/",
+    "spatial_count": 0,
+    "h5ad_count": 12,
+    "technology": "XYZeq"
+  },
+  "STDS0000134": {
+    "species": "人",
+    "api_prefix": "STDS0000134_",
+    "default_obs": "clusters",
+    "display": "Proximity RNA labeling by APEX-Seq Reveals the Organization of Translation Initiation Complexes and Repressive RNA Granules",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000134/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "APEX-seq"
+  },
+  "STDS0000135": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000135_",
+    "default_obs": "clusters",
+    "display": "LCM-Seq of niches and single-cell RNA-seq of mouse bone marrow",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000135/",
+    "spatial_count": 0,
+    "h5ad_count": 7,
+    "technology": "LCM-seq"
+  },
+  "STDS0000139": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000139_",
+    "default_obs": "annotation",
+    "display": "A cellular resolution spatial transcriptomic landscape of the postnatal mouse brain",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000139/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000140": {
+    "species": "食蟹猴",
+    "api_prefix": "STDS0000140_",
+    "default_obs": "annotation",
+    "display": "Macaque Brain Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000140/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000142": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000142_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptome analysis (Slide-seq2) of mouse main olfactory bulb",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000142/",
+    "spatial_count": 39,
+    "h5ad_count": 39,
+    "technology": "Slide-seqV2"
+  },
+  "STDS0000143": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000143_",
+    "default_obs": "clusters",
+    "display": "Neurons burdened by DNA double strand breaks incite microglia activation through antiviral-like signaling in neurodegeneration.",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000143/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000144": {
+    "species": "人",
+    "api_prefix": "STDS0000144_",
+    "default_obs": "clusters",
+    "display": "Spatial charting of single-cell transcriptomes in tissues",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000144/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000145": {
+    "species": "食蟹猴",
+    "api_prefix": "STDS0000145_",
+    "default_obs": "clusters",
+    "display": "Geography and molecular anatomy of germ layers in the gastrulating primate embryo",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000145/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "Geo-seq"
+  },
+  "STDS0000147": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000147_",
+    "default_obs": "clusters",
+    "display": "Integrative Analysis of Spatial Transcriptome with Single-cell Transcriptome and Single-cell Epigenome in Mouse Lungs after Immunization",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000147/",
+    "spatial_count": 0,
+    "h5ad_count": 6,
+    "technology": "10x Visium"
+  },
+  "STDS0000148": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000148_",
+    "default_obs": "clusters",
+    "display": "Pyramidal neuron subtype diversity governs microglia states in the neocortex [MERFISH]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000148/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000149": {
+    "species": "蝴蝶兰",
+    "api_prefix": "STDS0000149_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal transcriptomes of orchid flowers",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000149/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000150": {
+    "species": "人",
+    "api_prefix": "STDS0000150_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptome profiling of pancreatic cancer identifies multicellular dynamics associated with neoadjuvant treatment",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000150/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000151": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000151_",
+    "default_obs": "clusters",
+    "display": "Resident Macrophage Subpopulations Occupy Distinct Microenvironments in the Kidney",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000151/",
+    "spatial_count": 0,
+    "h5ad_count": 30,
+    "technology": "10x Visium"
+  },
+  "STDS0000152": {
+    "species": "人",
+    "api_prefix": "STDS0000152_",
+    "default_obs": "clusters",
+    "display": "Intratumor heterogeneity and T cell exhaustion in primary CNS lymphoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000152/",
+    "spatial_count": 4,
+    "h5ad_count": 13,
+    "technology": "10x Visium"
+  },
+  "STDS0000153": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000153_",
+    "default_obs": "cell_type",
+    "display": "Cancer cell states recur across tumor types and form specific interactions with the tumor microenvironment",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000153/",
+    "spatial_count": 12,
+    "h5ad_count": 17,
+    "technology": "10x Visium"
+  },
+  "STDS0000154": {
+    "species": "人",
+    "api_prefix": "STDS0000154_",
+    "default_obs": "clusters",
+    "display": "Checkpoint blockade-induced dermatitis and colitis are dominated by tissue resident memory T cells and  Th1/Tc1 cytokines",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000154/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000155": {
+    "species": "人",
+    "api_prefix": "STDS0000155_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of TSC angiomyolipoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000155/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000156": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000156_",
+    "default_obs": "clusters",
+    "display": "Temporal dynamics of macrophage heterogeneity after myocardial infarction",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000156/",
+    "spatial_count": 0,
+    "h5ad_count": 5,
+    "technology": "10x Visium"
+  },
+  "STDS0000158": {
+    "species": "人",
+    "api_prefix": "STDS0000158_",
+    "default_obs": "clusters",
+    "display": "Transcriptomic profiling of cardiac tissues from SARS-CoV-2 patients identifies DNA damage",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000158/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000159": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000159_",
+    "default_obs": "clusters",
+    "display": "The Deciphering of Mouse Uterine Microenvironment during Early Pregnancy",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000159/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000160": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000160_",
+    "default_obs": "clusters",
+    "display": "A cellular hierarchy in melanoma uncouples growth and metastasis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000160/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000162": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000162_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of the ageing ovary",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000162/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000164": {
+    "species": "人",
+    "api_prefix": "STDS0000164_",
+    "default_obs": "clusters",
+    "display": "Spatial gene expression-based, non-small cell lung carcinoma patients with paired brain metastases",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000164/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000165": {
+    "species": "European rabbit",
+    "api_prefix": "STDS0000165_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics tools allow for regional exploration of heterogeneous muscle pathology in the pre-clinical rabbit model of rotator cuff tear",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000165/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000167": {
+    "species": "人",
+    "api_prefix": "STDS0000167_",
+    "default_obs": "clusters",
+    "display": "Integrated multi-omics reveals cellular and molecular interactions governing the invasive niche of basal cell carcinoma (Digital Spatial Profiling)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000167/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000169": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000169_",
+    "default_obs": "clusters",
+    "display": "Molecular Atlas of the Adult Mouse Brain",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000169/",
+    "spatial_count": 0,
+    "h5ad_count": 75,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000170": {
+    "species": "人",
+    "api_prefix": "STDS0000170_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporally Deciphering the Unknown Role of Persistent HPV Infection in Precancer to Cervical Cancer Progression: Integrating Single-Cell RNA-Sequencing Landscape and Spatial Transcriptomics Atlas [Spatial Transcriptomics]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000170/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "Spatial Transcriptomics"
+  },
+  "STDS0000171": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000171_",
+    "default_obs": "clusters",
+    "display": "Defining the spatial-molecular map of fibrotic tendon healing and the drivers of Scleraxis-lineage cell fate and function",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000171/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000172": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000172_",
+    "default_obs": "clusters",
+    "display": "Mouse olfactory sensory neurons, main olfactory epithelium and main olfactory bulb",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000172/",
+    "spatial_count": 40,
+    "h5ad_count": 40,
+    "technology": "scRNA-seq"
+  },
+  "STDS0000173": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000173_",
+    "default_obs": "clusters",
+    "display": "Spatial Total RNA-Sequencing of regenerating mouse hindlimb muscle and Type 1-Lang reovirus-infected mouse heart",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000173/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000175": {
+    "species": "人",
+    "api_prefix": "STDS0000175_",
+    "default_obs": "cell_type",
+    "display": "A topographic atlas defines developmental origins of cell heterogeneity in the human embryonic lung [ST]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000175/",
+    "spatial_count": 34,
+    "h5ad_count": 34,
+    "technology": "10x Visium"
+  },
+  "STDS0000176": {
+    "species": "",
+    "api_prefix": "STDS0000176_",
+    "default_obs": "clusters",
+    "display": "STDS0000176",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000176/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000177": {
+    "species": "人",
+    "api_prefix": "STDS0000177_",
+    "default_obs": "clusters",
+    "display": "Single Cell and Spatial Analysis of Human Squamous Cell Carcinoma [ST]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000177/",
+    "spatial_count": 0,
+    "h5ad_count": 16,
+    "technology": "10x Visium"
+  },
+  "STDS0000178": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000178_",
+    "default_obs": "clusters",
+    "display": "Integration of whole transcriptome spatial profiling with protein markers",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000178/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000179": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000179_",
+    "default_obs": "clusters",
+    "display": "Gene expression profiles of mouse ischemia-reperfusion liver zones with or without celastrol-treated.",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000179/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000180": {
+    "species": "小鼠 / 犬",
+    "api_prefix": "STDS0000180_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal mapping of immune and stem cell dysregulation after volumetric muscle loss",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000180/",
+    "spatial_count": 22,
+    "h5ad_count": 22,
+    "technology": "10x Visium"
+  },
+  "STDS0000181": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000181_",
+    "default_obs": "cell_type",
+    "display": "INPP5D limits plaque formation and glial reactivity in the APP/PS1 mouse model of Alzheimer’s disease",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000181/",
+    "spatial_count": 12,
+    "h5ad_count": 12,
+    "technology": "10x Visium"
+  },
+  "STDS0000182": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000182_",
+    "default_obs": "clusters",
+    "display": "Visium spatial transcriptomics analysis of lacrimal gland during chronic inflammation progression.",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000182/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000183": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000183_",
+    "default_obs": "cell_type",
+    "display": "Spatially resolved transcriptomic profiling of degraded and challenging fresh frozen samples",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000183/",
+    "spatial_count": 14,
+    "h5ad_count": 14,
+    "technology": "10x Visium"
+  },
+  "STDS0000184": {
+    "species": "人",
+    "api_prefix": "STDS0000184_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics on human lumbar spinal cord",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000184/",
+    "spatial_count": 2,
+    "h5ad_count": 22,
+    "technology": "10x Visium"
+  },
+  "STDS0000185": {
+    "species": "人",
+    "api_prefix": "STDS0000185_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of post-mortem lung tissue from COVID-19 donors",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000185/",
+    "spatial_count": 0,
+    "h5ad_count": 12,
+    "technology": "10x Visium"
+  },
+  "STDS0000186": {
+    "species": "褐家鼠 / 人 / 小鼠",
+    "api_prefix": "STDS0000186_",
+    "default_obs": "clusters",
+    "display": "Assessment of Spatial Genomics for Oncology Discovery",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000186/",
+    "spatial_count": 29,
+    "h5ad_count": 29,
+    "technology": "10x Visium"
+  },
+  "STDS0000187": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000187_",
+    "default_obs": "clusters",
+    "display": "Genome-wide Spatial Expression Profiling in Formalin-fixed Tissues",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000187/",
+    "spatial_count": 15,
+    "h5ad_count": 15,
+    "technology": "10x Visium"
+  },
+  "STDS0000188": {
+    "species": "人",
+    "api_prefix": "STDS0000188_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved transcriptomics reveals genes associated with the vulnerability of middle temporal gyrus in Alzheimer’s disease",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000188/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000189": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000189_",
+    "default_obs": "clusters",
+    "display": "Moxibustion Improves Hypothalamus Aqp4 Polarization in APP/PS1 Mice: Evidence from Spatial Transcriptomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000189/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000190": {
+    "species": "",
+    "api_prefix": "STDS0000190_",
+    "default_obs": "clusters",
+    "display": "STDS0000190",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000190/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000191": {
+    "species": "人",
+    "api_prefix": "STDS0000191_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomic characterization of the lung parenchyma during COVID-19 pneumonitis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000191/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000192": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000192_",
+    "default_obs": "clusters",
+    "display": "10X-single cell seq of IEC and Stroma during recovery after DSS colitis in B cell sufficient/deficient mice",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000192/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000193": {
+    "species": "小鼠 / 人",
+    "api_prefix": "STDS0000193_",
+    "default_obs": "clusters",
+    "display": "Spatial epigenome-transcriptome co-profiling of mammalian tissues",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000193/",
+    "spatial_count": 11,
+    "h5ad_count": 11,
+    "technology": "CUT&Tag"
+  },
+  "STDS0000194": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000194_",
+    "default_obs": "clusters",
+    "display": "10X-single cell seq of B cells during colitis (d0 and d14)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000194/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000195": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000195_",
+    "default_obs": "clusters",
+    "display": "The neurons that restore walking after paralysis [spatial transcriptomics]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000195/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000196": {
+    "species": "",
+    "api_prefix": "STDS0000196_",
+    "default_obs": "clusters",
+    "display": "STDS0000196",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000196/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000197": {
+    "species": "人",
+    "api_prefix": "STDS0000197_",
+    "default_obs": "clusters",
+    "display": "A spatiotemporal regulatory network for steroidogenesis of human fetal adrenal glands and gonads",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000197/",
+    "spatial_count": 0,
+    "h5ad_count": 18,
+    "technology": "10x Visium"
+  },
+  "STDS0000199": {
+    "species": "人",
+    "api_prefix": "STDS0000199_",
+    "default_obs": "clusters",
+    "display": "A topographic atlas defines developmental origins of cell heterogeneity in the human embryonic lung [SC]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000199/",
+    "spatial_count": 0,
+    "h5ad_count": 39,
+    "technology": "10x Visium"
+  },
+  "STDS0000200": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000200_",
+    "default_obs": "clusters",
+    "display": "Spatial RNA sequencing of regenerating mouse hindlimb muscle",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000200/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000201": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000201_",
+    "default_obs": "cell_type",
+    "display": "Discovering Haematoma-Stimulated Circuits for Secondary Brain Injury after Intraventricular Haemorrhage by Spatial Transcriptome Analysis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000201/",
+    "spatial_count": 19,
+    "h5ad_count": 19,
+    "technology": "10x Visium"
+  },
+  "STDS0000202": {
+    "species": "",
+    "api_prefix": "STDS0000202_",
+    "default_obs": "clusters",
+    "display": "STDS0000202",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000202/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000203": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000203_",
+    "default_obs": "clusters",
+    "display": "The neurons that restore walking after paralysis [snRNA-seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000203/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000204": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000204_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics (Visium, 10x Genomics) data of Duchenne mouse models",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000204/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000205": {
+    "species": "人",
+    "api_prefix": "STDS0000205_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics landscape of non-communicable inflammatory skin diseases",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000205/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000206": {
+    "species": "人",
+    "api_prefix": "STDS0000206_",
+    "default_obs": "clusters",
+    "display": "Spatial multi-omics reveals vulnerabilities of radial glia-like cancer-initiating cells within distinct ecosystems of pediatric and adult malignant gliomas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000206/",
+    "spatial_count": 11,
+    "h5ad_count": 11,
+    "technology": "10x Visium"
+  },
+  "STDS0000207": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000207_",
+    "default_obs": "clusters",
+    "display": "Time-course single-cell and spatial transcriptomics of reovirus-induced myocarditis in neonatal mice",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000207/",
+    "spatial_count": 0,
+    "h5ad_count": 26,
+    "technology": "10x Visium"
+  },
+  "STDS0000208": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000208_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved transcriptomics reveals innervation-responsive functional cluster in skeletal muscle.",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000208/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000209": {
+    "species": "人",
+    "api_prefix": "STDS0000209_",
+    "default_obs": "cell_type",
+    "display": "Multimodal human thymic profiling reveals trajectories and cellular milieu for T agonist selection",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000209/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000210": {
+    "species": "人",
+    "api_prefix": "STDS0000210_",
+    "default_obs": "clusters",
+    "display": "Mapping the Spatial Dynamics of the Human Oral Mucosa in Chronic Inflammatory Disease",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000210/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000211": {
+    "species": "人",
+    "api_prefix": "STDS0000211_",
+    "default_obs": "clusters",
+    "display": "Re-convolving the compositional landscape of primary and recurrent glioblastoma reveals prognostic and targetable tissue states",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000211/",
+    "spatial_count": 0,
+    "h5ad_count": 7,
+    "technology": "10x Visium"
+  },
+  "STDS0000212": {
+    "species": "人",
+    "api_prefix": "STDS0000212_",
+    "default_obs": "cell_type",
+    "display": "Spatial transcriptomics combined with single-cell RNA-sequencing unravels the complex inflammatory cell network in atopic dermatitis [ST]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000212/",
+    "spatial_count": 19,
+    "h5ad_count": 19,
+    "technology": "10x Visium"
+  },
+  "STDS0000213": {
+    "species": "人",
+    "api_prefix": "STDS0000213_",
+    "default_obs": "clusters",
+    "display": "Transcriptome profiling between unfavorable and favorable Wilms Tumors and against human fetal kidney",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000213/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000214": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000214_",
+    "default_obs": "cell_type",
+    "display": "Probing pathways by which rhynchophylline modifies sleep using spatial transcriptomics (additional files)",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000214/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000215": {
+    "species": "人",
+    "api_prefix": "STDS0000215_",
+    "default_obs": "clusters",
+    "display": "Gene expression of human angiosarcoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000215/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000216": {
+    "species": "人",
+    "api_prefix": "STDS0000216_",
+    "default_obs": "clusters",
+    "display": "Single-cell and spatial transcriptome analysis reveals the cellular heterogeneity of liver metastatic colorectal cancer",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000216/",
+    "spatial_count": 0,
+    "h5ad_count": 6,
+    "technology": "scRNA-seq"
+  },
+  "STDS0000217": {
+    "species": "人",
+    "api_prefix": "STDS0000217_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal multi-omics decoding of the developing human spinal cord",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000217/",
+    "spatial_count": 21,
+    "h5ad_count": 52,
+    "technology": "10x Visium"
+  },
+  "STDS0000218": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000218_",
+    "default_obs": "cell_type",
+    "display": "Probing pathways by which rhynchophylline modifies sleep using spatial transcriptomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000218/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000219": {
+    "species": "人",
+    "api_prefix": "STDS0000219_",
+    "default_obs": "clusters",
+    "display": "Spatial resolution of cellular senescence dynamics in colorectal liver metastasis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000219/",
+    "spatial_count": 2,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000220": {
+    "species": "人",
+    "api_prefix": "STDS0000220_",
+    "default_obs": "clusters",
+    "display": "Analysis of donor pancreata defines the transcriptomic signature and microenvironment of early pre-neoplastic pancreatic lesions",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000220/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000221": {
+    "species": "人",
+    "api_prefix": "STDS0000221_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of adenoid cystic carcinoma of the lacrimal gland",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000221/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000222": {
+    "species": "人",
+    "api_prefix": "STDS0000222_",
+    "default_obs": "clusters",
+    "display": "Spatially Resolved Transcriptomics Deconvolutes Histological Prognostic Subgroups in Patients with Colorectal Cancer and Synchronous Liver Metastases",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000222/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000223": {
+    "species": "人",
+    "api_prefix": "STDS0000223_",
+    "default_obs": "cell_type",
+    "display": "Tertiary lymphoid structures generate and propagate anti-tumor antibody-producing plasma cells in renal cell cancer",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000223/",
+    "spatial_count": 20,
+    "h5ad_count": 20,
+    "technology": "10x Visium"
+  },
+  "STDS0000224": {
+    "species": "人",
+    "api_prefix": "STDS0000224_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics: The effect of consecutive slices data integration on accurate cell type annotation and clustering",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000224/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "10x Visium"
+  },
+  "STDS0000225": {
+    "species": "人",
+    "api_prefix": "STDS0000225_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved multi-omics single-cell analyses inform mechanisms of immune-dysfunction in pancreatic cancer",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000225/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "10x Visium"
+  },
+  "STDS0000226": {
+    "species": "人",
+    "api_prefix": "STDS0000226_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics reveal topological immune landscapes of Asian head and neck angiosarcoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000226/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000227": {
+    "species": "人",
+    "api_prefix": "STDS0000227_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of de novo NEPC and ARPC",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000227/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "10x Visium"
+  },
+  "STDS0000228": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000228_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomics of murine bone marrow megakaryocytes at single-cell resolution",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000228/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "GeoMx DSP"
+  },
+  "STDS0000229": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000229_",
+    "default_obs": "clusters",
+    "display": "Single-nucleus Ribonucleic Acid-sequencing and Spatial Transcriptomics Reveal the Cardioprotection of Shexiang Baoxin Pill (MUSKARDIA) in Mice with Myocardial Ischemia-Reperfusion Injury",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000229/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "10x Visium"
+  },
+  "STDS0000230": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000230_",
+    "default_obs": "clusters",
+    "display": "NIH3T3_point_locations for RNA seqFISH+ experiments",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000230/",
+    "spatial_count": 16,
+    "h5ad_count": 16,
+    "technology": "seqFISH+"
+  },
+  "STDS0000231": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000231_",
+    "default_obs": "clusters",
+    "display": "In situ transcription profiling of single cells reveals spatial organization of cells in the mouse hippocampus",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000231/",
+    "spatial_count": 21,
+    "h5ad_count": 21,
+    "technology": "seqFish"
+  },
+  "STDS0000232": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000232_",
+    "default_obs": "clusters",
+    "display": "Three-dimensional intact-tissue sequencing of single-cell transcriptional states",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000232/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "STARmap"
+  },
+  "STDS0000233": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000233_",
+    "default_obs": "clusters",
+    "display": "EASI-FISH for thick tissue defines lateral hypothalamus spatio-molecular organization",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000233/",
+    "spatial_count": 64,
+    "h5ad_count": 64,
+    "technology": "EASI-FISH"
+  },
+  "STDS0000234": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000234_",
+    "default_obs": "cell_type",
+    "display": "SAW: An efficient and accurate data analysis workflow for Stereo-seq spatial transcriptomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000234/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000235": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000235_",
+    "default_obs": "cell_type",
+    "display": "Spatial transcriptomics map of the embryonic mouse brain – a tool to explore neurogenesis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000235/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "10x Visium"
+  },
+  "STDS0000236": {
+    "species": "玉米",
+    "api_prefix": "STDS0000236_",
+    "default_obs": "cell_type",
+    "display": "A spatial transcriptome map of developing maize ear",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000236/",
+    "spatial_count": 3,
+    "h5ad_count": 3,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000237": {
+    "species": "拟南芥",
+    "api_prefix": "STDS0000237_",
+    "default_obs": "celltype",
+    "display": "ASRSSTA: Arabidopsis Shoot Regeneration Single-cell Spatiotemporal Transcriptomic Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000237/",
+    "spatial_count": 14,
+    "h5ad_count": 17,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000238": {
+    "species": "食蟹猴",
+    "api_prefix": "STDS0000238_",
+    "default_obs": "clusters",
+    "display": "Macaque Hypothalamus Atlas for Obesity and Diabetes",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000238/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000239": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000239_",
+    "default_obs": "annotation",
+    "display": "Cholestatic Injury and Repair Spatio-Temporal Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000239/",
+    "spatial_count": 22,
+    "h5ad_count": 22,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000241": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000241_",
+    "default_obs": "clusters",
+    "display": "ABSTA：Amniotes Brain Spatiotemporal Transcriptomic Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000241/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000242": {
+    "species": "人",
+    "api_prefix": "STDS0000242_",
+    "default_obs": "cell_type",
+    "display": "A cellular resolution spatial transcriptomic landscape of the adult human cortex",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000242/",
+    "spatial_count": 44,
+    "h5ad_count": 67,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000243": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000243_",
+    "default_obs": "CN_celltypes",
+    "display": "MCNSTA: Mouse Cochlear Nucleus Spatiotemporal Transcriptomic Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000243/",
+    "spatial_count": 2,
+    "h5ad_count": 3,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000244": {
+    "species": "小鼠 / 狨猴 / 食蟹猴",
+    "api_prefix": "STDS0000244_",
+    "default_obs": "region",
+    "display": "A spatial transcriptome atlas of the mammalian whole cerebella",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000244/",
+    "spatial_count": 192,
+    "h5ad_count": 192,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000245": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000245_",
+    "default_obs": "subregion",
+    "display": "MPSTA: Mouse Placentation Spatiotemporal Transcriptomic Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000245/",
+    "spatial_count": 17,
+    "h5ad_count": 17,
+    "technology": ""
+  },
+  "STDS0000247": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000247_",
+    "default_obs": "cell_type",
+    "display": "Spatial transcriptomic landscape unveils immunoglobin-associated senescence as a hallmark of aging",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000247/",
+    "spatial_count": 155,
+    "h5ad_count": 155,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000249": {
+    "species": "人",
+    "api_prefix": "STDS0000249_",
+    "default_obs": "cell_type",
+    "display": "Spatiotemporal atlas of human endometrial receptivity",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000249/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000250": {
+    "species": "人",
+    "api_prefix": "STDS0000250_",
+    "default_obs": "clusters",
+    "display": "In vitro reconstitution of epigenetic reprogramming in the human germ line [10X]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000250/",
+    "spatial_count": 0,
+    "h5ad_count": 7,
+    "technology": "ST"
+  },
+  "STDS0000256": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000256_",
+    "default_obs": "clusters",
+    "display": "Spatial transcriptomic profiling of the aging mouse brain [spatial scRNA-seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000256/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000258": {
+    "species": "人",
+    "api_prefix": "STDS0000258_",
+    "default_obs": "clusters",
+    "display": "Schwann Cells Shape Tumor Cells and Cancer-Associated Fibroblasts in the Pancreatic Ductal Adenocarcinoma Microenvironment [scRNA-seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000258/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "ST"
+  },
+  "STDS0000260": {
+    "species": "人",
+    "api_prefix": "STDS0000260_",
+    "default_obs": "clusters",
+    "display": "Deciphering spatial domains from spatial multi-omics with SpatialGlue",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000260/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "ST"
+  },
+  "STDS0000265": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000265_",
+    "default_obs": "clusters",
+    "display": "Shared inflammatory glial cell signature after brain injury, revealed by spatial, temporal and cell-type-specific profiling of the murine cerebral cortex [scRNA-Seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000265/",
+    "spatial_count": 0,
+    "h5ad_count": 15,
+    "technology": "ST"
+  },
+  "STDS0000273": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000273_",
+    "default_obs": "clusters",
+    "display": "Slide-tags: scalable, single-nucleus barcoding for multi-modal spatial genomics",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000273/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": "ST"
+  },
+  "STDS0000274": {
+    "species": "人",
+    "api_prefix": "STDS0000274_",
+    "default_obs": "clusters",
+    "display": "Spatially resolved transcriptomics of high-grade serous ovarian carcinoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000274/",
+    "spatial_count": 0,
+    "h5ad_count": 12,
+    "technology": "ST"
+  },
+  "STDS0000275": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000275_",
+    "default_obs": "clusters",
+    "display": "Obesity disrupts innate-adaptive immune network patterning in adipose tissue",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000275/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "ST"
+  },
+  "STDS0000277": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000277_",
+    "default_obs": "clusters",
+    "display": "An integrated toolkit for the analysis of synthetic cellular barcodes in the genome and transcriptome",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000277/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000278": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000278_",
+    "default_obs": "clusters",
+    "display": "Spatial Transcriptomics to define transcriptional patterns of zonation and structural components in the liver",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000278/",
+    "spatial_count": 0,
+    "h5ad_count": 13,
+    "technology": "ST"
+  },
+  "STDS0000279": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000279_",
+    "default_obs": "clusters",
+    "display": "Endocrine disruption of early uterine differentiation causes adenocarcinoma mediated by Wnt/β-catenin- and PI3K/AKT signaling",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000279/",
+    "spatial_count": 0,
+    "h5ad_count": 5,
+    "technology": "ST"
+  },
+  "STDS0000283": {
+    "species": "人 / 小鼠",
+    "api_prefix": "STDS0000283_",
+    "default_obs": "clusters",
+    "display": "A single cell atlas of human glioma under therapy",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000283/",
+    "spatial_count": 0,
+    "h5ad_count": 82,
+    "technology": "ST"
+  },
+  "STDS0000291": {
+    "species": "人",
+    "api_prefix": "STDS0000291_",
+    "default_obs": "clusters",
+    "display": "single cell RNA-seq and Visium data of human spinal cord",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000291/",
+    "spatial_count": 0,
+    "h5ad_count": 49,
+    "technology": "ST"
+  },
+  "STDS0000293": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000293_",
+    "default_obs": "clusters",
+    "display": "Single cell approaches define two mammalian oligodendrocyte precursor cell populations and their evolution over developmental time [scMultiome-seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000293/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000296": {
+    "species": "人",
+    "api_prefix": "STDS0000296_",
+    "default_obs": "clusters",
+    "display": "Spatiotemporal transcriptomic changes of human ovarian aging and the key regulatory role of FOXP1",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000296/",
+    "spatial_count": 0,
+    "h5ad_count": 24,
+    "technology": "ST"
+  },
+  "STDS0000298": {
+    "species": "褐家鼠",
+    "api_prefix": "STDS0000298_",
+    "default_obs": "clusters",
+    "display": "In situ tissue profile of rat trigeminal nerve in trigeminal neuralgia using spatial transcriptome sequencing",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000298/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000303": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000303_",
+    "default_obs": "clusters",
+    "display": "Image-seq: spatially-resolved single cell sequencing guided by in situ and in vivo imaging",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000303/",
+    "spatial_count": 0,
+    "h5ad_count": 21,
+    "technology": "ST"
+  },
+  "STDS0000306": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000306_",
+    "default_obs": "clusters",
+    "display": "Spatial Mapping of Mouse Brain Aging through Indexed Sequencing",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000306/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "ST"
+  },
+  "STDS0000307": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000307_",
+    "default_obs": "clusters",
+    "display": "Developmental Deficits of MGE-derived Interneurons in the Cntnap2 Knockout Mouse Model of Autism Spectrum Disorder",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000307/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000341": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000341_",
+    "default_obs": "clusters",
+    "display": "High resolution spatially resolved transcriptomic atlas of kidney injury and repair by RNA hybridization-based in situ sequencing [10X Visium]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000341/",
+    "spatial_count": 1,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000342": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000342_",
+    "default_obs": "clusters",
+    "display": "Mapping the cellular and molecular organization of mouse cerebral aging by single-cell transcriptome imaging",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000342/",
+    "spatial_count": 0,
+    "h5ad_count": 8,
+    "technology": "ST"
+  },
+  "STDS0000344": {
+    "species": "小鼠 / 人",
+    "api_prefix": "STDS0000344_",
+    "default_obs": "clusters",
+    "display": "High-plex protein and whole transcriptome co-mapping at cellular resolution with spatial CITE-seq",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000344/",
+    "spatial_count": 0,
+    "h5ad_count": 16,
+    "technology": "ST"
+  },
+  "STDS0000345": {
+    "species": "人",
+    "api_prefix": "STDS0000345_",
+    "default_obs": "clusters",
+    "display": "Schwann Cells Shape Tumor Cells and Cancer-Associated Fibroblasts in the Pancreatic Ductal Adenocarcinoma Microenvironment [ST]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000345/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "ST"
+  },
+  "STDS0000346": {
+    "species": "人",
+    "api_prefix": "STDS0000346_",
+    "default_obs": "clusters",
+    "display": "Single-cell profiling and spatial transcriptome of primary tumors and paired metastatic lymph nodes in breast cancer patients",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000346/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "ST"
+  },
+  "STDS0000352": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000352_",
+    "default_obs": "clusters",
+    "display": "Single cell approaches define two mammalian oligodendrocyte precursor cell populations and their evolution over developmental time [Xenium In Situ Gene Expression]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000352/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "ST"
+  },
+  "STDS0000359": {
+    "species": "人",
+    "api_prefix": "STDS0000359_",
+    "default_obs": "clusters",
+    "display": "Integrated single-cell RNA sequencing and spatial transcriptomics analysis reveals the tumor microenvironment in patients with endometrial cancer responding to anti-PD-1 treatment",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000359/",
+    "spatial_count": 0,
+    "h5ad_count": 4,
+    "technology": "ST"
+  },
+  "STDS0000362": {
+    "species": "人",
+    "api_prefix": "STDS0000362_",
+    "default_obs": "clusters",
+    "display": "Single cell analysis of endometriosis reveals a coordinated transcriptional program driving immunotolerance and angiogenesis across eutopic and ectopic tissues",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000362/",
+    "spatial_count": 0,
+    "h5ad_count": 35,
+    "technology": "ST"
+  },
+  "STDS0000364": {
+    "species": "犬",
+    "api_prefix": "STDS0000364_",
+    "default_obs": "clusters",
+    "display": "Single-nuclei expression of canine veins during carotid-cartoid vein bypass implantation",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000364/",
+    "spatial_count": 0,
+    "h5ad_count": 5,
+    "technology": "ST"
+  },
+  "STDS0000365": {
+    "species": "人",
+    "api_prefix": "STDS0000365_",
+    "default_obs": "clusters",
+    "display": "Cellular atlas of the human ovary using morphologically guided spatial transciptomics and single-cell sequencing [scRNA-seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000365/",
+    "spatial_count": 0,
+    "h5ad_count": 3,
+    "technology": "ST"
+  },
+  "STDS0000367": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000367_",
+    "default_obs": "clusters",
+    "display": "Single cell approaches define two mammalian oligodendrocyte precursor cell populations and their evolution over developmental time [scRNA-seq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000367/",
+    "spatial_count": 0,
+    "h5ad_count": 7,
+    "technology": "ST"
+  },
+  "STDS0000371": {
+    "species": "人",
+    "api_prefix": "STDS0000371_",
+    "default_obs": "clusters",
+    "display": "Melanoma Brain Metastasis Atlas [SlideSeq]",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000371/",
+    "spatial_count": 0,
+    "h5ad_count": 16,
+    "technology": "ST"
+  },
+  "STDS0000374": {
+    "species": "",
+    "api_prefix": "STDS0000374_",
+    "default_obs": "clusters",
+    "display": "STDS0000374",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000374/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000376": {
+    "species": "brain",
+    "api_prefix": "STDS0000376_",
+    "default_obs": "clusters",
+    "display": "STMICH: Spatiotemporal transcriptomic map of mouse intracerebral hemorrhage",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000376/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000377": {
+    "species": "竹",
+    "api_prefix": "STDS0000377_",
+    "default_obs": "celltype",
+    "display": "Single-nucleus and spatial transcriptomics reveal the cell populations of intercalary meristems in bamboo",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000377/",
+    "spatial_count": 1,
+    "h5ad_count": 2,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000378": {
+    "species": "",
+    "api_prefix": "STDS0000378_",
+    "default_obs": "clusters",
+    "display": "STDS0000378",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000378/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000379": {
+    "species": "番茄 / 黄瓜",
+    "api_prefix": "STDS0000379_",
+    "default_obs": "final_clusters",
+    "display": "Cucumber and Tomato Spatiotemporal Transcriptomic Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000379/",
+    "spatial_count": 63,
+    "h5ad_count": 63,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000380": {
+    "species": "人",
+    "api_prefix": "STDS0000380_",
+    "default_obs": "clusters",
+    "display": "HHSTA: Human Hippocampal Spatial Transcriptomic Atlas of Alzheimer's disease",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000380/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": ""
+  },
+  "STDS0000384": {
+    "species": "",
+    "api_prefix": "STDS0000384_",
+    "default_obs": "clusters",
+    "display": "STDS0000384",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000384/",
+    "spatial_count": 0,
+    "h5ad_count": 0,
+    "technology": ""
+  },
+  "STDS0000385": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000385_",
+    "default_obs": "clusters",
+    "display": "Comparison of Illumina NovaSeq 6000 and GeneMind SURFSeq 5000 Platforms for Single-Cell Spatial Transcriptomics of Murine Organs",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000385/",
+    "spatial_count": 0,
+    "h5ad_count": 2,
+    "technology": ""
+  },
+  "STDS0000386": {
+    "species": "马铃薯",
+    "api_prefix": "STDS0000386_",
+    "default_obs": "Cell_ID",
+    "display": "SSTA-PPI: Single-cell Spatiotemporal Transcriptome Atlas of Potato-Phytophthora infestans Interaction",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000386/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000387": {
+    "species": "人",
+    "api_prefix": "STDS0000387_",
+    "default_obs": "clusters",
+    "display": "METAHCC: Metastatic Evolution and Temporal-spatial Atlas of HepatoCellular Carcinoma",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000387/",
+    "spatial_count": 0,
+    "h5ad_count": 26,
+    "technology": ""
+  },
+  "STDS0000388": {
+    "species": "番茄",
+    "api_prefix": "STDS0000388_",
+    "default_obs": "batch",
+    "display": "TSSTA: Tomato SAM Spatiotemporal Transcriptomic Atlas",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000388/",
+    "spatial_count": 19,
+    "h5ad_count": 25,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000389": {
+    "species": "玉米",
+    "api_prefix": "STDS0000389_",
+    "default_obs": "batch",
+    "display": "Spatialtemporal transcriptome analyses the cell lineage of maize embryogenesis",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000389/",
+    "spatial_count": 23,
+    "h5ad_count": 23,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000390": {
+    "species": "小麦",
+    "api_prefix": "STDS0000390_",
+    "default_obs": "leiden",
+    "display": "Spatial Transcriptome Map of Early Wheat Inflorescence Development",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000390/",
+    "spatial_count": 8,
+    "h5ad_count": 8,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000391": {
+    "species": "",
+    "api_prefix": "STDS0000391_",
+    "default_obs": "seurat_clusters",
+    "display": "STDS0000391",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000391/",
+    "spatial_count": 27,
+    "h5ad_count": 27,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000392": {
+    "species": "玉米",
+    "api_prefix": "STDS0000392_",
+    "default_obs": "sample",
+    "display": "MaST-V6V8: Spatial Atlas of Maize Node and Internode at V6 and V8 Stages",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000392/",
+    "spatial_count": 4,
+    "h5ad_count": 4,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000393": {
+    "species": "玉米",
+    "api_prefix": "STDS0000393_",
+    "default_obs": "celltype",
+    "display": "Maize digital plant at a single-cell multi-omics perspective",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000393/",
+    "spatial_count": 7,
+    "h5ad_count": 18,
+    "technology": "Stereo-seq"
+  },
+  "STDS0000396": {
+    "species": "人",
+    "api_prefix": "STDS0000396_",
+    "default_obs": "clusters",
+    "display": "The Single-cell and spatial transcriptional landscape of human development",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000396/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Genomics"
+  },
+  "STDS0000397": {
+    "species": "小鼠",
+    "api_prefix": "STDS0000397_",
+    "default_obs": "clusters",
+    "display": "A single-cell time-lapse of mouse prenatal development from gastrula to birth",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000397/",
+    "spatial_count": 0,
+    "h5ad_count": 1,
+    "technology": "10x Genomis"
+  },
+  "STDS0000399": {
+    "species": "涡虫",
+    "api_prefix": "STDS0000399_",
+    "default_obs": "region",
+    "display": "PRISTA4D: Planarian Regenerative Interactive Spatiotemporal Transcriptomic Atlas in four Dimensions",
+    "portal": "https://db.cngb.org/stomics/datasets/STDS0000399/",
+    "spatial_count": 17,
+    "h5ad_count": 34,
+    "technology": "Stereo-seq"
+  }
+}

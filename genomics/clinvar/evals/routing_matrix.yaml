@@ -1,0 +1,22 @@
+competing_skills:
+  - dbsnp
+  - gnomad
+  - ensembl
+  - lovd
+  - variant-interpretation
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "rs80357906 致病吗"
+    expected_skill: clinvar
+  - query: "rs80357906 综合解读一下"
+    expected_skill: variant-interpretation
+    not: clinvar
+  - query: "BRCA1 有哪些致病变异"
+    expected_skill: clinvar
+  - query: "rs80357906 人群频率"
+    expected_skill: gnomad
+    not: clinvar
+  - query: "SOX2 在 HESTA 空间表达"
+    expected_skill: hesta
+    not: clinvar

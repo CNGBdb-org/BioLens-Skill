@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "GO:0006915 是什么",
+    "TP53 的 GO 注释"
+  ],
+  "should_not_trigger": [
+    "对基因列表做富集",
+    "hsa04110 通路"
+  ]
+}

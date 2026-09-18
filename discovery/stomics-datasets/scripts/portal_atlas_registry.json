@@ -1,0 +1,246 @@
+{
+  "_comment": "Dedicated STOmics mini-portals (not STDS0000xxx catalog rows). Bootstrap via bootstrap_portal_atlases.py.",
+  "absta": {
+    "display": "ABSTA",
+    "species": "Amniote / 羊膜动物（龟/雀/鸽/鼠/斑马雀）",
+    "portal_url": "https://db.cngb.org/stomics/absta/",
+    "api_prefix": "STDS0000241_",
+    "stds_id": "STDS0000241",
+    "default_obs": "celltype",
+    "technology": "Stereo-seq",
+    "visual_engine": "explore",
+    "pages": ["spatial/", "download/"],
+    "id_templates": ["STDS0000241_{stem}", "{stem}"]
+  },
+  "asta": {
+    "display": "ASTA",
+    "species": "拟南芥",
+    "portal_url": "https://db.cngb.org/stomics/asta/",
+    "api_prefix": "asta_",
+    "default_obs": "celltype",
+    "technology": "snRNA-seq",
+    "visual_engine": "cirro",
+    "pages": ["scRNAseq/", "download/"],
+    "id_templates": ["asta_{stem}"],
+    "cirro_path": "/union_visualization/cirro/?q={\"dataset\":\"asta_{stem}\"}"
+  },
+  "bloh": {
+    "display": "BLOH",
+    "species": "人 / 小鼠",
+    "portal_url": "https://db.cngb.org/stomics/bloh/",
+    "api_prefix": "BLOH_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / scRNA / snATAC",
+    "visual_engine": "explore",
+    "pages": ["spatial/", "scrna.seq/", "download/"],
+    "id_templates": ["BLOH_{stem}", "{stem}"]
+  },
+  "heart": {
+    "display": "Heart Evolution Atlas",
+    "species": "多物种（演化树）",
+    "portal_url": "https://db.cngb.org/stomics/heart/",
+    "api_prefix": "EvoHEART_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / scRNA",
+    "visual_engine": "explore",
+    "pages": ["spatial/", "scrna.seq/", "download/"],
+    "id_templates": ["EvoHEART_{stem}", "{stem}"]
+  },
+  "hmsma": {
+    "display": "HMSMA",
+    "species": "人",
+    "portal_url": "https://db.cngb.org/stomics/hmsma/",
+    "stds_id": "STDS0000374",
+    "api_prefix": "STDS0000374_",
+    "default_obs": "clusters",
+    "technology": "Visium / MALDI-MSI / scRNA",
+    "visual_engine": "explore",
+    "pages": ["stomics/", "scRNA.seq/", "maldi.msi/", "download/"],
+    "id_templates": [
+      "STDS0000374_stomics_{stem}",
+      "STDS0000374_scRNA_{stem}",
+      "STDS0000374_MALDI_{stem}"
+    ],
+    "fixed_explore_ids": [
+      "STDS0000374_all_visium_samples_all",
+      "STDS0000374_all_scRNA_samples_all",
+      "STDS0000374_all_MALDI_samples_all"
+    ],
+    "skip_stems": ["samples_all", "visium_samples_all"]
+  },
+  "hubsta": {
+    "display": "HUBSTA",
+    "species": "Homo sapiens / 人（胎脑 GW13.5）",
+    "portal_url": "https://db.cngb.org/stomics/hubsta/",
+    "api_prefix": "hubsta_",
+    "default_obs": "cell_type",
+    "technology": "Stereo-seq",
+    "visual_engine": "cirro",
+    "pages": ["spatial/", "download/"],
+    "id_templates": ["hubsta_{stem}"],
+    "cirro_path": "/union_visualization/cirro/?q={\"dataset\":\"hubsta_{stem}\"}"
+  },
+  "mcxa": {
+    "display": "MCxA",
+    "species": "猕猴（运动皮层）",
+    "portal_url": "https://db.genomics.cn/stomics/mcxa/",
+    "api_prefix": "MCxA_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / snRNA / snATAC",
+    "visual_engine": "cirro",
+    "pages": ["spatial/", "snrna.seq/", "snatac.seq/", "download/"],
+    "id_templates": ["MCxA_{stem}"],
+    "cirro_path": "/union_visualization/cirro/?q={\"dataset\":\"MCxA_{stem}\"}"
+  },
+  "hhsta": {
+    "display": "HHSTA",
+    "species": "人（AD 海马）",
+    "portal_url": "https://db.cngb.org/stomics/hhsta/",
+    "api_prefix": "HHSTA_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq",
+    "visual_engine": "explore",
+    "pages": ["spatial/", "scrna.seq/", "download/"],
+    "id_templates": ["HHSTA_{stem}", "{stem}"]
+  },
+  "nhpabc": {
+    "display": "NHPABC",
+    "species": "猕猴（全脑多模态）",
+    "portal_url": "https://db.cngb.org/stomics/nhpabc/",
+    "api_prefix": "NHPABC_",
+    "default_obs": "Age_group",
+    "technology": "snRNA / snATAC",
+    "visual_engine": "explore",
+    "pages": ["global_integrated/", "single_region_integrated/", "download/"],
+    "id_templates": ["NHPABC_{stem}", "{stem}"],
+    "custom_skill": "validate paper conclusions (myelin/PM, DDR, EO rebound)"
+  },
+  "starn": {
+    "display": "STARN",
+    "species": "大豆（根瘤）",
+    "portal_url": "https://db.cngb.org/stomics/starn/",
+    "api_prefix": "STARN_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq",
+    "visual_engine": "explore",
+    "pages": ["spatial/", "download/"],
+    "id_templates": ["STARN_{stem}", "{stem}"]
+  },
+  "stamrn": {
+    "display": "STAMRN",
+    "species": "Medicago sativa / 苜蓿（根瘤）",
+    "portal_url": "https://db.cngb.org/stomics/stamrn/",
+    "stds_id": "STDS0000401",
+    "api_prefix": "STAMRN_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq",
+    "visual_engine": "explore",
+    "pages": ["spatial/", "download/"],
+    "id_templates": ["STAMRN_{stem}", "{stem}"]
+  },
+  "lbspa": {
+    "display": "LBSPA",
+    "species": "Petromyzon marinus / 七鳃鳗（脑）",
+    "portal_url": "https://db.genomics.cn/stomics/lbspa/",
+    "stds_id": "STDS0000403",
+    "api_prefix": "LBSPA_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / scRNA",
+    "visual_engine": "explore",
+    "pages": ["stRNA.seq/", "scRNA.seq/", "download/"],
+    "id_templates": ["LBSPA_{stem}", "{stem}"],
+    "fixed_stems": ["lamrepy.3d", "lamrepy.sc"],
+    "cirro_path": "/union_visualization/cirro/?q={\"dataset\":\"LBSPA_{stem}\"}"
+  },
+  "mhaod": {
+    "display": "MHAOD",
+    "species": "食蟹猴（下丘脑）",
+    "portal_url": "https://db.cngb.org/stomics/mhaod/",
+    "api_prefix": "MHAOD_",
+    "default_obs": "celltype",
+    "technology": "scRNA",
+    "visual_engine": "explore",
+    "pages": [""],
+    "id_templates": ["MHAOD_{stem}", "{stem}"],
+    "fixed_stems": ["allcell", "neuron", "non_neuron"]
+  },
+  "hhaamstar": {
+    "display": "HHAAMSTAR",
+    "species": "Homo sapiens / 人（毛囊 / AGA）",
+    "portal_url": "https://db.cngb.org/stomics/hhaamstar/",
+    "api_prefix": "HHAAMSTAR_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / scRNA / scATAC",
+    "visual_engine": "portal_spa",
+    "spa_api_base": "https://db.cngb.org/stomics_smlhhfrl/api/",
+    "pages": [],
+    "id_templates": []
+  },
+  "firsstars": {
+    "display": "FIRSSTARS",
+    "species": "大鼠（皮肤损伤）",
+    "portal_url": "https://db.cngb.org/stomics/firsstars/",
+    "api_prefix": "FIRSSTARS_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / scRNA",
+    "visual_engine": "portal_spa",
+    "spa_api_base": "https://db.cngb.org/stomics_firsstar/api/",
+    "pages": [],
+    "id_templates": []
+  },
+  "gitomicsdb": {
+    "display": "GITomicsDB",
+    "species": "多物种（胃肠道演化）",
+    "portal_url": "https://db.genomics.cn/stomics/gitomicsdb/",
+    "api_prefix": "GITomicsDB_",
+    "default_obs": "clusters",
+    "technology": "Stereo-seq / scRNA",
+    "visual_engine": "cirro",
+    "pages": ["spatial/", "scrna.seq/", "download/"],
+    "id_templates": ["GITomicsDB_{stem}"],
+    "cirro_path": "/union_visualization/cirro/?q={\"dataset\":\"GITomicsDB_{stem}\"}"
+  },
+  "mcnsta": {
+    "display": "MCNSTA",
+    "species": "小鼠",
+    "portal_url": "https://db.cngb.org/stomics/datasets/STDS0000243/",
+    "api_prefix": "STDS0000243_",
+    "stds_id": "STDS0000243",
+    "default_obs": "CN_celltypes",
+    "technology": "Stereo-seq",
+    "visual_engine": "explore",
+    "alias_from_stds": "STDS0000243"
+  },
+  "ssta_ppi": {
+    "display": "SSTA-PPI",
+    "species": "马铃薯",
+    "portal_url": "https://db.cngb.org/stomics/datasets/STDS0000386/",
+    "api_prefix": "STDS0000386_",
+    "stds_id": "STDS0000386",
+    "default_obs": "Cell_ID",
+    "technology": "Stereo-seq",
+    "visual_engine": "explore",
+    "alias_from_stds": "STDS0000386"
+  },
+  "rsta": {
+    "display": "RSTA",
+    "species": "Oryza sativa / 水稻（中花11）",
+    "portal_url": "https://db.genomics.cn/stomics/rice/",
+    "api_prefix": "",
+    "default_obs": "celltype",
+    "technology": "Stereo-seq / snRNA",
+    "visual_engine": "explore",
+    "pages": ["stomics/", "scRNAseq/", "download/"],
+    "id_templates": ["{stem}"],
+    "fixed_stems": [
+      "Rice_SC_ZH11_SC",
+      "Rice_ST_ZH11_ST",
+      "Rice_ZH11_ST_supp"
+    ],
+    "kind_overrides": {
+      "Rice_SC_ZH11_SC": "snrna",
+      "Rice_ST_ZH11_ST": "spatial",
+      "Rice_ZH11_ST_supp": "spatial"
+    }
+  }
+}

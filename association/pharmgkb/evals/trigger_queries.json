@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "CYP2C19 CPIC 指南",
+    "rs4244285 药物基因组"
+  ],
+  "should_not_trigger": [
+    "BRCA1 致病突变",
+    "Open Targets EGFR"
+  ]
+}

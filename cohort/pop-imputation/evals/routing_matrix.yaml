@@ -1,0 +1,13 @@
+competing_skills:
+- pop-genotype-qc
+- pop-gwas-association
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: GWAS 前质控
+  expected_skill: pop-genotype-qc
+  not: pop-imputation
+- query: 填充后跑关联分析
+  expected_skill: pop-gwas-association
+  not: pop-imputation

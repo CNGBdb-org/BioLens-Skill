@@ -1,0 +1,9 @@
+[
+  {"query": "CNGB 有哪些 Brain 空间数据集？", "expect_skill": "stomics-datasets"},
+  {"query": "STDS0000001 有哪些样本？", "expect_skill": "stomics-datasets"},
+  {"query": "SCDS0000040 推荐 Brain 样本", "expect_skill": "stomics-datasets"},
+  {"query": "HESTA CS23 SOX2 空间表达", "expect_skill": "hesta", "not": "stomics-datasets"},
+  {"query": "CIMA B 细胞 CD8A UMAP", "expect_skill": "cima", "not": "stomics-datasets"},
+  {"query": "MOSTA E16.5 Sox2", "expect_skill": "mosta", "not": "stomics-datasets"},
+  {"query": "搜 GEO 肝癌单细胞", "expect_skill": "geo-sra", "not": "stomics-datasets"}
+]

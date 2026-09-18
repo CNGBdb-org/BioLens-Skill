@@ -1,0 +1,16 @@
+competing_skills:
+  - clinvar
+  - opentargets
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "CYP2C19 CPIC 指南"
+    expected_skill: pharmgkb
+  - query: "rs4244285 药物基因组"
+    expected_skill: pharmgkb
+  - query: "BRCA1 致病突变"
+    expected_skill: clinvar
+    not: pharmgkb
+  - query: "Open Targets EGFR"
+    expected_skill: clinvar
+    not: pharmgkb

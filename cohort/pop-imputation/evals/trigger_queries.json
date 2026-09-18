@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "芯片数据准备 TOPMed 提交文件",
+    "填充后做 info score 质控",
+    "填充前后等位基因频率一致性"
+  ],
+  "should_not_trigger": [
+    "跑 GWAS 关联",
+    "基因型 QC missingness",
+    "VEP 注释变异"
+  ]
+}

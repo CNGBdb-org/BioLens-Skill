@@ -1,0 +1,17 @@
+competing_skills:
+  - clinvar
+  - dbsnp
+  - ensembl
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "这段区域有哪些 CNV"
+    expected_skill: dgv
+  - query: "nsv516481"
+    expected_skill: dgv
+  - query: "rs80357906 致病"
+    expected_skill: clinvar
+    not: dgv
+  - query: "gnomAD SNV AF"
+    expected_skill: clinvar
+    not: dgv

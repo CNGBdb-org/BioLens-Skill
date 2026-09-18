@@ -1,0 +1,14 @@
+competing_skills:
+- pharmgkb
+- clinvar
+- pop-variant-annotation
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: CYP2C19 的 CPIC 用药指南
+  expected_skill: pharmgkb
+  not: pop-pharmacogenomics
+- query: rs4244285 临床意义
+  expected_skill: pharmgkb
+  not: pop-pharmacogenomics

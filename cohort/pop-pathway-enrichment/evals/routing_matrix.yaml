@@ -1,0 +1,15 @@
+competing_skills:
+- go
+- kegg
+- pop-heritability-ldsc
+- pop-gwas-association
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: GO:0006915 是什么意思
+  expected_skill: go
+  not: pop-pathway-enrichment
+- query: LDSC 估计 h2
+  expected_skill: pop-heritability-ldsc
+  not: pop-pathway-enrichment

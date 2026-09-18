@@ -1,0 +1,17 @@
+competing_skills:
+  - kegg
+  - uniprot
+  - eggnog
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "GO:0006915 是什么"
+    expected_skill: go
+  - query: "TP53 的 GO 注释"
+    expected_skill: go
+  - query: "对基因列表做富集"
+    expected_skill: kegg
+    not: go
+  - query: "hsa04110 通路"
+    expected_skill: kegg
+    not: go

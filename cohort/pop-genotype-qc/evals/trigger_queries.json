@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "帮我做 GWAS 前质控",
+    "检查这个 VCF 的样本杂合度离群",
+    "PLINK 数据亲缘关系和重复样本检测"
+  ],
+  "should_not_trigger": [
+    "帮我跑 GWAS 关联分析",
+    "算多基因风险评分 PRS",
+    "查 ClinVar 致病性"
+  ]
+}

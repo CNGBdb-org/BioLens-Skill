@@ -1,0 +1,21 @@
+competing_skills:
+  - dbsnp
+  - gnomad
+  - clinvar
+  - ensembl
+exclusions:
+  - Do not replace single-DB lookups when user only asks one facet
+  - Do not claim formal ACMG clinical classification
+near_miss_cases:
+  - query: "rs80357906 综合解读一下"
+    expected_skill: variant-interpretation
+    not: clinvar
+  - query: "rs80357906 致病吗"
+    expected_skill: clinvar
+    not: variant-interpretation
+  - query: "rs80357906 人群频率"
+    expected_skill: gnomad
+    not: variant-interpretation
+  - query: "坐标转 rsID"
+    expected_skill: dbsnp
+    not: variant-interpretation

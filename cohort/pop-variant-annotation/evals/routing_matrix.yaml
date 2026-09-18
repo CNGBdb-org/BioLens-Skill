@@ -1,0 +1,15 @@
+competing_skills:
+- clinvar
+- dbsnp
+- ensembl
+- pop-gwas-association
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: rs80357906 致病吗
+  expected_skill: clinvar
+  not: pop-variant-annotation
+- query: 这个 rsID 坐标是什么
+  expected_skill: dbsnp
+  not: pop-variant-annotation

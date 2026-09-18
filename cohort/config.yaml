@@ -1,0 +1,28 @@
+# Cohort Pipeline 配置文件
+# ================================
+
+# 输入数据
+vcf: data/demo_genotype.vcf.gz        # 输入 VCF 文件
+pheno: data/demo_pheno.txt            # 表型文件（FID IID PHENO）
+covar: data/demo_covar.txt            # 协变量文件（FID IID age sex PC1-PC10）
+sumstats: data/demo_sumstats.txt      # GWAS summary statistics
+eqtl: data/demo_eqtl.txt              # eQTL summary statistics
+pop_file: data/demo_pop.txt           # 群体标签文件（FID IID POP）
+locus: "1:1000000-2000000"            # 精细定位/共定位的目标 locus
+
+# 输出
+output: results                       # 输出目录
+
+# 质控参数
+maf: 0.05                             # MAF 下限
+hwe: 1e-6                             # HWE p 值下限
+sample_missing: 0.02                  # 样本缺失率上限
+variant_missing: 0.02                 # 变异缺失率上限
+
+# GWAS 参数
+tool: plink                           # GWAS 工具（plink/regenie/saige/bolt）
+binary: false                         # 是否二分类性状
+pval_threshold: 5e-8                  # 显著性阈值
+
+# PRS 参数
+prs_method: plink                     # PRS 方法（plink/prsice2/prscs/ldpred2）

@@ -1,0 +1,14 @@
+{
+  "should_trigger": [
+    "rs80357906 综合解读一下",
+    "这个变异怎么看：rs80357906",
+    "按 dbsnp gnomad clinvar 链路解读该位点",
+    "帮我做一下变异的 ACMG 相关证据梳理 rs80357906"
+  ],
+  "should_not_trigger": [
+    "rs80357906 在 ClinVar 致病吗",
+    "rs80357906 的 gnomAD 频率",
+    "把坐标转成 rsID",
+    "HESTA 上看 SOX2 表达"
+  ]
+}

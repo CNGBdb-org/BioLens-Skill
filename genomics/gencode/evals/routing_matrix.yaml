@@ -1,0 +1,16 @@
+competing_skills:
+  - ensembl
+  - refseq
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "GENCODE BRCA1 转录本"
+    expected_skill: gencode
+  - query: "ENST00000357654"
+    expected_skill: gencode
+  - query: "NM_007294"
+    expected_skill: ensembl
+    not: gencode
+  - query: "致病吗"
+    expected_skill: ensembl
+    not: gencode

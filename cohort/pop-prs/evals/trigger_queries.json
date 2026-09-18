@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 GWAS sumstats 计算目标群体 PRS",
+    "评估 PRS 的 AUC",
+    "PRSice2 多阈值扫描"
+  ],
+  "should_not_trigger": [
+    "跑全基因组关联分析",
+    "查 GWAS Catalog",
+    "孟德尔随机化"
+  ]
+}

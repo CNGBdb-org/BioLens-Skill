@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "rs80357906 gnomAD 频率",
+    "BRCA1 pLI LOEUF",
+    "这个位点 AF 是否支持 PM2"
+  ],
+  "should_not_trigger": [
+    "ClinVar 致病吗",
+    "查 rsID 坐标",
+    "HESTA SOX2 表达"
+  ]
+}

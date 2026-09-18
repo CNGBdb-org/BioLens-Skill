@@ -1,0 +1,14 @@
+competing_skills:
+- pop-genotype-qc
+- pop-gwas-association
+- pop-selection-scan
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 帮我做基因型质控
+  expected_skill: pop-genotype-qc
+  not: pop-structure-pca
+- query: Fst 选择信号
+  expected_skill: pop-selection-scan
+  not: pop-structure-pca

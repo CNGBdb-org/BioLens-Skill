@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "TP53 KEGG 通路",
+    "hsa04110"
+  ],
+  "should_not_trigger": [
+    "GO:0006915",
+    "做 GSEA"
+  ]
+}

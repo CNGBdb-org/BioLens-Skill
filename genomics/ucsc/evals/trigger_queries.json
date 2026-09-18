@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "UCSC RepeatMasker 这个区域",
+    "BRCA1 knownGene"
+  ],
+  "should_not_trigger": [
+    "Dfam Alu 家族",
+    "ClinVar"
+  ]
+}

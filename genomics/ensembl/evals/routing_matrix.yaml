@@ -1,0 +1,19 @@
+competing_skills:
+  - refseq
+  - gencode
+  - dbsnp
+  - clinvar
+  - uniprot
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "BRCA1 Ensembl ID"
+    expected_skill: ensembl
+  - query: "VEP 注释这个 HGVS"
+    expected_skill: ensembl
+  - query: "致病吗"
+    expected_skill: refseq
+    not: ensembl
+  - query: "gnomAD AF"
+    expected_skill: refseq
+    not: ensembl

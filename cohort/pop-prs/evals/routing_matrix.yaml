@@ -1,0 +1,14 @@
+competing_skills:
+- pop-gwas-association
+- gwascatalog
+- pop-mr-smr
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 帮我跑 GWAS
+  expected_skill: pop-gwas-association
+  not: pop-prs
+- query: 基因表达对疾病有没有因果
+  expected_skill: pop-mr-smr
+  not: pop-prs

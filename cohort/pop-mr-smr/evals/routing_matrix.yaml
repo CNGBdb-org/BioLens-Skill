@@ -1,0 +1,14 @@
+competing_skills:
+- cima-smr-gwas
+- pop-colocalization
+- pop-gwas-association
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: CTLA4 在 CIMA SMR 里和哪些免疫病有关
+  expected_skill: cima-smr-gwas
+  not: pop-mr-smr
+- query: GWAS 与 eQTL coloc
+  expected_skill: pop-colocalization
+  not: pop-mr-smr

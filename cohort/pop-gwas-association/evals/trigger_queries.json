@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 PLINK 跑 GWAS 关联分析",
+    "REGENIE 二分类 GWAS",
+    "算 λGC 并画 Manhattan"
+  ],
+  "should_not_trigger": [
+    "查 GWAS Catalog 已发表关联",
+    "算 PRS",
+    "查 ClinVar"
+  ]
+}

@@ -1,0 +1,15 @@
+competing_skills:
+  - ucsc
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "Dfam Alu 家族"
+    expected_skill: dfam
+  - query: "DF0000001 模型"
+    expected_skill: dfam
+  - query: "这段 chr 的 RepeatMasker"
+    expected_skill: ucsc
+    not: dfam
+  - query: "BRCA1 坐标"
+    expected_skill: ucsc
+    not: dfam

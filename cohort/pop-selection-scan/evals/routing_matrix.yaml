@@ -1,0 +1,11 @@
+competing_skills:
+- pop-structure-pca
+- pop-roh-inbreeding
+- pop-ld-haplotype
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 做 PCA 看人群分层
+  expected_skill: pop-structure-pca
+  not: pop-selection-scan

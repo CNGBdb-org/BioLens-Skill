@@ -1,0 +1,17 @@
+competing_skills:
+  - clinvar
+  - gnomad
+  - ensembl
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "rs80357906 在哪条染色体"
+    expected_skill: dbsnp
+  - query: "坐标 17:43057062 对应哪个 rsID"
+    expected_skill: dbsnp
+  - query: "这个变异致病吗"
+    expected_skill: clinvar
+    not: dbsnp
+  - query: "gnomAD AF 多少"
+    expected_skill: clinvar
+    not: dbsnp

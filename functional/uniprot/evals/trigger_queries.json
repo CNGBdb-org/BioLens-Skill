@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "BRCA1 UniProt 蛋白",
+    "P38398 功能"
+  ],
+  "should_not_trigger": [
+    "BRCA1 染色体位置",
+    "rs80357906 致病"
+  ]
+}

@@ -1,0 +1,31 @@
+PLINK v1.9.0-b.8 64-bit (22 Oct 2024)
+Options in effect:
+  --allow-no-sex
+  --make-bed
+  --out /work/makailong/cohort_scripts/data/demo_genotype
+  --vcf /work/makailong/cohort_scripts/data/demo_genotype.vcf.gz
+
+Hostname: task-p25z10200n1109st-h0aisgaf-787974cb74-6wvcb
+Working directory: /work/makailong/cohort_skills
+Start time: Fri Aug 14 16:18:18 2026
+
+Random number seed: 1786695498
+256574 MB RAM detected; reserving 128287 MB for main workspace.
+--vcf: /work/makailong/cohort_scripts/data/demo_genotype-temporary.bed +
+/work/makailong/cohort_scripts/data/demo_genotype-temporary.bim +
+/work/makailong/cohort_scripts/data/demo_genotype-temporary.fam written.
+484 variants loaded from .bim file.
+50 people (0 males, 0 females, 50 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/work/makailong/cohort_scripts/data/demo_genotype.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 50 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+484 variants and 50 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to /work/makailong/cohort_scripts/data/demo_genotype.bed +
+/work/makailong/cohort_scripts/data/demo_genotype.bim +
+/work/makailong/cohort_scripts/data/demo_genotype.fam ... done.
+
+End time: Fri Aug 14 16:18:18 2026

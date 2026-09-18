@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "从 VCF 做 CYP2D6 star allele 分型",
+    "预测药物代谢表型 PM IM NM",
+    "群体 PGx 频率"
+  ],
+  "should_not_trigger": [
+    "查 PharmGKB CPIC 指南 API",
+    "ClinVar 致病性",
+    "跑 GWAS"
+  ]
+}

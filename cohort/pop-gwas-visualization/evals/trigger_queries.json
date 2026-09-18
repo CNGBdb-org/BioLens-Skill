@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "画 GWAS Manhattan 和 QQ",
+    "Regional plot",
+    "多性状 Forest plot"
+  ],
+  "should_not_trigger": [
+    "跑关联检验",
+    "查 GWAS Catalog",
+    "精细定位 PIP"
+  ]
+}

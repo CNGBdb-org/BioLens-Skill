@@ -1,0 +1,14 @@
+competing_skills:
+- pop-finemapping
+- pop-mr-smr
+- cima-xqtl
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: SuSiE 精细定位
+  expected_skill: pop-finemapping
+  not: pop-colocalization
+- query: CIMA 预计算 cis-eQTL 表
+  expected_skill: cima-xqtl
+  not: pop-colocalization

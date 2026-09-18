@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "rs7903146 GWAS 性状",
+    "TCF7L2 关联研究"
+  ],
+  "should_not_trigger": [
+    "这个位点致病吗",
+    "gnomAD AF"
+  ]
+}

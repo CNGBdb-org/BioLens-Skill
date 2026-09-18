@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "计算 iHS 选择信号",
+    "两群体 Fst",
+    "XP-EHH 扫描"
+  ],
+  "should_not_trigger": [
+    "PCA 群体结构",
+    "ROH 近交系数",
+    "GWAS 关联"
+  ]
+}

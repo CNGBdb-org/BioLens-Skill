@@ -1,0 +1,14 @@
+competing_skills:
+- pop-gwas-association
+- pop-colocalization
+- pop-gwas-visualization
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: GWAS 和 eQTL 共定位
+  expected_skill: pop-colocalization
+  not: pop-finemapping
+- query: 画 Manhattan plot
+  expected_skill: pop-gwas-visualization
+  not: pop-finemapping

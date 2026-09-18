@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 DELLY 检测结构变异",
+    "CNV 频率统计",
+    "SV 基因注释"
+  ],
+  "should_not_trigger": [
+    "SNP GWAS",
+    "罕见 SNV burden",
+    "VEP 注释 SNP"
+  ]
+}

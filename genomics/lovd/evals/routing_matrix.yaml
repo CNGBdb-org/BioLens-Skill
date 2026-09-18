@@ -1,0 +1,16 @@
+competing_skills:
+  - clinvar
+  - dbsnp
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "LOVD 检查这个 HGVS"
+    expected_skill: lovd
+  - query: "DMD 基因是否在 LOVD"
+    expected_skill: lovd
+  - query: "ClinVar 致病吗"
+    expected_skill: clinvar
+    not: lovd
+  - query: "gnomAD AF"
+    expected_skill: clinvar
+    not: lovd

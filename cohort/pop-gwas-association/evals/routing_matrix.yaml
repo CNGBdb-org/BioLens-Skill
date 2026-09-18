@@ -1,0 +1,15 @@
+competing_skills:
+- gwascatalog
+- pop-prs
+- pop-gwas-visualization
+- pop-genotype-qc
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: rs7903146 在 GWAS Catalog 里关联什么
+  expected_skill: gwascatalog
+  not: pop-gwas-association
+- query: 用 sumstats 算 PRS
+  expected_skill: pop-prs
+  not: pop-gwas-association

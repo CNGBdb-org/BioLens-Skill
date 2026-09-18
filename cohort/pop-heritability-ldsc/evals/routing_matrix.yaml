@@ -1,0 +1,14 @@
+competing_skills:
+- pop-gwas-association
+- pop-pathway-enrichment
+- pop-prs
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: GWAS 通路富集 MAGMA
+  expected_skill: pop-pathway-enrichment
+  not: pop-heritability-ldsc
+- query: 计算 PRS
+  expected_skill: pop-prs
+  not: pop-heritability-ldsc

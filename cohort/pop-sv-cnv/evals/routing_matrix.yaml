@@ -1,0 +1,15 @@
+competing_skills:
+- pop-gwas-association
+- pop-rare-variant-burden
+- pop-variant-annotation
+- dgv
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 查 DGV 已报道 CNV
+  expected_skill: dgv
+  not: pop-sv-cnv
+- query: 罕见 SNV SKAT
+  expected_skill: pop-rare-variant-burden
+  not: pop-sv-cnv

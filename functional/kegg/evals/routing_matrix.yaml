@@ -1,0 +1,16 @@
+competing_skills:
+  - go
+  - opentargets
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "TP53 KEGG 通路"
+    expected_skill: kegg
+  - query: "hsa04110"
+    expected_skill: kegg
+  - query: "GO:0006915"
+    expected_skill: go
+    not: kegg
+  - query: "做 GSEA"
+    expected_skill: go
+    not: kegg

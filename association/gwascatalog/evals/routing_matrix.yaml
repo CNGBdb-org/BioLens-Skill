@@ -1,0 +1,17 @@
+competing_skills:
+  - opentargets
+  - clinvar
+  - gnomad
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "rs7903146 GWAS 性状"
+    expected_skill: gwascatalog
+  - query: "TCF7L2 关联研究"
+    expected_skill: gwascatalog
+  - query: "这个位点致病吗"
+    expected_skill: opentargets
+    not: gwascatalog
+  - query: "gnomAD AF"
+    expected_skill: opentargets
+    not: gwascatalog

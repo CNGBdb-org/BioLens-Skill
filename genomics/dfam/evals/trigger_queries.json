@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "Dfam Alu 家族",
+    "DF0000001 模型"
+  ],
+  "should_not_trigger": [
+    "这段 chr 的 RepeatMasker",
+    "BRCA1 坐标"
+  ]
+}

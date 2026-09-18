@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "GENCODE BRCA1 转录本",
+    "ENST00000357654"
+  ],
+  "should_not_trigger": [
+    "NM_007294",
+    "致病吗"
+  ]
+}

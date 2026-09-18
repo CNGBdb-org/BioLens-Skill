@@ -1,0 +1,14 @@
+competing_skills:
+- pop-gwas-association
+- pop-variant-annotation
+- pop-sv-cnv
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 全基因组常见变异关联
+  expected_skill: pop-gwas-association
+  not: pop-rare-variant-burden
+- query: 结构变异 CNV
+  expected_skill: pop-sv-cnv
+  not: pop-rare-variant-burden

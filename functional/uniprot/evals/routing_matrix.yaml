@@ -1,0 +1,17 @@
+competing_skills:
+  - ensembl
+  - go
+  - eggnog
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "BRCA1 UniProt 蛋白"
+    expected_skill: uniprot
+  - query: "P38398 功能"
+    expected_skill: uniprot
+  - query: "BRCA1 染色体位置"
+    expected_skill: ensembl
+    not: uniprot
+  - query: "rs80357906 致病"
+    expected_skill: ensembl
+    not: uniprot

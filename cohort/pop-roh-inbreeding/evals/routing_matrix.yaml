@@ -1,0 +1,14 @@
+competing_skills:
+- pop-selection-scan
+- pop-ld-haplotype
+- pop-genotype-qc
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: 亲缘关系检测质控
+  expected_skill: pop-genotype-qc
+  not: pop-roh-inbreeding
+- query: LD 衰减曲线
+  expected_skill: pop-ld-haplotype
+  not: pop-roh-inbreeding

@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "TP53 eggNOG 直系同源",
+    "OG 功能域"
+  ],
+  "should_not_trigger": [
+    "Ensembl ID",
+    "ClinVar"
+  ]
+}

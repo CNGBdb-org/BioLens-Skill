@@ -1,0 +1,16 @@
+competing_skills:
+  - ensembl
+  - uniprot
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "TP53 eggNOG 直系同源"
+    expected_skill: eggnog
+  - query: "OG 功能域"
+    expected_skill: eggnog
+  - query: "Ensembl ID"
+    expected_skill: ensembl
+    not: eggnog
+  - query: "ClinVar"
+    expected_skill: ensembl
+    not: eggnog

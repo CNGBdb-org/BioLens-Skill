@@ -1,0 +1,10 @@
+{
+  "should_trigger": [
+    "NM_007294 是什么",
+    "BRCA1 RefSeq 转录本"
+  ],
+  "should_not_trigger": [
+    "Ensembl VEP",
+    "致病性"
+  ]
+}

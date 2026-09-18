@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 VEP 注释这个 VCF",
+    "GWAS 显著 SNP 是 missense 还是 synonymous",
+    "pysam 统计 SNV 和 INDEL"
+  ],
+  "should_not_trigger": [
+    "查 ClinVar 临床意义",
+    "查 dbSNP rsID 坐标",
+    "跑 GWAS"
+  ]
+}

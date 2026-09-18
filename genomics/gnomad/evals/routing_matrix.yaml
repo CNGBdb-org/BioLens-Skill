@@ -1,0 +1,17 @@
+competing_skills:
+  - clinvar
+  - dbsnp
+  - ensembl
+exclusions:
+  - Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+  - query: "rs80357906 gnomAD 频率"
+    expected_skill: gnomad
+  - query: "BRCA1 pLI LOEUF"
+    expected_skill: gnomad
+  - query: "ClinVar 致病吗"
+    expected_skill: clinvar
+    not: gnomad
+  - query: "查 rsID 坐标"
+    expected_skill: clinvar
+    not: gnomad

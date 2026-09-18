@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "罕见变异 SKAT-O burden 检验",
+    "按基因聚合 CMC",
+    "MAF<0.01 的 burden"
+  ],
+  "should_not_trigger": [
+    "常见变异 GWAS",
+    "VEP 注释所有 SNP",
+    "算 PRS"
+  ]
+}

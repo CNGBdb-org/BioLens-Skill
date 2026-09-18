@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "GWAS 和 eQTL 做 coloc 共定位",
+    "算 PP4",
+    "HyPrColoc 多性状共定位"
+  ],
+  "should_not_trigger": [
+    "精细定位 PIP",
+    "SMR 孟德尔随机化",
+    "跑 GWAS"
+  ]
+}

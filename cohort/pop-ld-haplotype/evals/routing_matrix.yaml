@@ -1,0 +1,14 @@
+competing_skills:
+- pop-structure-pca
+- pop-finemapping
+- pop-selection-scan
+exclusions:
+- Must run packaged scripts/query.py; do not invent p-values or summary stats
+- Respect Not for / Do Not Use When in SKILL.md
+near_miss_cases:
+- query: SuSiE 精细定位
+  expected_skill: pop-finemapping
+  not: pop-ld-haplotype
+- query: LD 剪枝后做 PCA
+  expected_skill: pop-structure-pca
+  not: pop-ld-haplotype

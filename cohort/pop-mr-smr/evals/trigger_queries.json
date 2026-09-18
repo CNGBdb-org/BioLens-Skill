@@ -1,0 +1,12 @@
+{
+  "should_trigger": [
+    "用 eQTL 和 GWAS 做孟德尔随机化",
+    "跑 SMR HEIDI",
+    "TwoSampleMR IVW"
+  ],
+  "should_not_trigger": [
+    "查 CIMA 预计算免疫病 SMR 表",
+    "共定位 PP4",
+    "跑 GWAS"
+  ]
+}
